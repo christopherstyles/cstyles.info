@@ -33,19 +33,6 @@ export default function Navbar(): JSX.Element {
       <div className="relative flex h-full w-full">
         <div className="absolute left-0 top-0">
           <motion.div
-            animate={pathname === "/" ? "visible" : "hidden"}
-            initial="initial"
-            variants={variants}
-            transition={{ delay: pathname === "/" ? 0.1 : 0 }}
-          >
-            <h1 className="whitespace-nowrap text-2xl leading-none dark:font-light">
-              <Link href="/">Chris Styles</Link>
-            </h1>
-          </motion.div>
-        </div>
-
-        <div className="absolute left-0 top-0">
-          <motion.div
             animate={pathname === "/" ? "hidden" : "visible"}
             initial="initial"
             variants={variants}
