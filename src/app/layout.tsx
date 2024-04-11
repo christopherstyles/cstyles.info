@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="antialiased">
       <body className={inter.className}>
         <main className="grid min-h-screen grid-rows-[auto,1fr,auto] dark:font-light">
           <Navbar />
