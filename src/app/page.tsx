@@ -6,21 +6,13 @@ export default function Home() {
   return (
     <>
       <div className="mx-auto max-w-5xl">
-        <h1 className="mb-20 text-5xl">Hello!</h1>
-        <section className="mb-24 flex max-w-[610px] flex-col gap-8 text-2xl md:mb-48">
-          <p>
-            I’m Chris, a web developer living in rural Oregon with{" "}
-            <a
-              href="http://www.landbird.com/"
-              className="underline"
-              target="_blank"
-            >
-              @landbird
-            </a>
-            , three dogs, a raft of ducks, a lovely goose, and a couple of
-            chickens. I like to alphabetize things, and wander in the woods.
+        <div className="mb-40 flex flex-col gap-12">
+          <p className="text-2xl">
+            Chris Styles is a design-focused software engineer, based in Oregon.
+            His work focuses on creating beautiful, functional, and accessible
+            digital experiences.
           </p>
-        </section>
+        </div>
       </div>
       <section className="mb-24 flex w-full flex-col md:mb-48">
         <div className="flex w-full flex-col self-stretch bg-[#1A282A] p-0 md:p-24 lg:p-28">
