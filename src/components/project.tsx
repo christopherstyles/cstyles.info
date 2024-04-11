@@ -63,20 +63,9 @@ export default function Project({
           </section>
         )}
       </div>
-      <div
-        className="mx-auto grid grid-cols-12 gap-24 py-px"
-        style={
-          {
-            "--frame-bg-from": project.frameColorStart as string,
-            "--frame-bg-to": project.frameColorEnd as string,
-          } as React.CSSProperties
-        }
-      >
+      <div className="flex flex-col gap-16 md:gap-32">
         {project.screenshots.map((screenshot, index) => (
-          <div
-            className="col-span-12"
-            key={`${project.slug}-screenshot-${index}`}
-          >
+          <div key={`${project.slug}-screenshot-${index}`}>
             <Screenshot project={project} screenshot={screenshot} />
           </div>
         ))}
