@@ -14,16 +14,16 @@ export default function Page({ params }: { params: { slug: string } }) {
             <h2 className="text-2xl">Skills</h2>
             <ul className="space-y-6">
               <li>
-                <div className="font-medium">Languages</div>
-                Ruby, JavaScript, Typescript
+                <div className="font-bold">Languages</div>
+                <p className="font-normal">Ruby, JavaScript, Typescript</p>
               </li>
               <li>
-                <div className="font-medium">Frameworks</div>
+                <div className="font-bold">Frameworks</div>
                 Ruby on Rails, Hotwire, React.js, React Native, Lit, Next.js,
                 Gatsby, Bootstrap, Tailwind CSS
               </li>
               <li>
-                <div className="font-medium">
+                <div className="font-bold">
                   Tooling and additional experience
                 </div>
                 Algolia Search, API Development, AWS, CircleCI, Cloudinary,
@@ -34,7 +34,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 REST, StorybookJS, View Components, Zencoder, Zustand
               </li>
               <li>
-                <div className="font-medium">Deployment experience</div>
+                <div className="font-bold">Deployment experience</div>
                 AWS Amplify, Digital Ocean, DO App Platform, Dokku, Heroku,
                 Netlify, Vercel
               </li>
