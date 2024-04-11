@@ -186,11 +186,6 @@
       "screenshots": [
         {
           "caption": "",
-          "src": "/images/npr-live-sessions/poster.jpg",
-          "alt": ""
-        },
-        {
-          "caption": "",
           "src": "/images/npr-live-sessions/home-1.jpg",
           "alt": ""
         },
@@ -334,11 +329,6 @@
         }
       ],
       "screenshots": [
-        {
-          "caption": "",
-          "src": "/images/allthefarms/home-search-lg.jpg",
-          "alt": ""
-        },
         {
           "caption": "",
           "src": "/images/allthefarms/home-search.jpg",
