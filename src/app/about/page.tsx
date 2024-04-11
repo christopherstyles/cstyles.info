@@ -4,12 +4,10 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <div className="mx-auto max-w-5xl">
-        <div className="mb-20">
-          <h1 className="mb-4 text-5xl">Chris Styles</h1>
-        </div>
-        <section className="mb-40 flex flex-col gap-8 text-2xl">
-          <p>
-            Chris Styles was born in North Carolina and studied at the{" "}
+        <h1 className="mb-36 text-5xl">Chris Styles</h1>
+        <div className="mb-40 flex flex-col gap-12">
+          <p className="text-2xl">
+            Chris was born in North Carolina and studied at the{" "}
             <a
               aria-label="Maryland Institute College of art (opens in a new tab)"
               href="https://www.mica.edu/"
@@ -33,7 +31,15 @@ export default function Page({ params }: { params: { slug: string } }) {
             , three dogs, a raft of ducks, a lovely goose, and a few
             troublemaking chickens.
           </p>
-        </section>
+          <p className="text-lg">
+            If you’re interesting in chatting about a potential collaboration,
+            or would just like to say hello, please{" "}
+            <a href="mailto:cstyles@hey.com" className="underline">
+              get in touch
+            </a>
+            .
+          </p>
+        </div>
       </div>
       {/* <section className="mb-48 flex w-full flex-col">
         <div className="flex w-full flex-col self-stretch bg-[#1A282A] p-16 sm:p-20 md:p-24 lg:p-28">
