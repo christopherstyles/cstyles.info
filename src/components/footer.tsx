@@ -7,8 +7,7 @@ export default function Footer(): JSX.Element {
         ©️ {new Date().getFullYear()}
       </h1>
       <nav className="flex gap-4">
-        <Link href="/about">About</Link>
-        <a href="mailto:cstyles@hey.com">Contact</a>
+        <a href="mailto:cstyles@hey.com">Get in touch</a>
       </nav>
     </footer>
   );
