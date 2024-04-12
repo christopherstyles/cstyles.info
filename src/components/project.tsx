@@ -3,6 +3,12 @@ import RolesTable from "./roles-table";
 import Screenshot from "@/components/screenshot";
 import StackList from "./stack-list";
 
+export interface IAgency {
+  name: string;
+  prefix: string;
+  url: string;
+}
+
 export interface IRole {
   backend: boolean;
   frontend: boolean;
@@ -11,6 +17,7 @@ export interface IRole {
 }
 
 export interface IProject {
+  agency: IAgency;
   awards: string;
   challenge: string;
   deck: string;
@@ -33,27 +40,18 @@ export default function Project({
 }): JSX.Element {
   return (
     <>
-      <div className="mx-auto mb-48 flex max-w-5xl flex-col space-y-20">
+      <div className="mx-auto mb-48 flex max-w-5xl flex-col space-y-20 text-lg">
         <div>
           <h1 className="text-5xl">{project.title}</h1>
         </div>
         <section className="flex flex-col gap-8">
           {project.deck && <p className="text-2xl">{project.deck}</p>}
-          {project.challenge && (
-            <p className="text-lg font-extralight">{project.challenge}</p>
-          )}
-          {project.awards && (
-            <p className="text-lg font-extralight">{project.awards}</p>
-          )}
+          {project.challenge && <p>{project.challenge}</p>}
+          {project.awards && <p>{project.awards}</p>}
+          <p>
+            {project.agency.prefix} {project.agency.name}
+          </p>
         </section>
-        {project.stack.length > 0 && (
-          <section className="flex flex-col gap-8">
-            <h2 className="text-3xl">Stack</h2>
-            <div>
-              <StackList stack={project.stack} />
-            </div>
-          </section>
-        )}
         {project.roles.length > 0 && (
           <section className="flex flex-col gap-8">
             <h2 className="text-3xl">Role</h2>
@@ -62,8 +60,16 @@ export default function Project({
             </div>
           </section>
         )}
+        {project.stack.length > 0 && (
+          <section className="flex flex-col gap-8">
+            <h2 className="text-3xl">Stack</h2>
+            <div>
+              <StackList stack={project.stack} />
+            </div>
+          </section>
+        )}
       </div>
-      <div className="flex flex-col gap-16 md:gap-32">
+      <div className="mx-auto flex max-w-6xl flex-col gap-16 md:gap-32">
         {project.screenshots.map((screenshot, index) => (
           <div key={`${project.slug}-screenshot-${index}`}>
             <Screenshot project={project} screenshot={screenshot} />

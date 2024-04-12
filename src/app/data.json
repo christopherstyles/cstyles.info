@@ -1,6 +1,11 @@
 {
   "projects": [
     {
+      "agency": {
+        "prefix": "Developed at ",
+        "name": "Kongregate",
+        "url": "https://www.kongregate.com/"
+      },
       "challenge": "Introducing new changes presented a unique challenge to a 15 year old codebase. To address the need for progress while paying down technical debt, we initiated the creation of a design library consisting of web components (Konstruct UI) that could be used across all Kongregate properties. Utilizing web components provided a set of conventions to make collaboration easier, and ensure the design language would remain consistent across all Kongregate platforms, and would be intuitive for onboarding developers to easily utilize.",
       "deck": "For 15 years Kongregate has been a key player in gaming, captivating audiences globally. Facing technological advancements, it needed a major update. This involved modernizing infrastructure, creating a design library of UI components, and rebranding to align with its focus on innovation.",
       "frameColorStart": "#E478FA",
@@ -89,6 +94,11 @@
       "title": "Kongregate Platform & Konstruct UI"
     },
     {
+      "agency": {
+        "prefix": "Agency: ",
+        "name": "A Hundred Years",
+        "url": "https://www.ahundredyears.com/"
+      },
       "deck": "TED needed to develop an experience that reconnects educators and students with the joy and discovery of learning. For teachers, that meant using TED’s unique capacity to tell compelling stories as a teaching tool, and for students, giving them the opportunity to craft stories of their own.",
       "challenge": "The result was a platform that gives teachers the ability to create customized lesson plans around any TED-Ed or YouTube video, add their own comprehension checks, distribute lessons privately or publicly, and track real-time performance statistics for individual students, classes, or the public at large.",
       "awards": "TED-Ed has won 8 Webby awards, TIME Magazine best site of the year award, and drawn millions of users.",
@@ -163,6 +173,11 @@
       "title": "TED-Ed"
     },
     {
+      "agency": {
+        "prefix": "Agency: ",
+        "name": "Bletchley Park",
+        "url": "https://www.bletchley.co/"
+      },
       "challenge": "The challenge was to build a platform that seamlessly integrates the discovery of emerging artists with a robust bespoke backend, empowering station managers to curate live performance feeds and generate personalized recommendations.",
       "deck": "Live Sessions brings you the best videos of live music sessions from across the US. With national and local playlists, live webcasts of performances, and compelling coverage of emerging and proven artists, Live Sessions is NPR Music’s video connection to public radio music stations providing you the most exciting live performance content from around the country, updated daily.",
       "frameColorStart": "#E6B79B",
@@ -225,6 +240,11 @@
       "title": "NPR Live Sessions"
     },
     {
+      "agency": {
+        "prefix": "Agency: ",
+        "name": "Bletchley Park",
+        "url": "https://www.bletchley.co/"
+      },
       "challenge": "With a very large amount of content managed by Third Way editors and partners, a frontend approach was needed for issue verticals that could easily be scaled and reproduced. We created several frontend sites that could be managed by the Third Way team, and integrated with their existing Craft CMS. This allowed for a more flexible and dynamic approach to managing content, while providing an engaging experience for their audience.",
       "deck": "Third Way stands as a prominent national think tank dedicated to advancing modern center-left ideologies. Various program microsites help focus attention on federal policy and national initiatives that offer opportunity and progress.",
       "frameColorStart": "#E0CDAF",
@@ -308,6 +328,11 @@
       "title": "Third Way"
     },
     {
+      "agency": {
+        "prefix": "",
+        "name": "Personal Project",
+        "url": ""
+      },
       "challenge": "To help local farmers and rachers, we built an address-searchable database that helps people find their local farms and food growers, as well as local farms and ranches to be able to sell directly to the public that would like to support them. ",
       "deck": "The idea behind All The Farms is very straightforward and simple: We should understand what farms are around us, what they are carrying, and where/how we can support them.",
       "frameColorStart": "#EAEAD1",
@@ -371,10 +396,15 @@
       "title": "All The Farms"
     },
     {
+      "agency": {
+        "prefix": "Collaboration w/ ",
+        "name": "Post Typography",
+        "url": "https://www.posttypography.com/"
+      },
       "challenge": "Content is organized into three categories. The Feed is a collection of short articles that are selected from the site’s contributors. Splice Original is comprised of longer pieces, also from the site’s staff and roster of freelance contributors. Multimedia is a daily collection of new and classic material that’s slipped through the cracks in one way or another.",
       "deck": "Splice Today is a website covering topics such as music, film, books, sports and culture with a focus on politics and the arts. It features short articles, longer pieces, multimedia and a daily feed of new and classic material from its contributors and staff.",
-      "frameColorStart": "#2F2222",
-      "frameColorEnd": "#2F2222",
+      "frameColorStart": "#86a58b",
+      "frameColorEnd": "#398666",
       "position": 6,
       "posterImages": [
         {

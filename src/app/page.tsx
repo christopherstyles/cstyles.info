@@ -1,8 +1,14 @@
+import { promises as fs } from "fs";
+import Image from "next/image";
+import Link from "next/link";
 import { VscArrowRight } from "react-icons/vsc";
 
-import Image from "next/image";
+import { IProject } from "@/components/project";
 
-export default function Home() {
+export default async function Page({ params }: { params: { slug: string } }) {
+  const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
+  const data = JSON.parse(file);
+
   return (
     <>
       <div className="mx-auto max-w-5xl">
@@ -14,7 +20,49 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <section className="mb-24 flex w-full flex-col md:mb-48">
+      <section className="mb-20 grid grid-cols-1 gap-x-10 gap-y-12 lg:grid-cols-2">
+        {data.projects
+          .sort((a: IProject, b: IProject) => a.position - b.position)
+          .map((project: IProject) => (
+            <Link
+              href={`/work/${project.slug}`}
+              key={`${project.slug}-condensed`}
+            >
+              <div
+                style={
+                  {
+                    "--frame-bg-from": project.frameColorStart,
+                    "--frame-bg-to": project.frameColorEnd,
+                  } as React.CSSProperties
+                }
+              >
+                <figure
+                  className="group flex flex-col gap-4 transition-transform duration-1000 ease-out hover:-translate-y-1"
+                  role="group"
+                >
+                  <div className="relative flex w-full flex-col self-stretch bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-8 sm:p-10 md:p-12 xl:p-14">
+                    <Image
+                      alt={project.title}
+                      className="rounded-sm shadow-xl shadow-black/10 transition-all duration-1000 ease-out group-hover:-translate-y-1.5 group-hover:shadow-2xl group-hover:shadow-black/50"
+                      height={1728}
+                      src={`${project.posterImages[0].src}`}
+                      sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
+                      width={2880}
+                    />
+                  </div>
+                  <figcaption className="flex items-center justify-between text-sm text-gray-400 dark:text-gray-400">
+                    <h2 className="">{project.title}</h2>
+                    <p className="">
+                      {project.agency.prefix} {project.agency.name}
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </Link>
+          ))}
+      </section>
+
+      {/* <section className="flex w-full flex-col">
         <div className="flex w-full flex-col self-stretch bg-[#1A282A] p-0 md:p-24 lg:p-28">
           <Image
             className="shadow-[0_20px_200px] shadow-black/40"
@@ -24,18 +72,7 @@ export default function Home() {
             alt="A board of project screenshots, displayed at a 25° angle"
           />
         </div>
-      </section>
-      <div className="mx-auto max-w-5xl">
-        <section className="mb-48 flex w-full flex-col">
-          <a
-            className="inline-flex items-center gap-2 text-4xl"
-            href="mailto:cstyles@hey.com"
-          >
-            Get in touch
-            <VscArrowRight size={36} color="currentColor" />
-          </a>
-        </section>
-      </div>
+      </section> */}
     </>
   );
 }
