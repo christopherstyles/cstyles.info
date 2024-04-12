@@ -41,24 +41,6 @@ export default function Page({ params }: { params: { slug: string } }) {
           </p>
         </div>
       </div>
-      {/* <section className="mb-48 flex w-full flex-col">
-        <div className="flex w-full flex-col self-stretch bg-[#1A282A] p-16 sm:p-20 md:p-24 lg:p-28">
-          <Image
-            className="shadow-[0_20px_200px] shadow-black/40"
-            src="/images/project-board.jpg"
-            width={2880}
-            height={1728}
-            alt="A board of project screenshots, displayed at a 25° angle"
-          />
-        </div>
-      </section> */}
-      {/* <div className="mx-auto max-w-5xl">
-        <section className="mb-48 flex w-full flex-col">
-          <a className="text-4xl" href="mailto:cstyles@hey.com">
-            Get in touch
-          </a>
-        </section>
-      </div> */}
     </>
   );
 }
