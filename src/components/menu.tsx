@@ -15,7 +15,7 @@ export default function Menu({
       {isMenuOpen && (
         <div
           key="menu"
-          className="fixed inset-0 z-50 overflow-auto rounded-lg bg-white px-12 py-6 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100"
+          className="fixed inset-0 z-50 overflow-auto rounded-lg bg-neutral-100 px-12 py-6 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100"
         >
           <button
             type="button"
