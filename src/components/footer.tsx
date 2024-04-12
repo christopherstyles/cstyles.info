@@ -4,7 +4,7 @@ import { VscGithubInverted } from "react-icons/vsc";
 export default function Footer(): JSX.Element {
   return (
     <footer className="flex w-full items-center justify-between p-12 px-16">
-      <h1 className="text-xs text-gray-600 dark:font-light">
+      <h1 className="text-xs text-neutral-600 dark:font-light">
         ©️ {new Date().getFullYear()}
       </h1>
       <nav className="flex gap-4">

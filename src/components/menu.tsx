@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { HiOutlineXMark } from "react-icons/hi2";
-import { VscGithubAlt } from "react-icons/vsc";
+import { RxEnvelopeClosed, RxLinkedinLogo } from "react-icons/rx";
+import { VscGithubInverted } from "react-icons/vsc";
 
 export default function Menu({
   isMenuOpen,
@@ -15,7 +15,7 @@ export default function Menu({
       {isMenuOpen && (
         <div
           key="menu"
-          className="fixed inset-0 overflow-auto rounded-lg bg-white px-12 py-6 text-gray-900 dark:bg-black dark:bg-black dark:text-white"
+          className="fixed inset-0 z-50 overflow-auto rounded-lg bg-white px-12 py-6 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100"
         >
           <button
             type="button"
@@ -24,40 +24,58 @@ export default function Menu({
           >
             <HiOutlineXMark size={30} />
           </button>
-          <ul className="flex h-full flex-col justify-center gap-8 whitespace-nowrap text-center text-2xl">
-            <li key="menu-work">
-              <Link href="/work" onClick={() => setMenuIsOpen(false)}>
-                Work
+          <ul className="flex h-full flex-col justify-center gap-2 divide-y divide-neutral-900 text-center text-2xl ">
+            <li key="menu-about">
+              <Link
+                className="block p-6"
+                href="/about"
+                onClick={() => setMenuIsOpen(false)}
+              >
+                about
               </Link>
             </li>
             <li key="menu-cv">
-              <Link href="/cv" onClick={() => setMenuIsOpen(false)}>
-                CV
-              </Link>
-            </li>
-            <li key="menu-about">
-              <Link href="/about" onClick={() => setMenuIsOpen(false)}>
-                About
-              </Link>
-            </li>
-            <li key="menu-contact">
-              <a
-                href="mailto:cstyles@hey.com"
+              <Link
+                className="block p-6"
+                href="/cv"
                 onClick={() => setMenuIsOpen(false)}
               >
-                Contact
-              </a>
+                cv
+              </Link>
             </li>
-            <li key="menu-github">
-              <a
-                href="https://www.github.com/christopherstyles"
-                aria-label="GitHub: christopherstyles (opens in a new tab)"
-                target="_blank"
-                rel="noreferrer noopener"
-                onClick={() => setMenuIsOpen(false)}
-              >
-                GitHub
-              </a>
+            <li className="p-6" key="menu-github">
+              <div className="flex items-center justify-center gap-2">
+                <a
+                  className="p-6"
+                  href="https://www.linkedin.com/in/christopherstyles"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="LinkedIn: Chris Styles (opens in a new tab)"
+                  onClick={() => setMenuIsOpen(false)}
+                >
+                  <RxLinkedinLogo size={24} />
+                </a>
+                <a
+                  className="p-6"
+                  href="https://www.github.com/christopherstyles"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="GitHub: Chris Styles (opens in a new tab)"
+                  onClick={() => setMenuIsOpen(false)}
+                >
+                  <VscGithubInverted size={24} />
+                </a>
+                <a
+                  className="p-6"
+                  href="mailto:cstyles@hey.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Email Chris Styles (opens in the default mail application)"
+                  onClick={() => setMenuIsOpen(false)}
+                >
+                  <RxEnvelopeClosed size={24} />
+                </a>
+              </div>
             </li>
           </ul>
         </div>
