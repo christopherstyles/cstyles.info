@@ -75,9 +75,10 @@ export default function Navbar(): JSX.Element {
 
       <div className="relative -mt-2 flex rounded-full  md:hidden">
         <button
-          type="button"
+          aria-label="Open navigation menu"
           className="flex h-11 w-11 items-center justify-center "
           onClick={() => setMenuIsOpen(!isMenuOpen)}
+          type="button"
         >
           <HiOutlineMenuAlt4 size={24} />
         </button>
