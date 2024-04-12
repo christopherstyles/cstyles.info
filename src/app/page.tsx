@@ -50,7 +50,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                       width={2880}
                     />
                   </div>
-                  <figcaption className="flex items-center justify-between text-sm text-neutral-400 dark:text-neutral-400">
+                  <figcaption className="flex items-center justify-between text-sm text-neutral-600 dark:text-neutral-200">
                     <h2 className="">{project.title}</h2>
                     <p className="">
                       {project.agency.prefix} {project.agency.name}

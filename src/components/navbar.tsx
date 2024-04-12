@@ -38,7 +38,11 @@ export default function Navbar(): JSX.Element {
             variants={variants}
             whileHover={{ scale: 2, x: "25%" }}
           >
-            <Link href="/">
+            <Link
+              href="/"
+              arial-label="Go to the home page"
+              title="Home page link"
+            >
               <div className="-ml-6 -mt-6 p-6">
                 <VscArrowLeft size={24} color="currentColor" />
               </div>
@@ -51,7 +55,22 @@ export default function Navbar(): JSX.Element {
         <Link href="/about">about</Link>
         <Link href="/cv">cv</Link>
         <a href="mailto:cstyles@hey.com">contact</a>
-        <a href="https://www.github.com/christopherstyles">github</a>
+        <a
+          href="https://www.github.com/christopherstyles"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="GitHub: Chris Styles (opens in a new tab)"
+        >
+          github
+        </a>
+        <a
+          href="https://www.linkedin.com/in/christopherstyles"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="LinkedIn: Chris Styles (opens in a new tab)"
+        >
+          l/in
+        </a>
       </nav>
 
       <div className="relative -mt-2 flex rounded-full  md:hidden">
