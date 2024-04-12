@@ -50,10 +50,10 @@ export default function RolesTable({ roles }: { roles: IRole[] }): JSX.Element {
                 ""
               )}
             </td>
-            <td className="content-baseline px-3 py-4 text-sm">
+            <td className="content-baseline whitespace-nowrap px-3 py-4 text-sm">
               {role.project}
             </td>
-            <td className="content-baseline px-3 py-4 text-sm">
+            <td className="content-baseline whitespace-nowrap px-3 py-4 text-sm">
               {role.technologies}
             </td>
           </tr>
