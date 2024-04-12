@@ -42,6 +42,7 @@ export default function Screenshot({
           className="rounded-sm shadow-[0_20px_200px] shadow-black/40"
           height={1728}
           loading="lazy"
+          sizes="100vw"
           src={screenshot.src}
           width={2880}
         />
