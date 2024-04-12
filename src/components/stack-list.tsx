@@ -5,7 +5,7 @@ export default function StackList({ stack }: { stack: string[] }): JSX.Element {
     <ul className="flex w-full flex-wrap items-center gap-4 text-sm">
       {stack.map((item, index) => (
         <li
-          className="rounded-full bg-neutral-800 px-4 py-2 text-gray-200"
+          className="rounded-full bg-neutral-200 px-4 py-2 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-200"
           key={`stack-${index}`}
         >
           {item}
