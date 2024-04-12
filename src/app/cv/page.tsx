@@ -3,7 +3,7 @@ import { VscArrowRight } from "react-icons/vsc";
 export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-5xl text-lg">
         <h1 className="mb-36 text-5xl">Curriculum Vitae</h1>
         <div className="mb-40 flex flex-col gap-24">
           <section className="flex flex-col gap-4">
@@ -164,17 +164,6 @@ export default function Page({ params }: { params: { slug: string } }) {
             </ul>
           </section>
         </div>
-      </div>
-      <div className="mx-auto max-w-5xl">
-        <section className="mb-48 flex w-full flex-col">
-          <a
-            className="inline-flex items-center gap-2 text-4xl"
-            href="mailto:cstyles@hey.com"
-          >
-            Get in touch
-            <VscArrowRight size={36} color="currentColor" />
-          </a>
-        </section>
       </div>
     </>
   );
