@@ -23,7 +23,7 @@
           "backend": true,
           "frontend": true,
           "project": "Kongregate Platform",
-          "technologies": "Figma, Hotwire/Turbo, Ruby on Rails, View Components and Lookbook"
+          "technologies": "Figma, Hotwire/Turbo, Ruby on Rails, StimulusJS, View Components, and Lookbook"
         },
         {
           "backend": false,
