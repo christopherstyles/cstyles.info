@@ -55,8 +55,10 @@ export default function Project({
         {project.roles.length > 0 && (
           <section className="flex flex-col gap-8">
             <h2 className="text-3xl">Role</h2>
-            <div className="w-full max-w-5xl overflow-x-auto">
-              <RolesTable roles={project.roles} />
+            <div className="flex w-full">
+              <div className="overflow-x-auto">
+                <RolesTable roles={project.roles} />
+              </div>
             </div>
           </section>
         )}
