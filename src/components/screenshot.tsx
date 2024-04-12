@@ -46,9 +46,9 @@ export default function Screenshot({
         />
       </div>
       {screenshot.caption && (
-        <div className="w-full bg-white p-3">
+        <div className="w-full p-3">
           <p
-            className="text-xs text-black/90 lg:max-w-screen-sm xl:max-w-screen-lg"
+            className="text-sm text-neutral-600 lg:max-w-screen-sm xl:max-w-screen-lg dark:text-neutral-200"
             dangerouslySetInnerHTML={{ __html: screenshot.caption }}
           ></p>
         </div>
