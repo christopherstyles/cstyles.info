@@ -50,7 +50,7 @@
           "alt": "A screenshot of the Kongregate search page"
         },
         {
-          "caption": "Currently unreleased, a newly designed profile page is a major step forward for Kongregate users.",
+          "caption": "Currently unreleased, a newly designed profile page is a major step forward for Kongregate users. All components comprising this page were produced as part of the Konstruct UI library.",
           "src": "/images/kongregate/profile.jpg",
           "alt": "A screenshot of the unreleased Kongregate profile page"
         },
@@ -65,12 +65,12 @@
           "alt": ""
         },
         {
-          "caption": "Currently unreleased, a new and improved Account sign-up and registration flow was designed to be more user-friendly, intuitive, and playful. The design was created using components from the Konstruct UI design library.",
+          "caption": "Currently unreleased, a new and improved Account sign-up and registration flow was designed to be more user-friendly, intuitive, and playful. All components comprising this page were produced as part of the Konstruct UI library.",
           "src": "/images/kongregate/account.jpg",
           "alt": "A screenshot of a new Kongregate account sign-up flow"
         },
         {
-          "caption": "<a class='underline' href='https://www.bloodvessels.io' target='_blank'>Blood Vessels</a> is an interactive NFT experience with elements of social gaming & tabletop roleplaying, where NFT owners help create an ongoing community-driven narrative.",
+          "caption": "<a class='underline' href='https://www.bloodvessels.io' target='_blank'>Blood Vessels</a> is an interactive NFT experience with elements of social gaming & tabletop roleplaying, where NFT owners help create an ongoing community-driven narrative. This project was created using React and Framer Motion, with the purchase flow enabling users to buy NFTs directly from the site.",
           "src": "/images/kongregate/blood-vessels-cards.jpg",
           "alt": "A screenshot of example cards from the Blood Vessels NFT collection"
         }
