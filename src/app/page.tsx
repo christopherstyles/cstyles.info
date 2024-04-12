@@ -23,7 +23,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
       <section className="mb-20 grid grid-cols-1 gap-x-10 gap-y-12 lg:grid-cols-2">
         {data.projects
           .sort((a: IProject, b: IProject) => a.position - b.position)
-          .map((project: IProject) => (
+          .map((project: IProject, index: number) => (
             <Link
               href={`/work/${project.slug}`}
               key={`${project.slug}-condensed`}
@@ -45,8 +45,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
                       alt={project.title}
                       className="rounded-sm shadow-xl shadow-black/10 transition-all duration-1000 ease-out group-hover:-translate-y-1.5 group-hover:shadow-2xl group-hover:shadow-black/50"
                       height={1728}
-                      src={`${project.posterImages[0].src}`}
+                      loading={index > 2 ? "lazy" : "eager"}
                       sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
+                      src={`${project.posterImages[0].src}`}
                       width={2880}
                     />
                   </div>
@@ -61,18 +62,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
             </Link>
           ))}
       </section>
-
-      {/* <section className="flex w-full flex-col">
-        <div className="flex w-full flex-col self-stretch bg-[#1A282A] p-0 md:p-24 lg:p-28">
-          <Image
-            className="shadow-[0_20px_200px] shadow-black/40"
-            src="/images/project-board.jpg"
-            width={2880}
-            height={1728}
-            alt="A board of project screenshots, displayed at a 25° angle"
-          />
-        </div>
-      </section> */}
     </>
   );
 }
