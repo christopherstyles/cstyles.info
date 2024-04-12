@@ -38,7 +38,7 @@ export default function Navbar(): JSX.Element {
             variants={variants}
             whileHover={{ scale: 2, x: "25%" }}
           >
-            <Link href={pathname.includes("/work/") ? "/work" : "/"}>
+            <Link href="/">
               <div className="-ml-6 -mt-6 p-6">
                 <VscArrowLeft size={24} color="currentColor" />
               </div>
@@ -48,13 +48,10 @@ export default function Navbar(): JSX.Element {
       </div>
 
       <nav className="hidden gap-4 text-base md:flex dark:font-light">
-        <Link href="/work">Work</Link>
-        <Link href="/cv">CV</Link>
-        <Link href="/about">About</Link>
-        <a href="mailto:cstyles@hey.com">Contact</a>
-        <a href="https://www.github.com/christopherstyles">
-          <VscGithubAlt size={24} color="currentColor" />
-        </a>
+        <Link href="/about">about</Link>
+        <Link href="/cv">cv</Link>
+        <a href="mailto:cstyles@hey.com">contact</a>
+        <a href="https://www.github.com/christopherstyles">github</a>
       </nav>
 
       <div className="relative -mt-2 flex rounded-full  md:hidden">
