@@ -9,7 +9,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <p className="text-2xl">
             Chris was born in North Carolina and studied at the{" "}
             <a
-              aria-label="Maryland Institute College of art (opens in a new tab)"
+              aria-label="Maryland Institute College of Art (opens in a new tab)"
               href="https://www.mica.edu/"
               rel="noreferrer noopener"
               target="_blank"
