@@ -40,7 +40,7 @@ export default function Project({
 }): JSX.Element {
   return (
     <>
-      <div className="mx-auto mb-48 flex max-w-5xl flex-col space-y-20 text-lg">
+      <div className="mx-auto mb-24 flex max-w-5xl flex-col space-y-20 text-lg lg:mb-48">
         <div>
           <h1 className="text-5xl">{project.title}</h1>
         </div>
