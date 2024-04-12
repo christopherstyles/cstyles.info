@@ -36,10 +36,10 @@ export default function Screenshot({
         } as React.CSSProperties
       }
     >
-      <div className="flex w-full flex-col self-stretch bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-16 sm:p-20 md:p-24 lg:p-36">
+      <div className="flex w-full flex-col self-stretch bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-8 sm:p-10 md:p-12 xl:p-20">
         <Image
           alt={`${screenshot.alt || project.title} screenshot`}
-          className="shadow-[0_20px_200px] shadow-black/40"
+          className="rounded-sm shadow-[0_20px_200px] shadow-black/40"
           height={1728}
           src={screenshot.src}
           width={2880}
