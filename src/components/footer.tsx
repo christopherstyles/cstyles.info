@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { RxLinkedinLogo, RxEnvelopeClosed } from "react-icons/rx";
+import { VscGithubInverted } from "react-icons/vsc";
 
 export default function Footer(): JSX.Element {
   return (
@@ -7,7 +8,30 @@ export default function Footer(): JSX.Element {
         ©️ {new Date().getFullYear()}
       </h1>
       <nav className="flex gap-4">
-        <a href="mailto:cstyles@hey.com">Get in touch</a>
+        <a
+          href="https://www.linkedin.com/in/christopherstyles"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="LinkedIn: Chris Styles (opens in a new tab)"
+        >
+          <RxLinkedinLogo size={24} />
+        </a>
+        <a
+          href="https://www.github.com/christopherstyles"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="GitHub: Chris Styles (opens in a new tab)"
+        >
+          <VscGithubInverted size={24} />
+        </a>
+        <a
+          href="mailto:cstyles@hey.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="Email Chris Styles (opens in the default mail application)"
+        >
+          <RxEnvelopeClosed size={24} />
+        </a>
       </nav>
     </footer>
   );
