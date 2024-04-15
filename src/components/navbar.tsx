@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { VscGithubAlt } from "react-icons/vsc";
 import { VscArrowLeft } from "react-icons/vsc";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
