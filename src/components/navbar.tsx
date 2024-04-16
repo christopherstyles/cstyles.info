@@ -36,7 +36,7 @@ export default function Navbar(): JSX.Element {
             animate={pathname === "/" ? "hidden" : "visible"}
             initial="initial"
             variants={variants}
-            whileHover={{ scale: 2, x: "25%" }}
+            whileHover={{ scale: 1.4, x: 4 }}
           >
             <Link
               href="/"

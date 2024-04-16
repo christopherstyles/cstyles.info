@@ -47,13 +47,13 @@ export default function Menu({
               <div className="flex items-center justify-center gap-2">
                 <a
                   className="p-6"
-                  href="https://www.linkedin.com/in/christopherstyles"
+                  href="mailto:cstyles@hey.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  aria-label="LinkedIn: Chris Styles (opens in a new tab)"
+                  aria-label="Email Chris Styles (opens in the default mail application)"
                   onClick={() => setMenuIsOpen(false)}
                 >
-                  <RxLinkedinLogo size={24} />
+                  <RxEnvelopeClosed size={24} />
                 </a>
                 <a
                   className="p-6"
@@ -67,13 +67,13 @@ export default function Menu({
                 </a>
                 <a
                   className="p-6"
-                  href="mailto:cstyles@hey.com"
+                  href="https://www.linkedin.com/in/christopherstyles"
                   target="_blank"
                   rel="noreferrer noopener"
-                  aria-label="Email Chris Styles (opens in the default mail application)"
+                  aria-label="LinkedIn: Chris Styles (opens in a new tab)"
                   onClick={() => setMenuIsOpen(false)}
                 >
-                  <RxEnvelopeClosed size={24} />
+                  <RxLinkedinLogo size={24} />
                 </a>
               </div>
             </li>
