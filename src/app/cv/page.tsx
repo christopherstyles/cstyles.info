@@ -46,7 +46,7 @@ export default function Page({ params }: { params: { slug: string } }) {
               <div>
                 <h3 className="mb-4">
                   <span className="font-bold">Senior Software Engineer</span>,
-                  Kongregate (2021 - 2024)
+                  Kongregate (2021–2024)
                 </h3>
                 <ul className="list-disc pl-5">
                   <li>
@@ -82,7 +82,7 @@ export default function Page({ params }: { params: { slug: string } }) {
               <div>
                 <h3 className="mb-4">
                   <span className="font-bold">Senior Software Engineer</span>,
-                  Bletchley Park (2014 - 2021)
+                  Bletchley Park (2014–2021)
                 </h3>
                 <ul className="list-disc pl-5">
                   <li>
@@ -100,7 +100,7 @@ export default function Page({ params }: { params: { slug: string } }) {
               <div>
                 <h3 className="mb-4">
                   <span className="font-bold">Tech Lead</span>, A Hundred Years
-                  (2012 - 2014)
+                  (2012–2014)
                 </h3>
                 <ul className="list-disc pl-5">
                   <li>
@@ -112,24 +112,45 @@ export default function Page({ params }: { params: { slug: string } }) {
                   </li>
                   <li>
                     Developed a company playbook outlining company philosophy,
-                    design and development process, and strategic approach
+                    design and development process, and strategic approaches.
                   </li>
                 </ul>
               </div>
               <div>
                 <h3 className="mb-4">
                   <span className="font-bold">Principal Software Engineer</span>
-                  , HUGE (2010- 2012)
+                  , HUGE (2011-2012)
                 </h3>
                 <ul className="list-disc pl-5">
                   <li>
                     Directed teams of 5-10 engineers in development and delivery
-                    of 6+ full-stack projects for clients.
+                    of multiple full-stack projects for clients.
                   </li>
                   <li>
+                    <span className="font-bold">American University</span>: Led
+                    development effort in creating a CSS framework for the
+                    release of american.edu, and upon which subsequent sub brand
+                    sites could be built and maintained.
+                  </li>
+                  <li>
+                    <span className="font-bold">Royal Caribbean</span>: Led a
+                    team of developers in architecting a scalable component
+                    system to support purchase flows and modular site content.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="mb-4">
+                  <span className="font-bold">Senior Software Engineer</span>,
+                  HUGE (2008-2011)
+                </h3>
+                <ul className="list-disc pl-5">
+                  <li>
                     <span className="font-bold">iVillage</span>: Orchestrated
-                    vertical releases to accommodate iVillag’s user base of 21.4
-                    million monthly visitors.
+                    development efforts for sequential vertical releases with a
+                    focus on performance and capabilities which could
+                    accommodate iVillage’s user base of 21.4 million monthly
+                    visitors.
                   </li>
                   <li>
                     <span className="font-bold">Nintendo</span>: Launched an
@@ -137,9 +158,120 @@ export default function Page({ params }: { params: { slug: string } }) {
                     sold 1.27 million copies.
                   </li>
                   <li>
-                    <span className="font-bold">American University</span>:
-                    Designed a framework for release of award-winning site and
-                    subsequent subsites.
+                    <span className="font-bold">FX Networks</span>: Developed
+                    high performance online experiences for the newly redesigned
+                    fxnetworks.com prior to the fall kickoff.
+                  </li>
+                  <li>
+                    Created interactive flight visualizations and various
+                    frontend experiences for{" "}
+                    <span className="font-bold">JetBlue</span>.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="mb-4">
+                  <span className="font-bold">Web Developer</span>, Under Armour
+                  (2008-2009)
+                </h3>
+                <ul className="list-disc pl-5">
+                  <li>
+                    Built interactive and updatable frontend microsites in
+                    Flash/Actionscript and Javascript for{" "}
+                    <span className="font-bold">
+                      Under Armour Athletes Hunt
+                    </span>
+                    ,{" "}
+                    <span className="font-bold">
+                      Under Armour Mountain Gear
+                    </span>
+                    , and{" "}
+                    <span className="font-bold">
+                      Under Armour Performance Training
+                    </span>
+                    .
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="mb-4">
+                  <span className="font-bold">Web Developer</span>, Mammoth NYC
+                  (2007-2008)
+                </h3>
+                <ul className="list-disc pl-5">
+                  <li>
+                    Led frontend development efforts for a wide range of web
+                    projects in the entertainment industry, such as{" "}
+                    <span className="font-bold">
+                      Young Frankenstein the Musical
+                    </span>
+                    , <span className="font-bold">One Hour Photo</span>,{" "}
+                    <span className="font-bold">Dragon Dynasty</span>,{" "}
+                    <span className="font-bold">IFC Entertainment</span>, and{" "}
+                    <span className="font-bold">IFC In Theaters</span>.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="mb-4">
+                  <span className="font-bold">Web Developer</span>, Splice Today
+                  (2007-2010)
+                </h3>
+                <ul className="list-disc pl-5">
+                  <li>
+                    Built full-stack solution for a daily online magazine which
+                    receives millions of viewers per month. Included was a
+                    bespoke administration system for content editors and site
+                    managers to add and publish articles, monitor user comments,
+                    and upload media.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="mb-4">
+                  <span className="font-bold">Web Developer</span>, Cooper
+                  Hewitt, Smithsonian Design Museum (2007)
+                </h3>
+                <ul className="list-disc pl-5">
+                  <li>
+                    Built an interactive frontend experience for{" "}
+                    <span className="font-bold">
+                      IDEO Selects: Works From the Permanent Collection
+                    </span>
+                    .
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="mb-4">
+                  <span className="font-bold">Animator/Video</span>, U.S. Green
+                  Building Council (2007)
+                </h3>
+                <ul className="list-disc pl-5">
+                  <li>
+                    Created a feature animation for “Green School”, played as
+                    the opener to the Greenbuild 2008 Boston/Chicago Conference.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="mb-4">
+                  <span className="font-bold">
+                    Director of Design Technology
+                  </span>
+                  , Fastspot (2001–2007)
+                </h3>
+                <ul className="list-disc pl-5">
+                  <li>
+                    Led technology efforts in all aspects of frontend and
+                    backend development, animation and interactive experience,
+                    for a wide range of clients including{" "}
+                    <span className="font-bold">
+                      Cambridge Architectural Mesh, Cleveland Institute of Art,
+                      Maryland Institute College of Art, and Cooper Hewitt,
+                      Smithsonian Design Museum
+                    </span>
+                    .
                   </li>
                 </ul>
               </div>
@@ -157,8 +289,18 @@ export default function Page({ params }: { params: { slug: string } }) {
                 for <span className="italic">Pepsi Refresh</span>
               </li>
               <li>
-                2010 “Best Web Site of Industry” in Education category by the
-                Web Marketing Association for{" "}
+                2010 OMMA Award, “Best Integrated Online Campaign” in the
+                Non-Alcoholic Beverage category for{" "}
+                <span className="italic">Pepsi Refresh</span>
+              </li>
+              <li>
+                57th annual Cannes Lions, Bronze Cyber Lion for Best Digitally
+                Driven Integrated Campaign for{" "}
+                <span className="italic">Pepsi Refresh</span>
+              </li>
+              <li>
+                2010 “Best Web Site of Industry” in the Education category by
+                the Web Marketing Association for{" "}
                 <span className="italic">American University</span>
               </li>
             </ul>
