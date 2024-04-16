@@ -119,7 +119,7 @@ export default function Page({ params }: { params: { slug: string } }) {
               <div>
                 <h3 className="mb-4">
                   <span className="font-bold">Principal Software Engineer</span>
-                  , HUGE (2011-2012)
+                  , HUGE (2010-2012)
                 </h3>
                 <ul className="list-disc pl-5">
                   <li>
@@ -142,7 +142,7 @@ export default function Page({ params }: { params: { slug: string } }) {
               <div>
                 <h3 className="mb-4">
                   <span className="font-bold">Senior Software Engineer</span>,
-                  HUGE (2008-2011)
+                  HUGE (2008-2010)
                 </h3>
                 <ul className="list-disc pl-5">
                   <li>
