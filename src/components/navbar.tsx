@@ -8,6 +8,7 @@ import { VscArrowLeft } from "react-icons/vsc";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 import Menu from "@/components/menu";
+import Social from "./social";
 
 export default function Navbar(): JSX.Element {
   const [isMenuOpen, setMenuIsOpen] = useState(false);
@@ -50,29 +51,14 @@ export default function Navbar(): JSX.Element {
         </div>
       </div>
 
-      <nav className="hidden gap-4 text-base md:flex dark:font-light">
+      <nav className="hidden gap-4 text-base md:flex md:items-center dark:font-light">
         <Link href="/about">about</Link>
         <Link href="/cv">cv</Link>
-        <a href="mailto:cstyles@hey.com">contact</a>
-        <a
-          href="https://www.github.com/christopherstyles"
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label="GitHub: Chris Styles (opens in a new tab)"
-        >
-          github
-        </a>
-        <a
-          href="https://www.linkedin.com/in/christopherstyles"
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label="LinkedIn: Chris Styles (opens in a new tab)"
-        >
-          l/in
-        </a>
+        <div>•</div>
+        <Social />
       </nav>
 
-      <div className="relative -mt-2 flex rounded-full  md:hidden">
+      <div className="relative -mt-2 flex rounded-full md:hidden">
         <button
           aria-label="Open navigation menu"
           className="flex h-11 w-11 items-center justify-center "
