@@ -46,6 +46,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                       className="rounded-sm shadow-xl shadow-black/10 transition-all duration-1000 ease-out group-hover:-translate-y-1.5 group-hover:shadow-2xl group-hover:shadow-black/50"
                       height={1728}
                       loading={index > 2 ? "lazy" : "eager"}
+                      priority={index < 3}
                       sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
                       src={`${project.posterImages[0].src}`}
                       width={2880}
