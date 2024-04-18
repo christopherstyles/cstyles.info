@@ -20,7 +20,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           </p>
         </div>
       </div>
-      <section className="mb-20 grid grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+      <section className="mb-20 grid grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
         {data.projects
           .sort((a: IProject, b: IProject) => a.position - b.position)
           .map((project: IProject, index: number) => (
