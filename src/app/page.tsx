@@ -13,7 +13,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
     <>
       <div className="mx-auto max-w-5xl">
         <div className="mb-40 flex flex-col gap-12">
-          <p className="mx-auto max-w-[50ch] text-2xl">
+          <p className="max-w-[50ch] text-2xl xl:text-3xl">
             Chris Styles is a design-focused software engineer, based in Oregon.
             His work focuses on creating beautiful, functional, and accessible
             digital experiences.
@@ -37,13 +37,13 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 }
               >
                 <figure
-                  className="group flex flex-col gap-4 transition-transform duration-1000 ease-out hover:-translate-y-1"
+                  className="group flex flex-col gap-4 transition-transform duration-1000 ease-out hover:-translate-y-0.5"
                   role="group"
                 >
-                  <div className="relative flex w-full flex-col self-stretch rounded-sm bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-9 md:p-6 lg:p-8 xl:p-10">
+                  <div className="relative flex w-full flex-col self-stretch rounded-sm bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-10 lg:p-12 xl:p-12">
                     <Image
                       alt={project.title}
-                      className="rounded-sm shadow-xl shadow-black/10 transition-all duration-1000 ease-out group-hover:-translate-y-1.5 group-hover:shadow-2xl group-hover:shadow-black/50"
+                      className="rounded-sm shadow-xl shadow-black/10 transition-all duration-1000 ease-out group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-black/50"
                       height={1728}
                       loading={index < 4 ? "eager" : "lazy"}
                       priority={index < 4}
