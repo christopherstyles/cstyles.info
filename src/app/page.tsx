@@ -39,7 +39,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   className="group flex flex-col gap-4 transition-transform duration-1000 ease-out hover:-translate-y-0.5"
                   role="group"
                 >
-                  <div className="relative flex w-full flex-col self-stretch rounded-sm bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-10 lg:p-12 xl:p-12">
+                  <div className="relative flex w-full flex-col self-stretch rounded-sm bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-[clamp(2rem,2.8vw,4rem)]">
                     <Image
                       alt={project.title}
                       className="rounded-sm shadow-xl shadow-black/10 transition-all duration-1000 ease-out group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-black/50"
