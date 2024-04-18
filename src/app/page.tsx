@@ -1,7 +1,6 @@
 import { promises as fs } from "fs";
 import Image from "next/image";
 import Link from "next/link";
-import { VscArrowRight } from "react-icons/vsc";
 
 import { IProject } from "@/components/project";
 
