@@ -1,21 +1,15 @@
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { config } from "./config";
 import { Screenshot } from "../types";
-import { variants } from "./variants";
 import Thumbnail from "./thumbnail";
 
-interface ThumbnailsProps {
+interface DockProps {
   images: Screenshot[];
   index: number;
   setIndex: (index: number) => void;
 }
 
-export default function Thumbnails({
-  images,
-  index,
-  setIndex,
-}: ThumbnailsProps) {
+export default function Dock({ images, index, setIndex }: DockProps) {
   return (
     <motion.div
       animate={{

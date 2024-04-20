@@ -9,7 +9,7 @@ import { config } from "./config";
 import Slides from "./slides";
 import NextButton from "./next-button";
 import PreviousButton from "./previous-button";
-import Thumbnails from "./thumbnails";
+import Dock from "./dock";
 
 interface CarouselProps {
   images: Screenshot[];
@@ -53,7 +53,7 @@ export function Carousel({ images }: CarouselProps) {
           />
 
           <div className="absolute inset-x-0 bottom-6 hidden h-20 justify-center overflow-hidden py-1 md:flex">
-            <Thumbnails images={images} index={index} setIndex={setIndex} />
+            <Dock images={images} index={index} setIndex={setIndex} />
           </div>
         </div>
       </section>
