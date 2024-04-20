@@ -39,12 +39,14 @@ export function Carousel({ images }: CarouselProps) {
           </div>
 
           <PreviousButton
+            aria-label="Go to the previous slide"
             className="absolute -left-8 top-0 flex h-full w-1/2 origin-left items-center justify-start rounded-md focus:outline-none sm:-left-6 md:-left-8 md:h-[calc(100%_-_110px)]"
             onClick={() => setIndex(index - 1)}
             visible={index > 0}
           />
 
           <NextButton
+            aria-label="Go to the next slide"
             className="absolute -right-8 top-0 flex h-full w-1/2 origin-right items-center justify-end rounded-md focus:outline-none sm:-right-6 md:-right-8 md:h-[calc(100%_-_110px)]"
             onClick={() => setIndex(index + 1)}
             visible={index + 1 < images.length}

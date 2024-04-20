@@ -32,6 +32,7 @@ export default function Thumbnails({
     >
       {images.map((image, i) => (
         <motion.button
+          aria-label="Select this image as the current slide"
           animate={i === index ? "active" : "inactive"}
           className="shrink-0 overflow-hidden focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 md:rounded-md dark:focus-visible:ring-neutral-200"
           initial={false}
