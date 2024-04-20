@@ -30,5 +30,18 @@ body {
 }
 
 p a {
-  @apply underline decoration-1 underline-offset-2;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:focus-visible {
+  outline-color: theme("colors.neutral.900");
+  outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  a:focus-visible {
+    outline-color: theme("colors.white");
+  }
 }

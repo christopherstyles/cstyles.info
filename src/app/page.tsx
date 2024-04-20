@@ -27,6 +27,7 @@ export default async function Page({ params }: PageProps) {
           .sort((a: Project, b: Project) => a.position - b.position)
           .map((project: Project, index: number) => (
             <Link
+              className="focus-visible:outline-offset-8"
               href={`/work/${project.slug}`}
               key={`${project.slug}-condensed`}
             >

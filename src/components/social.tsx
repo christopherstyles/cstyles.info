@@ -15,7 +15,7 @@ export default function Social({ size = "sm" }: SocialProps) {
     <>
       <motion.a
         aria-label="Email Chris Styles (opens in the default mail application)"
-        className="focus:outline-none focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:focus-visible:outline-white"
+        className="p-2"
         href="mailto:cstyles@hey.com"
         rel="noreferrer noopener"
         target="_blank"
@@ -26,7 +26,7 @@ export default function Social({ size = "sm" }: SocialProps) {
 
       <motion.a
         aria-label="GitHub: Chris Styles (opens in a new tab)"
-        className="focus:outline-none focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:focus-visible:outline-white"
+        className="p-2"
         href="https://www.github.com/christopherstyles"
         rel="noreferrer noopener"
         target="_blank"
@@ -36,7 +36,7 @@ export default function Social({ size = "sm" }: SocialProps) {
       </motion.a>
       <motion.a
         aria-label="LinkedIn: Chris Styles (opens in a new tab)"
-        className="focus:outline-none focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:focus-visible:outline-white"
+        className="p-2"
         href="https://www.linkedin.com/in/christopherstyles"
         rel="noreferrer noopener"
         target="_blank"
