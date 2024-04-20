@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import { RxEnvelopeClosed, RxLinkedinLogo } from "react-icons/rx";
 import { VscGithubInverted } from "react-icons/vsc";
 
-export interface SocialProps {
+interface SocialProps {
   size?: "sm" | "lg";
 }
 
-export default function Social({ size = "sm" }: SocialProps): JSX.Element {
+export default function Social({ size = "sm" }: SocialProps) {
   const iconSize: number = size === "sm" ? 16 : 24;
 
   return (

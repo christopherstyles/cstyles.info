@@ -1,8 +1,11 @@
 import { VscCheck } from "react-icons/vsc";
+import { Role } from "./types";
 
-import { IRole } from "./project";
+interface RolesTableProps {
+  roles: Role[];
+}
 
-export default function RolesTable({ roles }: { roles: IRole[] }): JSX.Element {
+export default function RolesTable({ roles }: RolesTableProps) {
   return (
     <table className="max-w-fit divide-y divide-gray-700 break-words">
       <thead>

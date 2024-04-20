@@ -1,16 +1,16 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { VscArrowLeft } from "react-icons/vsc";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 import Menu from "@/components/menu";
 import Social from "./social";
 
-export default function Navbar(): JSX.Element {
+export default function Navbar() {
   const [isMenuOpen, setMenuIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -24,8 +24,8 @@ export default function Navbar(): JSX.Element {
 
   const variants = {
     initial: { opacity: 0 },
-    visible: { opacity: 1, x: 0 },
     hidden: { opacity: 0, x: [0, "-100%", "100%"] },
+    visible: { opacity: 1, x: 0 },
   };
 
   return (
@@ -39,8 +39,8 @@ export default function Navbar(): JSX.Element {
             whileHover={{ scale: 1.4, x: 4 }}
           >
             <Link
-              href="/"
               arial-label="Go to the home page"
+              href="/"
               title="Home page link"
             >
               <div className="-ml-6 -mt-6 p-6">

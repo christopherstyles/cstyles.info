@@ -1,6 +1,8 @@
-import Tag from "./tag";
+interface StackListProps {
+  stack: string[];
+}
 
-export default function StackList({ stack }: { stack: string[] }): JSX.Element {
+export default function StackList({ stack }: StackListProps) {
   return (
     <ul className="flex w-full flex-wrap items-center text-sm">
       {stack.map((item, index) => (

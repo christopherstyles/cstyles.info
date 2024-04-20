@@ -1,8 +1,7 @@
+import { Project } from "@/components/types";
 import { promises as fs } from "fs";
 import Image from "next/image";
 import Link from "next/link";
-
-import { IProject } from "@/components/project";
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
@@ -21,8 +20,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
       </div>
       <section className="mb-20 grid grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
         {data.projects
-          .sort((a: IProject, b: IProject) => a.position - b.position)
-          .map((project: IProject, index: number) => (
+          .sort((a: Project, b: Project) => a.position - b.position)
+          .map((project: Project, index: number) => (
             <Link
               href={`/work/${project.slug}`}
               key={`${project.slug}-condensed`}
