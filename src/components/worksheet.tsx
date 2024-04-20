@@ -49,6 +49,7 @@ export default function Worksheet({ project }: { project: Project }) {
           }
         >
           <div className="flex w-full flex-col self-stretch overflow-hidden rounded-sm bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-[clamp(2rem,5vw,4rem)] dark:bg-none">
+            <Carousel images={project.screenshots} />
           </div>
         </section>
       </div>
