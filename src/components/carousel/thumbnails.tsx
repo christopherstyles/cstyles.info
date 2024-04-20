@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { aspectRatios, gap, margin, thumbnailVariants } from "./config";
+import { config } from "./config";
 import { Screenshot } from "../types";
+import { variants } from "./variants";
 
 interface ThumbnailsProps {
   images: Screenshot[];
@@ -18,16 +19,18 @@ export default function Thumbnails({
     <motion.div
       animate={{
         x: `-${
-          index * 100 * (aspectRatios.collapsed / aspectRatios.full) +
-          margin +
-          index * gap
+          index *
+            100 *
+            (config.aspectRatios.collapsed / config.aspectRatios.full) +
+          config.margin +
+          index * config.gap
         }%`,
       }}
       className="flex"
       initial={false}
       style={{
-        aspectRatio: aspectRatios.full,
-        gap: `${gap}%`,
+        aspectRatio: config.aspectRatios.full,
+        gap: `${config.gap}%`,
       }}
     >
       {images.map((image, i) => (
@@ -39,7 +42,7 @@ export default function Thumbnails({
           key={image.src}
           onClick={() => setIndex(i)}
           onFocus={() => setIndex(i)}
-          variants={thumbnailVariants}
+          variants={variants.thumbnail}
           whileFocus="active"
           whileHover={{ opacity: 1 }}
         >

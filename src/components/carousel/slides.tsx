@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import { imageVariants } from "./config";
 import { Screenshot } from "../types";
+import { variants } from "./variants";
 
 const MotionImage = motion(Image);
 
@@ -26,7 +26,7 @@ export default function Slides({ images, index }: SlidesProps) {
           initial={false}
           key={image.src}
           src={image.src}
-          variants={imageVariants}
+          variants={variants.slide}
           width={2880}
         />
       ))}

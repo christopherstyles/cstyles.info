@@ -5,7 +5,7 @@ import { MotionConfig } from "framer-motion";
 import useKeyPress from "react-use-keypress";
 
 import { Screenshot } from "../types";
-import { transition } from "./config";
+import { config } from "./config";
 import Slides from "./slides";
 import NextButton from "./next-button";
 import PreviousButton from "./previous-button";
@@ -31,7 +31,7 @@ export function Carousel({ images }: CarouselProps) {
   });
 
   return (
-    <MotionConfig reducedMotion="user" transition={transition}>
+    <MotionConfig reducedMotion="user" transition={config.transition}>
       <section>
         <div className="relative mx-auto flex h-full w-full flex-col justify-center md:pb-[110px]">
           <div className="relative rounded-lg lg:rounded-xl">
