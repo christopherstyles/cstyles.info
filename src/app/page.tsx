@@ -3,7 +3,11 @@ import { promises as fs } from "fs";
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function Page({ params }: { params: { slug: string } }) {
+interface PageProps {
+  params: { slug: string };
+}
+
+export default async function Page({ params }: PageProps) {
   const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
   const data = JSON.parse(file);
 

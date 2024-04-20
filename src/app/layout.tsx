@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   description: "Chris Styles: Information and CV",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+interface RootLayoutProps {
   children: React.ReactNode;
-}>) {
+}
+
+export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en" className="antialiased">
       <body className={inter.className}>

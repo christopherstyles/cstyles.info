@@ -1,6 +1,10 @@
 import { VscArrowRight } from "react-icons/vsc";
 
-export default function Page({ params }: { params: { slug: string } }) {
+interface PageProps {
+  params: { slug: string };
+}
+
+export default function Page({ params }: PageProps) {
   return (
     <>
       <div className="mx-auto max-w-5xl text-lg">
