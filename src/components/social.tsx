@@ -14,29 +14,32 @@ export default function Social({ size = "sm" }: SocialProps) {
   return (
     <>
       <motion.a
-        href="mailto:cstyles@hey.com"
-        target="_blank"
-        rel="noreferrer noopener"
         aria-label="Email Chris Styles (opens in the default mail application)"
+        className="focus:outline-none focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:focus-visible:outline-white"
+        href="mailto:cstyles@hey.com"
+        rel="noreferrer noopener"
+        target="_blank"
         whileHover={{ scale: 1, y: -3 }}
       >
         <RxEnvelopeClosed size={iconSize} />
       </motion.a>
 
       <motion.a
-        href="https://www.github.com/christopherstyles"
-        target="_blank"
-        rel="noreferrer noopener"
         aria-label="GitHub: Chris Styles (opens in a new tab)"
+        className="focus:outline-none focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:focus-visible:outline-white"
+        href="https://www.github.com/christopherstyles"
+        rel="noreferrer noopener"
+        target="_blank"
         whileHover={{ scale: 1, y: -3 }}
       >
         <VscGithubInverted size={iconSize} />
       </motion.a>
       <motion.a
-        href="https://www.linkedin.com/in/christopherstyles"
-        target="_blank"
-        rel="noreferrer noopener"
         aria-label="LinkedIn: Chris Styles (opens in a new tab)"
+        className="focus:outline-none focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:focus-visible:outline-white"
+        href="https://www.linkedin.com/in/christopherstyles"
+        rel="noreferrer noopener"
+        target="_blank"
         whileHover={{ scale: 1, y: -3 }}
       >
         <RxLinkedinLogo size={iconSize} />
