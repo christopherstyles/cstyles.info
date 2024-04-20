@@ -1,12 +1,13 @@
 import { promises as fs } from "fs";
 
-import Project, { IProject } from "@/components/project";
+import Worksheet from "@/components/worksheet";
+import { Project } from "@/components/types";
 
 export async function generateStaticParams() {
   const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
   const data = JSON.parse(file);
 
-  return data.projects.map((project: IProject) => ({
+  return data.projects.map((project: Project) => ({
     slug: project.slug,
   }));
 }
@@ -16,8 +17,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
   const data = JSON.parse(file);
 
   const project = data.projects.find(
-    (project: IProject) => project.slug === params.slug,
+    (project: Project) => project.slug === params.slug,
   );
 
-  return <Project project={project} />;
+  return <Worksheet project={project} />;
 }
