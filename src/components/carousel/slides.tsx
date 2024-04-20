@@ -6,12 +6,12 @@ import { Screenshot } from "../types";
 
 const MotionImage = motion(Image);
 
-interface ImagesProps {
+interface SlidesProps {
   images: Screenshot[];
   index: number;
 }
 
-export default function Images({ images, index }: ImagesProps) {
+export default function Slides({ images, index }: SlidesProps) {
   return (
     <motion.div
       animate={{ x: `-${index * 100}%` }}

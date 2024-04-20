@@ -6,7 +6,7 @@ import useKeyPress from "react-use-keypress";
 
 import { Screenshot } from "../types";
 import { transition } from "./config";
-import Images from "./images";
+import Slides from "./slides";
 import NextButton from "./next-button";
 import PreviousButton from "./previous-button";
 import Thumbnails from "./thumbnails";
@@ -35,7 +35,7 @@ export function Carousel({ images }: CarouselProps) {
       <section>
         <div className="relative mx-auto flex h-full w-full flex-col justify-center md:pb-[110px]">
           <div className="relative rounded-lg lg:rounded-xl">
-            <Images images={images} index={index} />
+            <Slides images={images} index={index} />
           </div>
 
           <PreviousButton
