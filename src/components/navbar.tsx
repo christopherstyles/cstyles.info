@@ -61,17 +61,20 @@ export default function Navbar() {
         <Social />
       </nav>
 
-      <div className="relative -mt-2 flex rounded-full md:hidden">
-        <button
-          aria-label="Open navigation menu"
-          className="flex h-11 w-11 items-center justify-center "
-          onClick={() => setMenuIsOpen(!isMenuOpen)}
-          type="button"
-        >
-          <HiOutlineMenuAlt4 size={24} />
-        </button>
-        <Menu isMenuOpen={isMenuOpen} setMenuIsOpen={setMenuIsOpen} />
-      </div>
+      <button
+        aria-label="Toggle the mobile menu"
+        className="duration-400 group absolute right-4 top-10 z-50 flex h-11 w-11 origin-center touch-manipulation items-center justify-center outline-none transition-all ease-[cubic-bezier(0.08,0.6,0.54,0.92)] focus:outline-none focus-visible:ring focus-visible:ring-neutral-900 md:hidden"
+        data-open={isMenuOpen}
+        onClick={() => setMenuIsOpen(!isMenuOpen)}
+        type="button"
+      >
+        <div className="relative flex h-8 w-8 flex-col items-center justify-center">
+          <div className="duration-400 absolute top-[11px] h-0.5 w-6 origin-center bg-neutral-900 transition-all ease-[cubic-bezier(0.08,0.6,0.54,0.92)] group-data-[open=true]:top-[15px] group-data-[open=true]:rotate-45 dark:bg-neutral-100"></div>
+          <div className="duration-400 absolute top-[18px] h-0.5 w-6 origin-center bg-neutral-900 transition-all ease-[cubic-bezier(0.08,0.6,0.54,0.92)] group-data-[open=true]:top-[15px] group-data-[open=true]:-rotate-45 dark:bg-neutral-100"></div>
+        </div>
+      </button>
+
+      <Menu isMenuOpen={isMenuOpen} setMenuIsOpen={setMenuIsOpen} />
     </header>
   );
 }

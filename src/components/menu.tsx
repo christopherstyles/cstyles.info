@@ -13,16 +13,9 @@ export default function Menu({ isMenuOpen, setMenuIsOpen }: MenuProps) {
     <>
       {isMenuOpen && (
         <div
-          className="fixed inset-0 z-50 overflow-auto rounded-lg bg-neutral-100 px-12 py-6 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100"
+          className="fixed inset-0 z-40 overflow-auto rounded-lg bg-neutral-100 px-12 py-6 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100"
           key="menu"
         >
-          <button
-            className="absolute right-4 top-10 flex h-11 w-11 items-center justify-center md:hidden"
-            onClick={() => setMenuIsOpen(!isMenuOpen)}
-            type="button"
-          >
-            <HiOutlineXMark size={30} />
-          </button>
           <ul className="flex h-full flex-col justify-center gap-2 divide-y divide-neutral-900 text-center text-2xl ">
             <li key="menu-about">
               <Link
