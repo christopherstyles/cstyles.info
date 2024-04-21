@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { HiOutlineXMark } from "react-icons/hi2";
 import { RxEnvelopeClosed, RxLinkedinLogo } from "react-icons/rx";
 import { VscGithubInverted } from "react-icons/vsc";
 
