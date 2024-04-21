@@ -34,12 +34,12 @@ export default function Menu() {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="absolute inset-x-0 top-0 z-40 h-full w-full overflow-auto rounded-lg bg-neutral-100 px-12 py-6 text-neutral-900 md:hidden dark:bg-neutral-900 dark:text-neutral-100"
+            className="fixed inset-0 top-0 z-40 h-[105vh] w-full overflow-auto rounded-lg bg-neutral-100 px-12 py-6 text-neutral-900 md:hidden dark:bg-neutral-900 dark:text-neutral-100"
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%", pointerEvents: "none" }}
           >
             <ul className="flex h-full flex-col justify-center gap-2 divide-y divide-neutral-900 text-center text-2xl ">
-              <li key="menu-about">
+              <li>
                 <Link
                   className="block p-6"
                   href="/about"
@@ -48,7 +48,7 @@ export default function Menu() {
                   about
                 </Link>
               </li>
-              <li key="menu-cv">
+              <li>
                 <Link
                   className="block p-6"
                   href="/cv"
@@ -57,7 +57,7 @@ export default function Menu() {
                   cv
                 </Link>
               </li>
-              <li className="p-6" key="menu-github">
+              <li className="p-6">
                 <div className="flex items-center justify-center gap-2">
                   <a
                     aria-label="Email Chris Styles (opens in the default mail application)"
