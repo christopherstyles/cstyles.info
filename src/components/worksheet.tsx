@@ -1,9 +1,14 @@
+import { VscArrowRight } from "react-icons/vsc";
 import { Carousel } from "@/components/carousel";
 import RolesTable from "./roles-table";
 import StackList from "./stack-list";
 import { Project } from "./types";
 
-export default function Worksheet({ project }: { project: Project }) {
+interface WorksheetProps {
+  project: Project;
+}
+
+export default function Worksheet({ project }: WorksheetProps) {
   return (
     <>
       <div className="mx-auto mb-24 flex max-w-5xl flex-col space-y-20 text-lg lg:mb-40">
@@ -18,6 +23,30 @@ export default function Worksheet({ project }: { project: Project }) {
             {project.agency.prefix} {project.agency.name}
           </p>
         </section>
+        {project.links && project.links.length > 0 && (
+          <section className="flex flex-col gap-8">
+            <h2 className="text-3xl">Visit</h2>
+            <ul className="flex flex-col gap-4">
+              {project.links.map((link) => (
+                <li key={link.href}>
+                  <a
+                    aria-label={`View ${link.title} (opens in a new tab)`}
+                    className="group"
+                    href={link.href}
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    {link.title}{" "}
+                    <VscArrowRight
+                      className="inline align-text-top transition-transform group-hover:translate-x-1"
+                      size={22}
+                    />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
         {project.roles.length > 0 && (
           <section className="flex flex-col gap-8">
             <h2 className="text-3xl">Role</h2>

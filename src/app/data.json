@@ -104,6 +104,12 @@
       "awards": "TED-Ed has won 8 Webby awards, TIME Magazine best site of the year award, and drawn millions of users.",
       "frameColorStart": "#89ADF0",
       "frameColorEnd": "#89ADF0",
+      "links": [
+        {
+          "href": "https://ed.ted.com",
+          "title": "TED-Ed"
+        }
+      ],
       "position": 2,
       "posterImages": [
         {
@@ -182,6 +188,12 @@
       "deck": "Live Sessions brings you the best videos of live music sessions from across the US. With national and local playlists, live webcasts of performances, and compelling coverage of emerging and proven artists, Live Sessions is NPR Music’s video connection to public radio music stations providing you the most exciting live performance content from around the country, updated daily.",
       "frameColorStart": "#E6B79B",
       "frameColorEnd": "#E6B79B",
+      "links": [
+        {
+          "href": "https://livesessions.npr.org",
+          "title": "NPR Live Sessions"
+        }
+      ],
       "position": 3,
       "posterImages": [
         {
@@ -249,6 +261,20 @@
       "deck": "Third Way stands as a prominent national think tank dedicated to advancing modern center-left ideologies. Various program microsites help focus attention on federal policy and national initiatives that offer opportunity and progress.",
       "frameColorStart": "#E0CDAF",
       "frameColorEnd": "#E0CDAF",
+      "links": [
+        {
+          "href": "https://www.thirdway.org",
+          "title": "Third Way"
+        },
+        {
+          "href": "https://www.aeequity.org",
+          "title": "Alliance for Entrepreneurial Equity"
+        },
+        {
+          "href": "https://www.carbonfreeeurope.org",
+          "title": "Carbon Free Europe"
+        }
+      ],
       "position": 4,
       "posterImages": [
         {
@@ -337,6 +363,12 @@
       "deck": "The idea behind All The Farms is very straightforward and simple: We should understand what farms are around us, what they are carrying, and where/how we can support them.",
       "frameColorStart": "#EAEAD1",
       "frameColorEnd": "#EAEAD1",
+      "links": [
+        {
+          "href": "https://www.allthefarms.com",
+          "title": "All The Farms"
+        }
+      ],
       "position": 5,
       "posterImages": [
         {
@@ -405,6 +437,12 @@
       "deck": "Splice Today is a website covering topics such as music, film, books, sports and culture with a focus on politics and the arts. It features short articles, longer pieces, multimedia and a daily feed of new and classic material from its contributors and staff.",
       "frameColorStart": "#86a58b",
       "frameColorEnd": "#398666",
+      "links": [
+        {
+          "href": "https://www.splicetoday.com",
+          "title": "Splice Today"
+        }
+      ],
       "position": 6,
       "posterImages": [
         {

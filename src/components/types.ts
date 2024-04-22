@@ -12,6 +12,7 @@ export type Project = {
   description: string;
   frameColorEnd: string;
   frameColorStart: string;
+  links: ProjectLink[];
   position: number;
   posterImages: Screenshot[];
   roles: Role[];
@@ -32,4 +33,9 @@ export type Screenshot = {
   caption?: string;
   src: string;
   alt?: string;
+};
+
+export type ProjectLink = {
+  href: string;
+  title: string;
 };
