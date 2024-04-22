@@ -30,6 +30,7 @@ export default function Navbar() {
                 aria-label="Go to the home page"
                 href="/"
                 initial="initial"
+                key={pathname}
                 title="Home page link"
                 variants={variants}
                 whileHover={{ scale: 1.4, x: 4 }}
