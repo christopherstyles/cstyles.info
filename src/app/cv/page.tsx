@@ -164,7 +164,7 @@ export default function Page({ params }: PageProps) {
                   <li>
                     <span className="font-bold">FX Networks</span>: Developed
                     high performance online experiences for the newly redesigned
-                    fxnetworks.com prior to the fall kickoff.
+                    fxnetworks.com in the run-up to a fall kickoff.
                   </li>
                   <li>
                     Created interactive flight visualizations and various
