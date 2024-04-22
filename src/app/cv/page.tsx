@@ -115,6 +115,10 @@ export default function Page({ params }: PageProps) {
                     , and various microsites.
                   </li>
                   <li>
+                    Contributed to design system style guides and component
+                    libraries for TED-Ed, utilizing Zeroheight and Lookbook.
+                  </li>
+                  <li>
                     Developed a company playbook outlining company philosophy,
                     design and development process, and strategic approaches.
                   </li>

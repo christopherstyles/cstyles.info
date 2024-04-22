@@ -123,7 +123,7 @@
           "backend": true,
           "frontend": true,
           "project": "ed.ted.com",
-          "technologies": "Cloudinary, CircleCI, Elasticsearch, Heroku, Hotwire, Ruby on Rails, StimulusJS, TailwindCSS, Turbo, View Components"
+          "technologies": "Cloudinary, CircleCI, Design Systems, Elasticsearch, Heroku, Hotwire, Lookbook, Ruby on Rails, StimulusJS, TailwindCSS, Turbo, View Components, Zeroheight"
         }
       ],
       "screenshots": [
@@ -167,14 +167,17 @@
       "stack": [
         "Cloudinary",
         "CircleCI",
+        "Design Systems",
         "Elasticsearch",
         "Heroku",
         "Hotwire",
+        "Lookbook",
         "Ruby on Rails",
         "StimulusJS",
         "TailwindCSS",
         "Turbo",
-        "View Components"
+        "View Components",
+        "Zeroheight"
       ],
       "title": "TED-Ed"
     },
