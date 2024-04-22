@@ -40,14 +40,14 @@ export function Carousel({ images }: CarouselProps) {
 
           <PreviousButton
             aria-label="Go to the previous slide"
-            className="absolute -left-11 top-1/2 flex h-20 w-20 origin-center -translate-y-1/2 items-center justify-center rounded-full focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-neutral-900 sm:-right-6 md:-right-8 dark:focus-visible:ring-neutral-200"
+            className="absolute -left-12 top-1/2 flex h-20 w-20 origin-center -translate-y-1/2 items-center justify-center rounded-full focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-neutral-900 sm:-left-10 md:-left-8 dark:focus-visible:ring-neutral-200"
             onClick={() => setIndex(index - 1)}
             visible={index > 0}
           />
 
           <NextButton
             aria-label="Go to the next slide"
-            className="absolute -right-11 top-1/2 flex h-20 w-20 origin-center -translate-y-1/2 items-center justify-center rounded-full focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-neutral-900 sm:-right-6 md:-right-8 dark:focus-visible:ring-neutral-200"
+            className="absolute -right-12 top-1/2 flex h-20 w-20 origin-center -translate-y-1/2 items-center justify-center rounded-full focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-neutral-900 sm:-right-10 md:-right-8 dark:focus-visible:ring-neutral-200"
             onClick={() => setIndex(index + 1)}
             visible={index + 1 < images.length}
           />
