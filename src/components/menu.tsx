@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { RxEnvelopeClosed, RxLinkedinLogo } from "react-icons/rx";
 import { VscGithubInverted } from "react-icons/vsc";
@@ -6,16 +6,6 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function Menu() {
   const [isMenuOpen, setMenuIsOpen] = useState(false);
-
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-  }, [isMenuOpen]);
-
-  console.log("isMenuOpen", isMenuOpen);
 
   return (
     <>
@@ -36,6 +26,7 @@ export default function Menu() {
           <motion.div
             className="fixed inset-0 top-0 z-40 h-[105vh] w-full overflow-auto rounded-lg bg-neutral-100 px-12 py-6 text-neutral-900 md:hidden dark:bg-neutral-900 dark:text-neutral-100"
             animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: "-100%" }}
             exit={{ opacity: 0, y: "-100%", pointerEvents: "none" }}
           >
             <ul className="flex h-full flex-col justify-center gap-2 divide-y divide-neutral-900 text-center text-2xl ">
