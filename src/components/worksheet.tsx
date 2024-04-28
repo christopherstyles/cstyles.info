@@ -67,7 +67,7 @@ export default function Worksheet({ project }: WorksheetProps) {
         )}
       </div>
 
-      <div className="mx-auto flex w-full flex-col gap-16 md:gap-32">
+      <div className="mx-auto flex w-full max-w-5xl flex-col gap-16 md:gap-32">
         <section
           className="relative flex w-full flex-col"
           style={
@@ -77,7 +77,7 @@ export default function Worksheet({ project }: WorksheetProps) {
             } as React.CSSProperties
           }
         >
-          <div className="flex w-full flex-col self-stretch overflow-hidden rounded-sm bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-[clamp(2rem,5vw,4rem)] dark:bg-none">
+          <div className="flex w-full flex-col self-stretch overflow-hidden rounded-md bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-[clamp(2rem,5vw,4rem)] dark:bg-none">
             <Carousel images={project.screenshots} />
           </div>
         </section>
