@@ -13,6 +13,11 @@
       "position": 1,
       "posterImages": [
         {
+          "caption": "<a class='underline' href='https://www.kongregate.com/kongjam' target='_blank'>KongJam</a> is a game development competition where developers push their skills for 48 hours to create a new game related to a Kongregate theme. The jam is hosted on Discord for Kongregate community members to participate and vote on their favorite games.",
+          "src": "/images/kongregate/kongjam.jpg",
+          "alt": "A screenshot of the Kongregate KongJam landing page"
+        },
+        {
           "caption": "",
           "src": "/images/kongregate/board.jpg",
           "alt": ""
@@ -114,6 +119,11 @@
       "posterImages": [
         {
           "caption": "",
+          "src": "/images/ted-ed/earth-school.jpg",
+          "alt": ""
+        },
+        {
+          "caption": "",
           "src": "/images/ted-ed/board.jpg",
           "alt": ""
         }
@@ -201,6 +211,11 @@
       "posterImages": [
         {
           "caption": "",
+          "src": "/images/npr-live-sessions/home-2.jpg",
+          "alt": ""
+        },
+        {
+          "caption": "",
           "src": "/images/npr-live-sessions/board.jpg",
           "alt": ""
         }
@@ -280,6 +295,11 @@
       ],
       "position": 4,
       "posterImages": [
+        {
+          "caption": "National Security, one of many issues which Third Way creates research & policy proposals for.",
+          "src": "/images/third-way/national-security.jpg",
+          "alt": "A screenshot of Third Way’s National Security issue page"
+        },
         {
           "caption": "",
           "src": "/images/third-way/board.jpg",
@@ -376,6 +396,11 @@
       "posterImages": [
         {
           "caption": "",
+          "src": "/images/allthefarms/search-filters.jpg",
+          "alt": ""
+        },
+        {
+          "caption": "",
           "src": "/images/allthefarms/board.jpg",
           "alt": ""
         }
@@ -448,6 +473,11 @@
       ],
       "position": 6,
       "posterImages": [
+        {
+          "caption": "",
+          "src": "/images/splice-today/home.jpg",
+          "alt": ""
+        },
         {
           "caption": "",
           "src": "/images/splice-today/board.jpg",
