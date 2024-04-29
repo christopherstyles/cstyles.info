@@ -71,7 +71,7 @@ export default function Menu() {
             <motion.ul className="flex h-full flex-col justify-center gap-2 text-center text-2xl font-medium">
               <motion.li variants={item}>
                 <Link
-                  className="block p-4"
+                  className="block p-4 uppercase"
                   href="/about"
                   onClick={() => setMenuIsOpen(false)}
                 >
@@ -80,7 +80,7 @@ export default function Menu() {
               </motion.li>
               <motion.li variants={item}>
                 <Link
-                  className="block p-4"
+                  className="block p-4 uppercase"
                   href="/cv"
                   onClick={() => setMenuIsOpen(false)}
                 >
