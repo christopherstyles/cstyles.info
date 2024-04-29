@@ -61,7 +61,9 @@ export default function Page({ params }: PageProps) {
       </div>
       <div className="mx-auto flex max-w-5xl flex-col gap-16 border-t border-neutral-300 pt-16 dark:border-neutral-700">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <h3 className="text-base font-semibold uppercase">Contact</h3>
+          <h3 className="mb-4 text-base font-semibold uppercase md:mb-0">
+            Contact
+          </h3>
           <div>
             <a
               aria-label="Email Chris Styles (opens in the default mail application)"
@@ -74,7 +76,9 @@ export default function Page({ params }: PageProps) {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <h3 className="text-base font-semibold uppercase">Follow</h3>
+          <h3 className="mb-4 text-base font-semibold uppercase md:mb-0">
+            Follow
+          </h3>
           <div className="flex flex-col gap-3">
             <a
               aria-label="Visit Chris’s Instagram (opens in a new window)"
