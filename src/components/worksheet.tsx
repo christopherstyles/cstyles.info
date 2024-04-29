@@ -2,7 +2,7 @@ import { VscArrowRight } from "react-icons/vsc";
 import { Carousel } from "@/components/carousel";
 import RolesTable from "./roles-table";
 import StackList from "./stack-list";
-import { Project } from "./types";
+import type { Project } from "./types";
 
 interface WorksheetProps {
   project: Project;
