@@ -98,6 +98,14 @@ export default function Page({ params }: PageProps) {
             >
               LinkedIn
             </a>
+            <a
+              aria-label="Visit Chris’s GitHub (opens in a new window)"
+              href="https://www.github.com/christopherstyles/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              GitHub
+            </a>
           </div>
         </div>
       </div>
