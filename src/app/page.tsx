@@ -46,7 +46,7 @@ export default async function Page({ params }: PageProps) {
                   <div className="relative flex w-full flex-col self-stretch rounded-sm bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-[clamp(2rem,2.8vw,4rem)]">
                     <Image
                       alt={project.title}
-                      className="rounded-sm shadow-xl shadow-black/10 transition-all duration-1000 ease-out group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-black/50"
+                      className="rounded shadow-xl shadow-black/10 transition-all duration-1000 ease-out group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-black/50"
                       height={1728}
                       loading={index < 4 ? "eager" : "lazy"}
                       priority={index < 4}
