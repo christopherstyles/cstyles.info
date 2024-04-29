@@ -6,83 +6,71 @@
         "name": "Kongregate",
         "url": "https://www.kongregate.com/"
       },
-      "challenge": "Introducing new changes presented a unique challenge to a 15 year old codebase. To address the need for progress while paying down technical debt, we initiated the creation of a design library consisting of web components (Konstruct UI) that could be used across all Kongregate properties. Utilizing web components provided a set of conventions to make collaboration easier, and ensure the design language would remain consistent across all Kongregate platforms, and would be intuitive for onboarding developers to easily utilize.",
-      "deck": "For 15 years Kongregate has been a key player in gaming, captivating audiences globally. Facing technological advancements, it needed a major update. This involved modernizing infrastructure, creating a design library of UI components, and rebranding to align with its focus on innovation.",
+      "deck": "Kongregate, an open platform for web gaming, set forth on a massive effort to rebrand its identity and platform. Because of technical debt from the past it quickly became clear that working new components into its existing technology stack would be problematic and prohibitively time consuming.",
+      "challenge": "By utilizing web components it was possible to create reusable custom elements which encapsulated their functionality away from the monolitic app codebase. This avoided issues of overridden and unexpected behavior, and provided us with the confidence to use the design library in any Kongregate project moving forward. The system was created to be used intuitively by future developers, while maintaining a level of design fidelity we intended.",
       "frameColorStart": "#E478FA",
-      "frameColorEnd": "#F04438",
+      "frameColorEnd": "#bc2e24",
       "position": 1,
       "posterImages": [
         {
-          "caption": "<a class='underline' href='https://www.kongregate.com/kongjam' target='_blank'>KongJam</a> is a game development competition where developers push their skills for 48 hours to create a new game related to a Kongregate theme. The jam is hosted on Discord for Kongregate community members to participate and vote on their favorite games.",
-          "src": "/images/kongregate/kongjam.jpg",
-          "alt": "A screenshot of the Kongregate KongJam landing page"
-        },
-        {
           "caption": "",
-          "src": "/images/kongregate/board.jpg",
+          "src": "/images/konstruct/misc.jpg",
           "alt": ""
         }
       ],
       "roles": [
         {
-          "backend": true,
-          "frontend": true,
-          "project": "Kongregate Platform",
-          "technologies": "Figma, Hotwire/Turbo, Ruby on Rails, StimulusJS, View Components, and Lookbook"
-        },
-        {
           "backend": false,
           "frontend": true,
           "project": "Konstruct UI",
-          "technologies": "Figma, Lit Web Components, NX Monorepo, Storybook JS"
+          "technologies": "Figma, Lit Web Components, NX Monorepo, Storybook"
         },
         {
           "backend": true,
           "frontend": true,
-          "project": "Game and NFT Collection Microsites",
-          "technologies": "AWS Amplify, Figma, Framer Motion, Hashlips Art Engine, NextJS, React"
+          "project": "kongregate.com (Rails integration)",
+          "technologies": "Figma, Hotwire/Turbo, Ruby on Rails, StimulusJS, View Components, and Lookbook"
         }
       ],
       "screenshots": [
         {
-          "caption": "A homepage redesign introduced new search features, new browsing capabilities, and an immersive experience.",
-          "src": "/images/kongregate/home.jpg",
-          "alt": "A screenshot of the Kongregate homepage"
-        },
-        {
-          "caption": "Search behavior was vastly improved, and utilized components from the Konstruct UI design library.",
-          "src": "/images/kongregate/search.jpg",
-          "alt": "A screenshot of the Kongregate search page"
-        },
-        {
-          "caption": "Currently unreleased, a newly designed profile page is a major step forward for Kongregate users. All components comprising this page were produced as part of the Konstruct UI library.",
-          "src": "/images/kongregate/profile.jpg",
-          "alt": "A screenshot of the unreleased Kongregate profile page"
-        },
-        {
-          "caption": "<a class='underline' href='https://www.kongregate.com/kongjam' target='_blank'>KongJam</a> is a game development competition where developers push their skills for 48 hours to create a new game related to a Kongregate theme. The jam is hosted on Discord for Kongregate community members to participate and vote on their favorite games.",
-          "src": "/images/kongregate/kongjam.jpg",
-          "alt": "A screenshot of the Kongregate KongJam landing page"
+          "caption": "",
+          "src": "/images/konstruct/misc.jpg",
+          "alt": "A screenshot of various components in the Konstruct UI kit"
         },
         {
           "caption": "",
-          "src": "/images/kongregate/devices.jpg",
-          "alt": ""
+          "src": "/images/konstruct/palette.jpg",
+          "alt": "A screenshot of the Konstruct color palette"
         },
         {
-          "caption": "Currently unreleased, a new and improved Account sign-up and registration flow was designed to be more user-friendly, intuitive, and playful. All components comprising this page were produced as part of the Konstruct UI library.",
-          "src": "/images/kongregate/account.jpg",
-          "alt": "A screenshot of a new Kongregate account sign-up flow"
+          "caption": "",
+          "src": "/images/konstruct/components-01.jpg",
+          "alt": "A screenshot of various components in the Konstruct UI kit"
         },
         {
-          "caption": "<a class='underline' href='https://www.bloodvessels.io' target='_blank'>Blood Vessels</a> is an interactive NFT experience with elements of social gaming & tabletop roleplaying, where NFT owners help create an ongoing community-driven narrative. This project was created using React and Framer Motion, with the purchase flow enabling users to buy NFTs directly from the site.",
-          "src": "/images/kongregate/blood-vessels-cards.jpg",
-          "alt": "A screenshot of example cards from the Blood Vessels NFT collection"
+          "caption": "",
+          "src": "/images/konstruct/components-02.jpg",
+          "alt": "A screenshot of various components in the Konstruct UI kit"
+        },
+        {
+          "caption": "",
+          "src": "/images/konstruct/components-03.jpg",
+          "alt": "A screenshot of various components in the Konstruct UI kit"
+        },
+        {
+          "caption": "",
+          "src": "/images/konstruct/account.jpg",
+          "alt": "A screenshot of the Konstruct UI Account sign-in screen"
+        },
+        {
+          "caption": "",
+          "src": "/images/konstruct/account-02.jpg",
+          "alt": "A screenshot of the Konstruct UI Account sign-in screen"
         }
       ],
-      "slug": "kongregate",
+      "slug": "konstruct-ui",
       "stack": [
-        "AWS Amplify",
         "Fastly",
         "Figma",
         "Hotwire",
@@ -90,13 +78,13 @@
         "NX Monorepo",
         "Ruby on Rails",
         "StimulusJS",
-        "Storybook JS",
+        "Storybook",
         "TailwindCSS",
         "Turbo",
         "View Components",
         "Web Components"
       ],
-      "title": "Kongregate Platform & Konstruct UI"
+      "title": "Konstruct UI"
     },
     {
       "agency": {
@@ -475,7 +463,7 @@
       "posterImages": [
         {
           "caption": "",
-          "src": "/images/splice-today/home.jpg",
+          "src": "/images/splice-today/logos-01.jpg",
           "alt": ""
         },
         {
