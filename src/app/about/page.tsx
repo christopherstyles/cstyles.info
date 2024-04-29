@@ -14,6 +14,7 @@ export default function Page({ params }: PageProps) {
           <Image
             alt="Chris standing while holding Lucy (a standard wire-haired dachshund)"
             className="order-first w-full md:order-last"
+            loading="eager"
             sizes="50vw"
             src={bioImage}
             width={768}
