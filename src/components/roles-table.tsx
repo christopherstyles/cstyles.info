@@ -1,5 +1,5 @@
 import { VscCheck } from "react-icons/vsc";
-import { Role } from "./types";
+import type { Role } from "./types";
 
 interface RolesTableProps {
   roles: Role[];
