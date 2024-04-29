@@ -54,8 +54,8 @@ export default function Menu() {
         type="button"
       >
         <div className="relative flex h-8 w-8 flex-col items-center justify-center">
-          <div className="duration-400 absolute top-[10px] h-0.5 w-6 origin-center bg-neutral-900 transition-all ease-in-out group-data-[open=true]:top-[15px] group-data-[open=true]:rotate-45 dark:bg-neutral-100"></div>
-          <div className="duration-400 absolute top-[20px] h-0.5 w-6 origin-center bg-neutral-900 transition-all ease-in-out group-data-[open=true]:top-[15px] group-data-[open=true]:-rotate-45 dark:bg-neutral-100"></div>
+          <div className="duration-400 absolute top-[10px] h-0.5 w-6 origin-center bg-neutral-900 transition-all ease-in-out group-data-[open=true]:top-[15px] group-data-[open=true]:rotate-45 dark:bg-neutral-100" />
+          <div className="duration-400 absolute top-[20px] h-0.5 w-6 origin-center bg-neutral-900 transition-all ease-in-out group-data-[open=true]:top-[15px] group-data-[open=true]:-rotate-45 dark:bg-neutral-100" />
         </div>
       </motion.button>
       <AnimatePresence>
