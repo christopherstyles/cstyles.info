@@ -21,7 +21,7 @@ export default function Page({ params }: PageProps) {
             height={1024}
           />
           <div className="mb-40 flex flex-col gap-12">
-            <p className="text-2xl md:mt-12">
+            <p className="text-2xl md:mt-7">
               Chris Styles is an Oregon-based software developer working at the
               intersection of design and engineering.
             </p>
