@@ -45,15 +45,13 @@ export default function Navbar() {
         </div>
       </div>
 
-      <nav className="hidden gap-2 text-base md:flex md:items-center dark:font-light">
+      <nav className="hidden gap-2 text-sm uppercase md:flex md:items-center dark:font-light">
         <Link className="px-2" href="/about">
-          about
+          About
         </Link>
         <Link className="px-2" href="/cv">
-          cv
+          CV
         </Link>
-        <div>•</div>
-        <Social />
       </nav>
 
       <Menu />
