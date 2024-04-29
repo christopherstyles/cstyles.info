@@ -38,7 +38,7 @@ export default function RolesTable({ roles }: RolesTableProps) {
       </thead>
       <tbody className="divide-y divide-neutral-800">
         {roles.map((role, index) => (
-          <tr key={`role-${index}`}>
+          <tr key={`role-${role.project}`}>
             <td className="content-start whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
               {role.backend ? (
                 <VscCheck className="mx-auto" color="currentColor" size={18} />
