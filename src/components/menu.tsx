@@ -37,7 +37,7 @@ export default function Menu() {
   const [isMenuOpen, setMenuIsOpen] = useState(false);
 
   useEffect(() => {
-    if (document.body.style.overflow !== "hidden") {
+    if (isMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
