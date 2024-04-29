@@ -1,11 +1,48 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { RxEnvelopeClosed, RxLinkedinLogo } from "react-icons/rx";
 import { VscGithubInverted } from "react-icons/vsc";
 import { AnimatePresence, motion } from "framer-motion";
 
+const container = {
+  hidden: {
+    clipPath: "rect(0% 100% 100% 100%)",
+  },
+  show: {
+    clipPath: "rect(0% 100% 100% 0%)",
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const item = {
+  hidden: {
+    opacity: 0,
+    y: 0,
+    transition: { type: "tween", ease: "easeIn" },
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      ease: "easeOut",
+      duration: 0.6,
+    },
+  },
+};
+
 export default function Menu() {
   const [isMenuOpen, setMenuIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (document.body.style.overflow !== "hidden") {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -25,30 +62,32 @@ export default function Menu() {
         {isMenuOpen && (
           <motion.div
             className="fixed inset-0 top-0 z-40 h-[105vh] w-full overflow-auto rounded-lg bg-neutral-100 px-12 py-6 text-neutral-900 md:hidden dark:bg-neutral-900 dark:text-neutral-100"
-            animate={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: "-100%" }}
-            exit={{ opacity: 0, y: "-100%", pointerEvents: "none" }}
+            animate="show"
+            initial="hidden"
+            exit="hidden"
+            transition={{ ease: "easeInOut", duration: 0.5 }}
+            variants={container}
           >
-            <ul className="flex h-full flex-col justify-center gap-2 divide-y divide-neutral-900 text-center text-2xl ">
-              <li>
+            <motion.ul className="flex h-full flex-col justify-center gap-2 text-center text-2xl font-medium">
+              <motion.li variants={item}>
                 <Link
-                  className="block p-6"
+                  className="block p-4"
                   href="/about"
                   onClick={() => setMenuIsOpen(false)}
                 >
-                  about
+                  About
                 </Link>
-              </li>
-              <li>
+              </motion.li>
+              <motion.li variants={item}>
                 <Link
-                  className="block p-6"
+                  className="block p-4"
                   href="/cv"
                   onClick={() => setMenuIsOpen(false)}
                 >
-                  cv
+                  CV
                 </Link>
-              </li>
-              <li className="p-6">
+              </motion.li>
+              <motion.li className="p-4" variants={item}>
                 <div className="flex items-center justify-center gap-2">
                   <a
                     aria-label="Email Chris Styles (opens in the default mail application)"
@@ -81,8 +120,8 @@ export default function Menu() {
                     <RxLinkedinLogo size={24} />
                   </a>
                 </div>
-              </li>
-            </ul>
+              </motion.li>
+            </motion.ul>
           </motion.div>
         )}
       </AnimatePresence>
