@@ -1,5 +1,5 @@
 import { Project } from "@/components/types";
-import { promises as fs } from "fs";
+import { promises as fs } from "node:fs";
 import Image from "next/image";
 import Link from "next/link";
 
