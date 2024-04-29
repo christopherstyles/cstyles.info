@@ -8,7 +8,7 @@ interface PageProps {
 }
 
 export default async function Page({ params }: PageProps) {
-  const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
+  const file = await fs.readFile(`${process.cwd()}/src/app/data.json`, "utf8");
   const data = JSON.parse(file);
 
   return (
