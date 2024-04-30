@@ -17,29 +17,32 @@ export function Carousel({ screenshots }: CarouselProps) {
   const handleSlideChange = (swiper: SwiperClass) => {
     const slides = swiper.slides;
     slides.forEach((slide, index) => {
-      slide.style.transition = "opacity 0.3s ease-in-out";
+      slide.style.transition =
+        "opacity 0.3s ease-in-out, transform 0.3s ease-out";
       if (index === swiper.activeIndex) {
         slide.style.opacity = "1";
+        slide.style.transform = "scale(1)";
       } else {
         slide.style.opacity = "0.2";
+        slide.style.transform = "scale(0.93)";
       }
     });
   };
 
   return (
     <Swiper
-      className="[--swiper-theme-color:#ffffff]"
       breakpoints={{}}
       centeredSlides={true}
+      className="[--swiper-theme-color:#ffffff]"
       keyboard={{
         enabled: true,
       }}
       modules={[Keyboard, Navigation]}
       navigation={true}
-      onSlideChange={(swiper) => handleSlideChange(swiper)}
       onInit={handleSlideChange}
-      spaceBetween={32}
+      onSlideChange={(swiper) => handleSlideChange(swiper)}
       slidesPerView={"auto"}
+      spaceBetween={16}
     >
       {screenshots.map((screenshot, i) => (
         <SwiperSlide
