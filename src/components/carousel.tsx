@@ -55,7 +55,9 @@ export function Carousel({ screenshots }: CarouselProps) {
             draggable={false}
             height={1728}
             key={screenshot.src}
-            loading={i === 0 ? "eager" : "lazy"}
+            loading="lazy"
+            quality={65}
+            sizes="(max-width: 768px) 100vw, 56rem"
             src={screenshot.src}
             width={2880}
           />
