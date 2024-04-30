@@ -28,7 +28,7 @@ export default function Page({ params }: PageProps) {
               intersection of design and engineering.
             </p>
             <p className="text-lg">
-              He was born in North Carolina and studied at the{" "}
+              Chris was born in North Carolina and studied at the{" "}
               <a
                 aria-label="Maryland Institute College of Art (opens in a new tab)"
                 href="https://www.mica.edu/"
@@ -37,10 +37,10 @@ export default function Page({ params }: PageProps) {
               >
                 Maryland Institute College of Art
               </a>{" "}
-              in Baltimore. Chris has worked in the design and technology
-              industry for nearly two decades, leading teams and projects for
-              clients like VuHaus (NPR Live Sessions), FX Networks, Nintendo,
-              and TED-Ed. He lives with his partner{" "}
+              in Baltimore. He has worked in the design and technology industry
+              for nearly two decades, leading teams and projects for clients
+              like VuHaus (NPR Live Sessions), FX Networks, Nintendo, and
+              TED-Ed. He lives with his partner{" "}
               <a
                 aria-label="Landbird (opens in a new tab)"
                 href="http://www.landbird.com/"
