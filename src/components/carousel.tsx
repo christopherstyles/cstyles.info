@@ -23,7 +23,7 @@ export function Carousel({ screenshots }: CarouselProps) {
         slide.style.opacity = "1";
         slide.style.transform = "scale(1)";
       } else {
-        slide.style.opacity = "0.2";
+        slide.style.opacity = "0.4";
         slide.style.transform = "scale(0.93)";
       }
     });
