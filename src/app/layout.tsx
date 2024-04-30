@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
         <Analytics />
         <SpeedInsights />
       </body>
+      <GoogleAnalytics gaId="G-MBMD8MW9BT" />
     </html>
   );
 }
