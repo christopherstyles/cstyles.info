@@ -8,7 +8,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
+  const file = await fs.readFile(`${process.cwd()}/src/app/data.json`, "utf8");
   const data = JSON.parse(file);
 
   return data.projects.map((project: Project) => ({
@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }: PageProps) {
-  const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
+  const file = await fs.readFile(`${process.cwd()}/src/app/data.json`, "utf8");
   const data = JSON.parse(file);
 
   const project = data.projects.find(
