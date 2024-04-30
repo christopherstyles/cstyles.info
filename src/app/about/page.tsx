@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bioImage from "../../../public/images/bio/chris-and-lucy.jpg";
+import bioImage from "../../../public/images/bio/chris-and-finley.jpg";
 
 interface PageProps {
   params: { slug: string };
@@ -12,10 +12,12 @@ export default function Page({ params }: PageProps) {
         <h1 className="sr-only mb-36 text-5xl">Chris Styles</h1>
         <div className="grid grid-cols-1 gap-12 md:mb-24 md:grid-cols-2">
           <Image
-            alt="Chris standing while holding Lucy (a standard wire-haired dachshund)"
+            alt="Chris standing in a northwest forest during Spring, while holding Finley (a 25lb standard wire-haired dachshund)"
             className="order-first w-full md:order-last"
             loading="eager"
-            sizes="50vw"
+            priority={true}
+            quality={65}
+            sizes="(max-width: 768px) 100vw, 50vw"
             src={bioImage}
             width={768}
             height={1024}
