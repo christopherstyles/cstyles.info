@@ -45,3 +45,13 @@ a:focus-visible {
     outline-color: theme("colors.white");
   }
 }
+
+.swiper-slide {
+  height: 300px;
+  transition: all 200ms linear;
+  transform: scale(0.8);
+
+  &.swiper-slide-active {
+    transform: scale(1);
+  }
+}

@@ -10,7 +10,7 @@ export default function Page({ params }: PageProps) {
     <>
       <div className="mx-auto max-w-5xl">
         <h1 className="sr-only mb-36 text-5xl">Chris Styles</h1>
-        <div className="mb-24 grid grid-cols-1 gap-12 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-12 md:mb-24 md:grid-cols-2">
           <Image
             alt="Chris standing while holding Lucy (a standard wire-haired dachshund)"
             className="order-first w-full md:order-last"
