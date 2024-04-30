@@ -33,7 +33,7 @@ export function Carousel({ screenshots }: CarouselProps) {
     <Swiper
       breakpoints={{}}
       centeredSlides={true}
-      className="[--swiper-theme-color:#ffffff]"
+      className="[--swiper-theme-color:#171717] dark:[--swiper-theme-color:#ffffff]"
       keyboard={{
         enabled: true,
       }}
@@ -59,6 +59,7 @@ export function Carousel({ screenshots }: CarouselProps) {
             src={screenshot.src}
             width={2880}
           />
+          <div className="swiper-lazy-preloader" />
         </SwiperSlide>
       ))}
     </Swiper>
