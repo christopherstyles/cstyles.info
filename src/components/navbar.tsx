@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import { VscArrowLeft } from "react-icons/vsc";
 
 import Menu from "@/components/menu";
-import Social from "./social";
 
 const MotionLink = motion(Link);
 
