@@ -8,7 +8,7 @@ export default function Page({ params }: PageProps) {
   return (
     <>
       <div className="mx-auto max-w-5xl text-lg">
-        <h1 className="mb-36 text-5xl">Curriculum Vitae</h1>
+        <h1 className="sr-only mb-36 text-5xl">Curriculum Vitae</h1>
         <div className="mb-40 flex flex-col gap-24">
           <section className="flex flex-col gap-4">
             <h2 className="text-2xl">Education</h2>
@@ -24,12 +24,10 @@ export default function Page({ params }: PageProps) {
               <li>
                 <div className="font-bold">Frameworks</div>
                 Ruby on Rails, Hotwire, React.js, React Native, Lit, Next.js,
-                Gatsby, Bootstrap, Tailwind CSS
+                Gatsby, Tailwind CSS
               </li>
               <li>
-                <div className="font-bold">
-                  Tooling and additional experience
-                </div>
+                <div className="font-bold">Experience with</div>
                 Algolia Search, API Development, AWS, CircleCI, Cloudinary,
                 CodeClimate, Elasticsearch, Fastly, Figma, Framer Motion, Github
                 Actions, Google Firebase, GraphQL, GSAP, Hasura GraphQL Engine,
@@ -38,7 +36,7 @@ export default function Page({ params }: PageProps) {
                 REST, StorybookJS, View Components, Zencoder, Zustand
               </li>
               <li>
-                <div className="font-bold">Deployment experience</div>
+                <div className="font-bold">Deployment</div>
                 AWS Amplify, Digital Ocean, DO App Platform, Dokku, Heroku,
                 Netlify, Vercel
               </li>
