@@ -1,5 +1,6 @@
-import { VscArrowRight } from "react-icons/vsc";
 import { Carousel } from "@/components/carousel";
+import { VscArrowRight } from "react-icons/vsc";
+import Container from "./container";
 import RolesTable from "./roles-table";
 import StackList from "./stack-list";
 import type { Project } from "./types";
@@ -10,8 +11,8 @@ interface WorksheetProps {
 
 export default function Worksheet({ project }: WorksheetProps) {
   return (
-    <>
-      <div className="mx-auto flex max-w-5xl flex-col space-y-20 text-lg">
+    <Container>
+      <div className="flex flex-col space-y-20 text-lg">
         <div>
           <h1 className="text-5xl">{project.title}</h1>
         </div>
@@ -69,6 +70,6 @@ export default function Worksheet({ project }: WorksheetProps) {
       <section className="-mx-4 md:-mx-6">
         <Carousel screenshots={project.screenshots} />
       </section>
-    </>
+    </Container>
   );
 }

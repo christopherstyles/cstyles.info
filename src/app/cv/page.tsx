@@ -1,3 +1,4 @@
+import Container from "@/components/container";
 import { VscArrowRight } from "react-icons/vsc";
 
 interface PageProps {
@@ -6,8 +7,8 @@ interface PageProps {
 
 export default function Page({ params }: PageProps) {
   return (
-    <>
-      <div className="mx-auto max-w-5xl text-lg">
+    <Container>
+      <div className="text-lg">
         <h1 className="sr-only mb-36 text-5xl">Curriculum Vitae</h1>
         <div className="mb-40 flex flex-col gap-24">
           <section className="flex flex-col gap-4">
@@ -346,6 +347,6 @@ export default function Page({ params }: PageProps) {
           </section>
         </div>
       </div>
-    </>
+    </Container>
   );
 }

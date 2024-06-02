@@ -1,3 +1,4 @@
+import Container from "@/components/container";
 import Image from "next/image";
 import bioImage from "../../../public/images/bio/chris-and-finley.jpg";
 
@@ -8,7 +9,7 @@ interface PageProps {
 export default function Page({ params }: PageProps) {
   return (
     <>
-      <div className="mx-auto max-w-5xl">
+      <Container>
         <h1 className="sr-only mb-36 text-5xl">Chris Styles</h1>
         <div className="grid grid-cols-1 gap-12 md:mb-24 md:grid-cols-2">
           <Image
@@ -62,55 +63,56 @@ export default function Page({ params }: PageProps) {
             </p>
           </div>
         </div>
-      </div>
-      <div className="mx-auto flex max-w-5xl flex-col gap-16 border-t border-neutral-300 pt-16 dark:border-neutral-700">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <h3 className="mb-4 text-base font-semibold uppercase md:mb-0">
-            Contact
-          </h3>
-          <div>
-            <a
-              aria-label="Email Chris Styles (opens in the default mail application)"
-              href="mailto:cstyles@hey.com"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              cstyles@hey.com
-            </a>
+
+        <div className="flex flex-col gap-16 border-t border-neutral-300 pt-16 dark:border-neutral-700">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <h3 className="mb-4 text-base font-semibold uppercase md:mb-0">
+              Contact
+            </h3>
+            <div>
+              <a
+                aria-label="Email Chris Styles (opens in the default mail application)"
+                href="mailto:cstyles@hey.com"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                cstyles@hey.com
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <h3 className="mb-4 text-base font-semibold uppercase md:mb-0">
+              Follow
+            </h3>
+            <div className="flex flex-col gap-3">
+              <a
+                aria-label="Visit Chris’s Instagram (opens in a new window)"
+                href="https://www.instagram.com/christopherstyles/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Instagram
+              </a>
+              <a
+                aria-label="Visit Chris’s LinkedIn (opens in a new window)"
+                href="https://www.linkedin.com/in/christopherstyles/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+              <a
+                aria-label="Visit Chris’s GitHub (opens in a new window)"
+                href="https://www.github.com/christopherstyles/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <h3 className="mb-4 text-base font-semibold uppercase md:mb-0">
-            Follow
-          </h3>
-          <div className="flex flex-col gap-3">
-            <a
-              aria-label="Visit Chris’s Instagram (opens in a new window)"
-              href="https://www.instagram.com/christopherstyles/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              Instagram
-            </a>
-            <a
-              aria-label="Visit Chris’s LinkedIn (opens in a new window)"
-              href="https://www.linkedin.com/in/christopherstyles/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-            <a
-              aria-label="Visit Chris’s GitHub (opens in a new window)"
-              href="https://www.github.com/christopherstyles/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              GitHub
-            </a>
-          </div>
-        </div>
-      </div>
+      </Container>
     </>
   );
 }

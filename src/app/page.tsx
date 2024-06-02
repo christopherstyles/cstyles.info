@@ -1,7 +1,9 @@
-import type { Project } from "@/components/types";
-import { promises as fs } from "node:fs";
 import Image from "next/image";
 import Link from "next/link";
+import { promises as fs } from "node:fs";
+
+import Container from "@/components/container";
+import type { Project } from "@/components/types";
 
 interface PageProps {
   params: { slug: string };
@@ -13,15 +15,15 @@ export default async function Page({ params }: PageProps) {
 
   return (
     <>
-      <div className="max-w-5xl xl:mx-auto">
-        <div className="mb-40 flex flex-col gap-12">
-          <p className="max-w-[48ch] text-pretty text-2xl xl:mx-auto xl:text-center">
-            Chris Styles is a design-focused software engineer, based in Oregon.
-            His work focuses on creating beautiful, functional, and accessible
-            digital experiences.
+      <Container>
+        <div className="mb-40 flex flex-col gap-12 ">
+          <h1 className="mb-24 text-5xl">Chris Styles</h1>
+          <p className="max-w-[48ch] text-pretty text-2xl">
+            A design-focused software engineer working to create beautiful,
+            functional, and accessible digital experiences.
           </p>
         </div>
-      </div>
+      </Container>
       <section className="mb-20 grid grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
         {data.projects
           .sort((a: Project, b: Project) => a.position - b.position)
