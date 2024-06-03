@@ -3,6 +3,7 @@ import Link from "next/link";
 import { promises as fs } from "node:fs";
 
 import Container from "@/components/container";
+import FadeUp from "@/components/fade-up";
 import type { Project } from "@/components/types";
 
 interface PageProps {
@@ -14,60 +15,55 @@ export default async function Page({ params }: PageProps) {
   const data = JSON.parse(file);
 
   return (
-    <>
+    <div className="mx-auto flex w-full flex-col items-start px-4 pt-10 md:px-6 md:pt-32">
       <Container>
-        <div className="mb-40 flex flex-col gap-12 ">
-          <h1 className="mb-24 text-5xl">Chris Styles</h1>
+        <div className="flex h-svh flex-col justify-center gap-12">
+          <h1 className="mb-6 text-5xl md:mb-24">Chris Styles</h1>
           <p className="max-w-[48ch] text-pretty text-2xl">
             A design-focused software engineer working to create beautiful,
             functional, and accessible digital experiences.
           </p>
         </div>
-      </Container>
-      <section className="mb-20 grid grid-cols-1 gap-x-10 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
-        {data.projects
-          .sort((a: Project, b: Project) => a.position - b.position)
-          .map((project: Project, index: number) => (
-            <Link
-              className="focus-visible:outline-offset-8"
-              href={`/work/${project.slug}`}
-              key={`${project.slug}-condensed`}
-            >
-              <div
-                style={
-                  {
-                    "--frame-bg-from": project.frameColorStart,
-                    "--frame-bg-to": project.frameColorEnd,
-                  } as React.CSSProperties
-                }
-              >
-                <figure
-                  className="group flex flex-col gap-4 transition-transform duration-1000 ease-out hover:-translate-y-0.5"
-                  role="group"
+
+        <section className="gap-x-15 mb-20 grid grid-cols-1 gap-y-16 md:grid-cols-2">
+          {data.projects
+            .sort((a: Project, b: Project) => a.position - b.position)
+            .map((project: Project, index: number) => (
+              <FadeUp key={project.slug}>
+                <Link
+                  className="flex h-full flex-col focus-visible:outline-offset-8"
+                  href={`/work/${project.slug}`}
                 >
-                  <div className="relative flex w-full flex-col self-stretch rounded-sm bg-gradient-to-b from-[var(--frame-bg-from)] to-[var(--frame-bg-to)] p-[clamp(2rem,2.8vw,4rem)]">
-                    <Image
-                      alt={project.title}
-                      className="rounded shadow-xl shadow-black/10 transition-all duration-1000 ease-out group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-black/50"
-                      height={1728}
-                      loading={index < 4 ? "eager" : "lazy"}
-                      priority={index < 4}
-                      sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
-                      src={`${project.posterImages[0].src}`}
-                      width={2880}
-                    />
-                  </div>
-                  <figcaption className="flex items-center justify-between text-sm text-neutral-600 dark:text-neutral-200">
-                    <h2 className="">{project.title}</h2>
-                    <p className="">
-                      {project.agency.prefix} {project.agency.name}
-                    </p>
-                  </figcaption>
-                </figure>
-              </div>
-            </Link>
-          ))}
-      </section>
-    </>
+                  <figure
+                    className="group flex h-full flex-col gap-4 transition-transform duration-1000 ease-out hover:-translate-y-0.5"
+                    role="group"
+                  >
+                    <figcaption className="flex flex-col items-start gap-3">
+                      <h2 className="text-2xl font-medium leading-[18px]">
+                        {project.title}
+                      </h2>
+                      <p className="text-base font-normal opacity-40">
+                        {project.agency.prefix} {project.agency.name}
+                      </p>
+                    </figcaption>
+                    <div className="relative flex h-full w-full flex-col self-stretch bg-gradient-to-b">
+                      <Image
+                        alt={project.title}
+                        className="object-cover shadow-xl shadow-black/10 transition-all duration-1000 ease-out group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-black/50"
+                        height={1728}
+                        loading={index < 4 ? "eager" : "lazy"}
+                        priority={index < 4}
+                        sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
+                        src={`${project.posterImages[0].src}`}
+                        width={2880}
+                      />
+                    </div>
+                  </figure>
+                </Link>
+              </FadeUp>
+            ))}
+        </section>
+      </Container>
+    </div>
   );
 }
