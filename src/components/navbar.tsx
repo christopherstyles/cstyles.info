@@ -1,61 +1,44 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { VscArrowLeft } from "react-icons/vsc";
+import { TfiWorld } from "react-icons/tfi";
 
-import Menu from "@/components/menu";
 import ThemeToggle from "./theme-toggle";
-
-const MotionLink = motion(Link);
 
 export default function Navbar() {
   const pathname = usePathname();
 
-  const variants = {
-    initial: { opacity: 0 },
-    hidden: { opacity: 0, x: [0, "-100%", "100%"] },
-    visible: { opacity: 1, x: 0 },
-  };
-
   return (
-    <header className="mx-auto flex w-full max-w-screen-2xl items-center justify-between p-12 px-4 md:px-6">
-      <div className="relative flex h-full w-full">
-        <div className="absolute left-2 top-2">
-          <AnimatePresence>
-            {pathname !== "/" && (
-              <MotionLink
-                animate={pathname === "/" ? "hidden" : "visible"}
-                aria-label="Go to the home page"
-                href="/"
-                initial="initial"
-                key={pathname}
-                title="Home page link"
-                variants={variants}
-                whileHover={{ scale: 1.4, x: 4 }}
-                whileTap={{ scale: 1.4, x: 4 }}
-              >
-                <div className="-ml-6 -mt-6 p-2">
-                  <VscArrowLeft size={32} color="currentColor" />
-                </div>
-              </MotionLink>
-            )}
-          </AnimatePresence>
+    <header className="fixed top-0 z-50 mx-auto flex w-full max-w-screen-2xl items-center justify-between px-4 py-8 md:px-6">
+      <div className="relative flex h-full w-full items-center justify-between">
+        <div className="rounded-full opacity-100 backdrop-blur-md transition-all duration-200">
+          <Link
+            aria-label="Go to the home page"
+            href="/"
+            title="Home page link"
+          >
+            <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 font-semibold transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-800">
+              <TfiWorld className="size-5" />
+            </div>
+          </Link>
+        </div>
+        <div>
+          <nav className="flex items-center gap-2 rounded-full text-sm uppercase backdrop-blur-md dark:font-light md:items-center">
+            <ThemeToggle />
+            <Link href="/about">
+              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-800">
+                About
+              </div>
+            </Link>
+            <Link href="/cv">
+              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-800">
+                CV
+              </div>
+            </Link>
+          </nav>
         </div>
       </div>
-
-      <nav className="hidden gap-2 text-sm uppercase md:flex md:items-center dark:font-light">
-        <ThemeToggle />
-        <Link className="px-2" href="/about">
-          About
-        </Link>
-        <Link className="px-2" href="/cv">
-          CV
-        </Link>
-      </nav>
-
-      <Menu />
     </header>
   );
 }
