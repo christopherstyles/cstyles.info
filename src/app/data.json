@@ -84,8 +84,8 @@
         "name": "Kongregate",
         "url": "https://www.kongregate.com/"
       },
-      "deck": "Kongregate, an open platform for web gaming, set forth on a massive effort to rebrand its identity and platform. Because of technical debt from the past it quickly became clear that working new components into its existing technology stack would be problematic and prohibitively time consuming.",
-      "challenge": "By utilizing web components it was possible to create reusable custom elements which encapsulated their functionality away from the monolitic app codebase. This avoided issues of overridden and unexpected behavior, and provided us with the confidence to use the design library in any Kongregate project moving forward. The system was created to be used intuitively by future developers, while maintaining a level of design fidelity we intended.",
+      "deck": "Kongregate, an open platform for web gaming, set forth on a massive effort to rebrand its identity and platform.",
+      "challenge": "By utilizing web components it was possible to make design changes without breaking existing functionality, and to expand the new brand’s visual identity across all Kongregate products while maintaining a consistent look and feel.",
       "frameColorStart": "#E478FA",
       "frameColorEnd": "#bc2e24",
       "position": 3,
