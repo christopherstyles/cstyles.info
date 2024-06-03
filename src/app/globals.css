@@ -2,33 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 23, 23, 23;
-  --background-start-rgb: 245, 245, 245;
-  --background-end-rgb: 245, 245, 245;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 245, 245, 245;
-    --background-start-rgb: 23, 23, 23;
-    --background-end-rgb: 23, 23, 23;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background-color: rgb(var(--background-end-rgb));
-  /*
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb)) ;
-    )
-    rgb(var(--background-start-rgb));
-    */
-}
-
 p a {
   text-decoration-line: underline;
   text-decoration-thickness: 1px;

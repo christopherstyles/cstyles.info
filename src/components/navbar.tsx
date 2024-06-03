@@ -1,11 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { VscArrowLeft } from "react-icons/vsc";
 
 import Menu from "@/components/menu";
+import ThemeToggle from "./theme-toggle";
 
 const MotionLink = motion(Link);
 
@@ -45,6 +46,7 @@ export default function Navbar() {
       </div>
 
       <nav className="hidden gap-2 text-sm uppercase md:flex md:items-center dark:font-light">
+        <ThemeToggle />
         <Link className="px-2" href="/about">
           About
         </Link>
