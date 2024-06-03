@@ -24,6 +24,7 @@ export type Project = {
 
 export type Role = {
   backend: boolean;
+  description: string;
   frontend: boolean;
   project: string;
   technologies: string;
