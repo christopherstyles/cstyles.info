@@ -8,28 +8,30 @@ interface PageProps {
 
 export default function Page({ params }: PageProps) {
   return (
-    <>
+    <div className="mx-auto mt-20 flex w-full flex-col items-start px-4 pt-10 md:px-6 md:pt-32">
       <Container>
         <h1 className="sr-only mb-36 text-5xl">Chris Styles</h1>
-        <div className="grid grid-cols-1 gap-12 md:mb-24 md:grid-cols-2">
-          <Image
-            alt="Chris standing in a northwest forest during Spring, while holding Finley (a 25lb standard wire-haired dachshund)"
-            className="order-first w-full md:order-last"
-            loading="eager"
-            priority={true}
-            quality={65}
-            sizes="(max-width: 768px) 100vw, 50vw"
-            src={bioImage}
-            width={768}
-            height={1024}
-          />
+        <div className="flex flex-col gap-12 md:mb-24 md:flex-row">
+          <div className="relative w-1/2 sm:w-1/3 md:w-1/4 md:flex-shrink-0">
+            <Image
+              alt="Chris standing in a northwest forest during Spring, while holding Finley (a standard wire-haired dachshund)"
+              className=""
+              loading="eager"
+              priority
+              quality={65}
+              sizes="50vw"
+              src={bioImage}
+              width={768}
+              height={1024}
+            />
+          </div>
           <div className="mb-40 flex flex-col gap-12">
-            <p className="text-2xl md:mt-7">
-              Chris Styles is an Oregon-based software developer working at the
-              intersection of design and engineering.
+            <p className="text-2xl">
+              Chris Styles is a design-focused software engineer working to
+              create beautiful, functional, and accessible digital experiences.
             </p>
             <p className="text-lg">
-              Chris was born in North Carolina and studied at the{" "}
+              He was born in North Carolina and studied at the{" "}
               <a
                 aria-label="Maryland Institute College of Art (opens in a new tab)"
                 href="https://www.mica.edu/"
@@ -50,8 +52,7 @@ export default function Page({ params }: PageProps) {
               >
                 @landbird
               </a>
-              , three dogs, a raft of ducks, a lovely goose, and a few
-              mischievous chickens.
+              , three dogs, a raft of ducks, a lovely goose, and some chickens.
             </p>
             <p className="text-lg">
               If you’re interesting in chatting about a potential collaboration,
@@ -113,6 +114,6 @@ export default function Page({ params }: PageProps) {
           </div>
         </div>
       </Container>
-    </>
+    </div>
   );
 }

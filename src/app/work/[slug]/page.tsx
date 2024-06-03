@@ -1,7 +1,7 @@
 import { promises as fs } from "node:fs";
 
-import Worksheet from "@/components/worksheet";
 import type { Project } from "@/components/types";
+import Worksheet from "@/components/worksheet";
 
 interface PageProps {
   params: { slug: string };
@@ -24,5 +24,9 @@ export default async function Page({ params }: PageProps) {
     (project: Project) => project.slug === params.slug,
   );
 
-  return <Worksheet project={project} />;
+  return (
+    <div className="mx-auto mt-20 flex w-full flex-col items-start px-4 pt-10 md:px-6 md:pt-32">
+      <Worksheet project={project} />
+    </div>
+  );
 }
