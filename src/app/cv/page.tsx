@@ -1,5 +1,4 @@
 import Container from "@/components/container";
-import { VscArrowRight } from "react-icons/vsc";
 
 interface PageProps {
   params: { slug: string };
@@ -14,39 +13,40 @@ export default function Page({ params }: PageProps) {
           <div className="mb-40 flex flex-col gap-24">
             <section className="flex flex-col gap-4">
               <h2 className="text-2xl">Education</h2>
-              <p>Maryland Institute College of Art, BA Graphic Design</p>
+              <p>Maryland Institute College of Art, BA in Graphic Design</p>
             </section>
             <section className="flex flex-col gap-6">
               <h2 className="text-2xl">Skills</h2>
               <ul className="space-y-6">
                 <li>
                   <div className="font-bold">Languages</div>
-                  <p className="font-normal">Ruby, JavaScript, Typescript</p>
+                  <p className="font-normal">
+                    Ruby, JavaScript, TypeScript, HTML/CSS
+                  </p>
                 </li>
                 <li>
-                  <div className="font-bold">Frameworks</div>
-                  Ruby on Rails, Hotwire, React.js, React Native, Lit, Next.js,
-                  Gatsby, Tailwind CSS
+                  <div className="font-bold">Technologies</div>
+                  Rails, React, Tailwind, Figma, Next.js, React Native,
+                  PostgreSQL, Lit
                 </li>
                 <li>
-                  <div className="font-bold">Experience with</div>
-                  Algolia Search, API Development, AWS, CircleCI, Cloudinary,
-                  CodeClimate, Elasticsearch, Fastly, Figma, Framer Motion,
-                  Github Actions, Google Firebase, GraphQL, GSAP, Hasura GraphQL
-                  Engine, Hashlips Art Engine, Imgix, Keen.io, KeyCDN, Lookbook,
-                  Mapbox, Meilisearch, Motion One, MySQL, Postgres, React Query,
-                  Redis, REST, StorybookJS, View Components, Zencoder, Zustand
+                  <div className="font-bold">Additional Experience</div>
+                  Accessibility, Continuous Integration (CircleCI, GitHub
+                  Actions, TravisCI), CDN (Cloudinary, Imgix, KeyCDN, Fastly),
+                  GraphQL (Apollo Federation, Hasura GraphQL Engine), Keen.io,
+                  Mapbox, MySQL, Redis, Search (Algolia, Meilisearch,
+                  Elasticsearch), StorybookJS, Zencoder
                 </li>
                 <li>
                   <div className="font-bold">Deployment</div>
-                  AWS Amplify, Digital Ocean, DO App Platform, Dokku, Heroku,
+                  AWS/Amplify, DigitalOcean/App Platform, Heroku/Dokku, Hetzner,
                   Netlify, Vercel
                 </li>
               </ul>
             </section>
             <section className="flex flex-col gap-4">
               <h2 className="text-2xl">Work Experience</h2>
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-4 md:gap-8">
                 <div>
                   <h3 className="mb-4">
                     <span className="font-bold">Senior Software Engineer</span>,
@@ -54,20 +54,16 @@ export default function Page({ params }: PageProps) {
                   </h3>
                   <ul className="list-disc pl-5">
                     <li>
-                      Collaborated with a small team to revamp and rebrand the
-                      Kongregate platform and brand website, enhancing
-                      performance and ensuring a seamless experience for 40,000+
-                      daily users.
+                      Collaborated with product designers and developers to
+                      revamp and rebrand the Kongregate platform and website,
+                      enhancing performance and ensuring a seamless experience
+                      for 40,000+ daily users.
                     </li>
+
                     <li>
-                      Collaborated to create a design library of web components
-                      (Konstruct UI) that could be used across all Kongregate
-                      properties.
-                    </li>
-                    <li>
-                      Coordinated with graphic artists, storytellers, comic
-                      inkers, and character riggers to curate a cutting-edge NFT
-                      collection for the Blood Vessels web3 RPG, consisting of
+                      Coordinated with graphic artists, comic inkers, and
+                      storytellers to create a generative NFT collection and
+                      website for the Blood Vessels web3 RPG, consisting of
                       thousands of distinct layer-based art images.
                     </li>
                     <li>
@@ -77,10 +73,10 @@ export default function Page({ params }: PageProps) {
                       attributes, presented in an easy to parse UI.
                     </li>
                     <li>
-                      Architected a dashboard enabling teams to review
-                      generative trait iterations in NFT collections, caching
-                      assets from S3 with Imgix, storing character data in
-                      Postgres, and providing filters for feature comparison.
+                      Created a dashboard enabling teams to review visual
+                      changes across NFT collection generation runs by providing
+                      feature filters for comparison, reducing team review time
+                      by nearly 80%.
                     </li>
                   </ul>
                 </div>
@@ -96,9 +92,16 @@ export default function Page({ params }: PageProps) {
                     </li>
                     <li>
                       <span className="font-bold">NPR Live Sessions</span>:
-                      Created a customized content management dashboard for
-                      station managers of 20+ national radio stations; crafted a
+                      Developed a bespoke content management system for station
+                      managers of 20+ national radio stations, providing the
+                      ability for artist management, automatic video
+                      transcoding, music, and artist recommendations. Created a
                       versioned API for third-party tool integration.
+                    </li>
+                    <li>
+                      Built a modular React frontend framework for political
+                      think-tank organizations to easily deploy across multiple
+                      initiatives.
                     </li>
                   </ul>
                 </div>
@@ -120,8 +123,10 @@ export default function Page({ params }: PageProps) {
                       libraries for TED-Ed, utilizing Zeroheight and Lookbook.
                     </li>
                     <li>
-                      Developed a company playbook outlining company philosophy,
-                      design and development process, and strategic approaches.
+                      Developed a playbook outlining company philosophy, design
+                      and development process, and strategic approaches to
+                      product discovery and implementation, which was adopted as
+                      the standard by all new team members.
                     </li>
                   </ul>
                 </div>
@@ -139,14 +144,13 @@ export default function Page({ params }: PageProps) {
                     </li>
                     <li>
                       <span className="font-bold">American University</span>:
-                      Led development effort in creating a CSS framework for the
-                      release of american.edu, and upon which subsequent sub
-                      brand sites could be built and maintained.
+                      Developed a frontend framework for release of their
+                      award-winning site and subsequent child site spinoffs.
                     </li>
                     <li>
-                      <span className="font-bold">Royal Caribbean</span>: Led a
-                      team of developers in architecting a scalable component
-                      system to support purchase flows and modular site content.
+                      <span className="font-bold">Royal Caribbean</span>: Led
+                      development efforts for company website rebrand and
+                      updated purchase flows.
                     </li>
                   </ul>
                 </div>
@@ -158,15 +162,13 @@ export default function Page({ params }: PageProps) {
                   <ul className="list-disc pl-5">
                     <li>
                       <span className="font-bold">iVillage</span>: Orchestrated
-                      development efforts for sequential vertical releases with
-                      a focus on performance and capabilities which could
-                      accommodate iVillage’s user base of 21.4 million monthly
-                      visitors.
+                      vertical releases to accommodate iVillage’s user base of
+                      21.4 million users.
                     </li>
                     <li>
                       <span className="font-bold">Nintendo</span>: Launched an
-                      interactive web experience for Punch-Out!!, a Wii game
-                      which sold 1.27 million copies.
+                      interactive web experience for Punch-Out!!, a game selling
+                      1.27 million copies.
                     </li>
                     <li>
                       <span className="font-bold">FX Networks</span>: Developed
@@ -174,9 +176,9 @@ export default function Page({ params }: PageProps) {
                       redesigned fxnetworks.com in the run-up to a fall kickoff.
                     </li>
                     <li>
-                      Created interactive flight visualizations and various
-                      frontend experiences for{" "}
-                      <span className="font-bold">JetBlue</span>.
+                      <span className="font-bold">JetBlue</span>: Created
+                      interactive flight path visualizations and various
+                      frontend experiences.
                     </li>
                   </ul>
                 </div>
