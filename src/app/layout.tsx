@@ -24,13 +24,13 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en" className="antialiased" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:font-light dark:text-neutral-50`}
+      >
         <ThemeProvider attribute="class">
-          <main className="grid min-h-screen grid-cols-1 grid-rows-[auto,1fr,auto] bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:font-light dark:text-neutral-50">
+          <main className="grid min-h-screen grid-cols-1 grid-rows-[auto,1fr,auto]">
             <Navbar />
-            <div className="mx-auto mt-20 flex w-full flex-col items-start px-4 md:px-6">
-              {children}
-            </div>
+            {children}
             <Footer />
           </main>
         </ThemeProvider>
