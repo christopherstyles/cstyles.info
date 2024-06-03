@@ -25,7 +25,17 @@ export default function Worksheet({ project }: WorksheetProps) {
         </section>
         {project.links && project.links.length > 0 && (
           <section className="flex flex-col gap-8">
-            <h2 className="text-3xl">Visit</h2>
+            <h2 className="text-3xl">
+              <a
+                aria-label={`View ${project.links[0].title} (opens in a new tab)`}
+                className="group"
+                href={project.links[0].href}
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Visit
+              </a>
+            </h2>
             <ul className="flex flex-col gap-4">
               {project.links.map((link) => (
                 <li key={link.href}>
