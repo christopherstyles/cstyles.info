@@ -2,6 +2,84 @@
   "projects": [
     {
       "agency": {
+        "prefix": "Agency: ",
+        "name": "Bletchley Park",
+        "url": "https://www.bletchley.co/"
+      },
+      "challenge": "The challenge was to build a platform that seamlessly integrates the discovery of emerging artists with a robust bespoke backend, empowering station managers to curate live performance feeds and generate personalized recommendations.",
+      "deck": "Live Sessions brings you the best videos of live music sessions from across the US. With national and local playlists, live webcasts of performances, and compelling coverage of emerging and proven artists, Live Sessions is NPR Music’s video connection to public radio music stations providing you the most exciting live performance content from around the country, updated daily.",
+      "frameColorStart": "#E6B79B",
+      "frameColorEnd": "#E6B79B",
+      "links": [
+        {
+          "href": "https://livesessions.npr.org",
+          "title": "NPR Live Sessions"
+        }
+      ],
+      "position": 1,
+      "posterImages": [
+        {
+          "caption": "",
+          "src": "/images/npr-live-sessions/board.jpg",
+          "alt": ""
+        },
+        {
+          "caption": "",
+          "src": "/images/npr-live-sessions/home-2.jpg",
+          "alt": ""
+        }
+      ],
+      "roles": [
+        {
+          "backend": true,
+          "frontend": true,
+          "project": "livesessions.npr.org",
+          "technologies": "API Development, CircleCI, Custom Admin, ElasticSearch, Heroku, KeenIO, Postgres, Reactjs, Redis, Ruby on Rails, Zencoder"
+        }
+      ],
+      "screenshots": [
+        {
+          "caption": "",
+          "src": "/images/npr-live-sessions/home-1.jpg",
+          "alt": ""
+        },
+        {
+          "caption": "",
+          "src": "/images/npr-live-sessions/home-2.jpg",
+          "alt": ""
+        },
+        {
+          "caption": "",
+          "src": "/images/npr-live-sessions/grid-1.jpg",
+          "alt": ""
+        },
+        {
+          "caption": "",
+          "src": "/images/npr-live-sessions/grid-2.jpg",
+          "alt": ""
+        },
+        {
+          "caption": "",
+          "src": "/images/npr-live-sessions/devices-02.jpg",
+          "alt": ""
+        }
+      ],
+      "slug": "npr-live-sessions",
+      "stack": [
+        "CircleCI",
+        "ElasticSearch",
+        "Heroku",
+        "KeenIO",
+        "Postgres",
+        "Reactjs",
+        "Redis",
+        "Ruby on Rails",
+        "Zencoder"
+      ],
+      "title": "NPR Live Sessions"
+    },
+    {
+      "agency": {
         "prefix": "Developed at ",
         "name": "Kongregate",
         "url": "https://www.kongregate.com/"
@@ -10,7 +88,7 @@
       "challenge": "By utilizing web components it was possible to create reusable custom elements which encapsulated their functionality away from the monolitic app codebase. This avoided issues of overridden and unexpected behavior, and provided us with the confidence to use the design library in any Kongregate project moving forward. The system was created to be used intuitively by future developers, while maintaining a level of design fidelity we intended.",
       "frameColorStart": "#E478FA",
       "frameColorEnd": "#bc2e24",
-      "position": 1,
+      "position": 3,
       "posterImages": [
         {
           "caption": "",
@@ -179,84 +257,7 @@
       ],
       "title": "TED-Ed"
     },
-    {
-      "agency": {
-        "prefix": "Agency: ",
-        "name": "Bletchley Park",
-        "url": "https://www.bletchley.co/"
-      },
-      "challenge": "The challenge was to build a platform that seamlessly integrates the discovery of emerging artists with a robust bespoke backend, empowering station managers to curate live performance feeds and generate personalized recommendations.",
-      "deck": "Live Sessions brings you the best videos of live music sessions from across the US. With national and local playlists, live webcasts of performances, and compelling coverage of emerging and proven artists, Live Sessions is NPR Music’s video connection to public radio music stations providing you the most exciting live performance content from around the country, updated daily.",
-      "frameColorStart": "#E6B79B",
-      "frameColorEnd": "#E6B79B",
-      "links": [
-        {
-          "href": "https://livesessions.npr.org",
-          "title": "NPR Live Sessions"
-        }
-      ],
-      "position": 3,
-      "posterImages": [
-        {
-          "caption": "",
-          "src": "/images/npr-live-sessions/home-2.jpg",
-          "alt": ""
-        },
-        {
-          "caption": "",
-          "src": "/images/npr-live-sessions/board.jpg",
-          "alt": ""
-        }
-      ],
-      "roles": [
-        {
-          "backend": true,
-          "frontend": true,
-          "project": "livesessions.npr.org",
-          "technologies": "API Development, CircleCI, Custom Admin, ElasticSearch, Heroku, KeenIO, Postgres, Reactjs, Redis, Ruby on Rails, Zencoder"
-        }
-      ],
-      "screenshots": [
-        {
-          "caption": "",
-          "src": "/images/npr-live-sessions/home-1.jpg",
-          "alt": ""
-        },
-        {
-          "caption": "",
-          "src": "/images/npr-live-sessions/home-2.jpg",
-          "alt": ""
-        },
-        {
-          "caption": "",
-          "src": "/images/npr-live-sessions/grid-1.jpg",
-          "alt": ""
-        },
-        {
-          "caption": "",
-          "src": "/images/npr-live-sessions/grid-2.jpg",
-          "alt": ""
-        },
-        {
-          "caption": "",
-          "src": "/images/npr-live-sessions/devices-02.jpg",
-          "alt": ""
-        }
-      ],
-      "slug": "npr-live-sessions",
-      "stack": [
-        "CircleCI",
-        "ElasticSearch",
-        "Heroku",
-        "KeenIO",
-        "Postgres",
-        "Reactjs",
-        "Redis",
-        "Ruby on Rails",
-        "Zencoder"
-      ],
-      "title": "NPR Live Sessions"
-    },
+
     {
       "agency": {
         "prefix": "Agency: ",
@@ -384,6 +385,11 @@
       "posterImages": [
         {
           "caption": "",
+          "src": "/images/allthefarms/home.jpg",
+          "alt": ""
+        },
+        {
+          "caption": "",
           "src": "/images/allthefarms/search-filters.jpg",
           "alt": ""
         },
@@ -463,12 +469,12 @@
       "posterImages": [
         {
           "caption": "",
-          "src": "/images/splice-today/logos-01.jpg",
+          "src": "/images/splice-today/board.jpg",
           "alt": ""
         },
         {
           "caption": "",
-          "src": "/images/splice-today/board.jpg",
+          "src": "/images/splice-today/logos-01.jpg",
           "alt": ""
         }
       ],
