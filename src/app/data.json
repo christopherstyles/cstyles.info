@@ -32,6 +32,7 @@
       "roles": [
         {
           "backend": true,
+          "description": "",
           "frontend": true,
           "project": "livesessions.npr.org",
           "technologies": "API Development, CircleCI, Custom Admin, ElasticSearch, Heroku, KeenIO, Postgres, Reactjs, Redis, Ruby on Rails, Zencoder"
@@ -99,12 +100,14 @@
       "roles": [
         {
           "backend": false,
+          "description": "Working closely with Kongregate’s Sr. Product Designer, we developed a new design system that could be used across all Kongregate products. This included a new color palette, typography, and a rich set of components that could be used to build new features and pages.\n\nOur small team of developers used design tokens from Figma, and built web components using the Lit Framework. We also used Storybook to document and test the components, and an NX monorepo to manage the project. We integrated the new design system into the primary Kongregate Rails app, using Hotwire/Turbo, StimulusJS, View Components, and Lookbook.",
           "frontend": true,
           "project": "Konstruct UI",
           "technologies": "Figma, Lit Web Components, NX Monorepo, Storybook"
         },
         {
           "backend": true,
+          "description": "",
           "frontend": true,
           "project": "kongregate.com (Rails integration)",
           "technologies": "Figma, Hotwire/Turbo, Ruby on Rails, StimulusJS, View Components, and Lookbook"
@@ -197,6 +200,7 @@
       "roles": [
         {
           "backend": true,
+          "description": "",
           "frontend": true,
           "project": "ed.ted.com",
           "technologies": "Cloudinary, CircleCI, Design Systems, Elasticsearch, Heroku, Hotwire, Lookbook, Ruby on Rails, StimulusJS, TailwindCSS, Turbo, View Components, Zeroheight"
@@ -298,18 +302,21 @@
       "roles": [
         {
           "backend": false,
+          "description": "",
           "frontend": true,
           "project": "thirdway.org",
           "technologies": "Apollo GraphQL, Craft CMS, Google Maps, GraphQL, Imgix, React, TailwindCSS"
         },
         {
           "backend": false,
+          "description": "",
           "frontend": true,
           "project": "aeequity.org",
           "technologies": "Apollo GraphQL, Craft CMS, Google Maps, GraphQL, Imgix, NextJS, React, TailwindCSS"
         },
         {
           "backend": false,
+          "description": "",
           "frontend": true,
           "project": "carbonfreeeurope.org",
           "technologies": "Contentful, GraphQL, NextJS, React, TailwindCSS"
@@ -402,6 +409,7 @@
       "roles": [
         {
           "backend": true,
+          "description": "",
           "frontend": true,
           "project": "allthefarms.com",
           "technologies": "Ag-tech, Hotwire, Mapbox, Meilisearch, New Relic APM, Ruby on Rails, Sidekiq, StimulusJS, TailwindCSS, Turbo, View Components"
@@ -481,6 +489,7 @@
       "roles": [
         {
           "backend": true,
+          "description": "",
           "frontend": true,
           "project": "splicetoday.com",
           "technologies": "API Development, AWS Administration, Bootstrap, Imgix, Memcached, New Relic APM, Postgres, Redis, Ruby on Rails, Sidekiq"
