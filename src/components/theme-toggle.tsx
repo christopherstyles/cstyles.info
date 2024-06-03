@@ -1,24 +1,14 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-import {
-  WiMoonAltWaxingCrescent4,
-  WiSolarEclipse,
-  WiSunrise,
-} from "react-icons/wi";
+import { WiMoonAltWaxingCrescent4, WiSunrise } from "react-icons/wi";
 
 export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme, theme } = useTheme();
 
   const setNextTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else if (theme === "dark") {
-      setTheme("system");
-    } else if (theme === "system") {
-      setTheme("light");
-    }
+    setTheme(resolvedTheme === "light" ? "dark" : "light");
   };
 
   useEffect(() => {
@@ -37,27 +27,21 @@ export default function ThemeToggle() {
         type="button"
         onClick={() => setNextTheme()}
       >
-        {theme === "light" && (
+        {resolvedTheme === "light" && (
           <>
             <WiSunrise className="size-5" />
             <span className="sr-only">Toggle theme</span>
           </>
         )}
-        {theme === "dark" && (
+        {resolvedTheme === "dark" && (
           <>
             <WiMoonAltWaxingCrescent4 className="size-5" />
             <span className="sr-only">Toggle theme</span>
           </>
         )}
-        {theme === "system" && (
-          <>
-            <WiSolarEclipse className="size-5" />
-            <span className="sr-only">Toggle theme</span>
-          </>
-        )}
       </button>
-      <div className="pointer-events-none absolute -bottom-9 left-1/2 scale-95 whitespace-nowrap rounded px-1.5 py-0.5 text-xs capitalize text-neutral-900 opacity-0 transition-all duration-200 ease-[cubic-bezier(0.76,0,0.24,1)] [transform:rotateX(90deg)_translateY(0)_translateX(-50%)] group-hover/theme-toggle:opacity-100 group-hover/theme-toggle:[transform:rotateX(0deg)_translateY(-40%)_translateX(-50%)] dark:text-white">
-        {theme}
+      <div className="pointer-events-none absolute -bottom-9 left-1/2 scale-95 whitespace-nowrap rounded px-1.5 py-0.5 text-xs capitalize text-neutral-900 opacity-0 transition-all duration-200 ease-[cubic-bezier(0.76,0,0.24,1)] [transform:rotateX(90deg)_translateY(0)_translateX(-50%)_scale(0.9)] group-hover/theme-toggle:opacity-100 group-hover/theme-toggle:[transform:rotateX(0deg)_translateY(-40%)_translateX(-50%)_scale(1)] dark:text-white">
+        {theme} Mode
       </div>
     </div>
   );
