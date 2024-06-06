@@ -18,7 +18,7 @@ export default function Navbar() {
             href="/"
             title="Home page link"
           >
-            <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 font-semibold transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-800">
+            <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 font-semibold transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700">
               <TfiWorld className="size-5" />
             </div>
           </Link>
@@ -27,12 +27,12 @@ export default function Navbar() {
           <nav className="flex items-center gap-2 rounded-full text-sm uppercase backdrop-blur-md dark:font-light md:items-center">
             <ThemeToggle />
             <Link href="/about">
-              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-800">
+              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700">
                 About
               </div>
             </Link>
             <Link href="/cv">
-              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-800">
+              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700">
                 CV
               </div>
             </Link>
