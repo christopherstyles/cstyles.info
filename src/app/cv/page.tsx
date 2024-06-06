@@ -8,7 +8,7 @@ export default function Page({ params }: PageProps) {
   return (
     <div className="mx-auto mt-20 flex w-full flex-col items-start px-4 pt-10 md:px-6 md:pt-32">
       <Container>
-        <div className="text-lg">
+        <div className="max-w-[960px] text-lg">
           <h1 className="sr-only mb-36 text-5xl">Curriculum Vitae</h1>
           <div className="mb-40 flex flex-col gap-24">
             <section className="flex flex-col gap-4">

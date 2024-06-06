@@ -3,5 +3,7 @@ interface ContainerProps {
 }
 
 export default function Container({ children }: ContainerProps) {
-  return <section className="max-w-[1200px] xl:mx-auto">{children}</section>;
+  return (
+    <section className="w-full max-w-[1200px] xl:mx-auto">{children}</section>
+  );
 }
