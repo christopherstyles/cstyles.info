@@ -54,10 +54,10 @@ export default function Page({ params }: PageProps) {
                   </h3>
                   <ul className="list-disc pl-5">
                     <li>
-                      Collaborated with product designers and developers to
-                      revamp and rebrand the Kongregate platform and website,
-                      enhancing performance and ensuring a seamless experience
-                      for 40,000+ daily users.
+                      Led platform and website rebrand development effort, to
+                      support 40,000+ daily users. This work resulted in 40% SEO
+                      rankings improvement, 25% Core Vitals improvement, and
+                      per-user gameplay increase of 15%.
                     </li>
 
                     <li>
