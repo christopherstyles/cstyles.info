@@ -11,7 +11,10 @@ interface PageProps {
 }
 
 export default async function Page({ params }: PageProps) {
-  const file = await fs.readFile(`${process.cwd()}/src/app/data.json`, "utf8");
+  const file = await fs.readFile(
+    `${process.cwd()}/src/data/projects.json`,
+    "utf8",
+  );
   const data = JSON.parse(file);
 
   return (
@@ -25,8 +28,8 @@ export default async function Page({ params }: PageProps) {
           </p>
         </div>
 
-        <section className="gap-x-15 mb-20 grid grid-cols-1 gap-y-16 md:grid-cols-2">
-          {data.projects
+        <section className="mb-20 grid grid-cols-1 gap-x-15 gap-y-16 md:grid-cols-2">
+          {data
             .sort((a: Project, b: Project) => a.position - b.position)
             .map((project: Project, index: number) => (
               <FadeUp key={project.slug}>
