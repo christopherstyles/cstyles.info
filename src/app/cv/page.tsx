@@ -61,14 +61,16 @@ export default async function Page() {
             <FadeUp>
               <section className="flex flex-col gap-4 pt-12">
                 <h2 className="text-2xl">Education</h2>
-                <p>Maryland Institute College of Art, BA in Graphic Design</p>
+                <p className="text-sm">
+                  Maryland Institute College of Art, BA in Graphic Design
+                </p>
               </section>
             </FadeUp>
 
             <FadeUp>
-              <section className="flex flex-col gap-6 border-t border-neutral-300 pt-16 dark:border-neutral-600">
+              <section className="flex flex-col gap-6 dark:border-neutral-600">
                 <h2 className="text-2xl">Skills</h2>
-                <ul className="space-y-6">
+                <ul className="space-y-6 text-sm">
                   <li>
                     <div className="font-bold">Languages</div>
                     <p className="font-normal">
@@ -98,9 +100,9 @@ export default async function Page() {
             </FadeUp>
 
             <FadeUp>
-              <section className="flex flex-col gap-4 border-t border-neutral-300 pt-16 dark:border-neutral-600">
+              <section className="flex flex-col gap-4 dark:border-neutral-600">
                 <h2 className="text-2xl">Awards</h2>
-                <ul className="list-disc pl-5">
+                <ul className="list-disc pl-5 text-sm">
                   <li>
                     2013 Webby in Education category for{" "}
                     <span className="italic">TED-Ed</span>
