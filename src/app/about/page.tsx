@@ -13,7 +13,7 @@ export default function Page({ params }: PageProps) {
         <div className="max-w-[960px]">
           <h1 className="sr-only mb-36 text-5xl">Chris Styles</h1>
           <div className="flex flex-col gap-12 md:mb-24 md:flex-row">
-            <div className="relative w-1/2 sm:w-1/3 md:w-1/4 md:flex-shrink-0">
+            <div className="relative w-1/3 md:w-1/5 md:flex-shrink-0">
               <Image
                 alt="Chris standing in a northwest forest during Spring, while holding Finley (a standard wire-haired dachshund)"
                 className=""
@@ -27,11 +27,6 @@ export default function Page({ params }: PageProps) {
               />
             </div>
             <div className="mb-40 flex flex-col gap-12">
-              <p className="text-2xl">
-                Chris Styles is a design-focused software engineer working to
-                create beautiful, functional, and accessible digital
-                experiences.
-              </p>
               <p className="text-lg">
                 Chris was born in North Carolina and studied at the{" "}
                 <a
@@ -44,8 +39,8 @@ export default function Page({ params }: PageProps) {
                 </a>{" "}
                 in Baltimore. He has worked in the design and technology
                 industry for nearly two decades, leading teams and projects for
-                clients like VuHaus (NPR Live Sessions), FX Networks, Nintendo,
-                and TED-Ed. He lives with his partner{" "}
+                clients like NPR Live Sessions, FX Networks, Nintendo, and
+                TED-Ed. He lives with his partner{" "}
                 <a
                   aria-label="Landbird (opens in a new tab)"
                   href="http://www.landbird.com/"
@@ -54,8 +49,8 @@ export default function Page({ params }: PageProps) {
                 >
                   @landbird
                 </a>
-                , three dogs, a raft of ducks, a lovely goose, and some
-                chickens.
+                , three dogs, a raft of ducks, a lovely goose, and a few
+                mischievous chickens.
               </p>
               <p className="text-lg">
                 If you’re interesting in chatting about a potential
