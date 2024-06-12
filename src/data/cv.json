@@ -1,0 +1,124 @@
+[
+  {
+    "agency": "Kongregate",
+    "date": "2021 – 2024",
+    "highlights": [
+      "Led platform and website rebrand development effort, to support 40,000+ daily users. This work resulted in 40% SEO rankings improvement, 25% Core Vitals improvement, and per-user gameplay increase of 15%.",
+      "Collaborated with graphic artists, comic inkers, and storytellers to create a generative NFT collection and website for the Blood Vessels web3 RPG, consisting of thousands of distinct layer-based art images.",
+      "Created a character card generator for the Blood Vessels web3 RPG game, which could produce near limitless role-based character data with randomized traits and attributes, presented in an easy to parse UI.",
+      "Created a dashboard enabling teams to review visual changes across NFT collection generation runs by providing feature filters for comparison, reducing team review time by nearly 80%."
+    ],
+    "id": "e9fc3bc6-3297-40b4-b1c5-602570a04866",
+    "location": "Remote",
+    "title": "Senior Software Engineer"
+  },
+  {
+    "agency": "Bletchley Park: Design Engineering",
+    "date": "2014 – 2021",
+    "highlights": [
+      "Led development of 8+ projects for enterprise clients, SMB customers, and internal stakeholders.",
+      "NPR Live Sessions: Developed a bespoke content management system for station managers of 20+ national radio stations, providing the ability for artist management, automatic video transcoding, music, and artist recommendations. Created a versioned API for third-party tool integration.",
+      "Built a modular React frontend framework for political think-tank organizations to easily deploy across multiple initiatives."
+    ],
+    "id": "bf503913-0fda-467c-a2d2-c0bf063503dc",
+    "location": "Remote",
+    "title": "Senior Software Engineer"
+  },
+  {
+    "agency": "A Hundred Years",
+    "date": "2012 – 2014",
+    "highlights": [
+      "Led full-stack development efforts for TED-Ed, TED City, WorldScienceU, 100yrs, and various microsites.",
+      "Contributed to design system style guides and component libraries for TED-Ed, utilizing Zeroheight and Lookbook.",
+      "Developed a playbook outlining company philosophy, design and development process, and strategic approaches to product discovery and implementation, which was adopted as the standard by all new team members."
+    ],
+    "id": "92f49c70-8a2f-48a5-81d8-bca248cd3375",
+    "location": "Remote",
+    "title": "Tech Lead"
+  },
+  {
+    "agency": "HUGE",
+    "date": "2010 – 2012",
+    "highlights": [
+      "Directed teams of 5-10 engineers in development and delivery of multiple full-stack projects for clients.",
+      "American University: Developed a frontend framework for release of their award-winning site and subsequent child site spinoffs.",
+      "Royal Caribbean: Led development efforts for company website rebrand and updated purchase flows."
+    ],
+    "id": "afa530d1-0903-4f52-a688-bef209e971bc",
+    "location": "Remote, Los Angeles CA",
+    "title": "Principal Software Engineer"
+  },
+  {
+    "agency": "HUGE",
+    "date": "2008 – 2010",
+    "highlights": [
+      "iVillage: Orchestrated vertical releases to accommodate iVillage’s user base of 21.4 million users.",
+      "Nintendo: Launched an interactive web experience for Punch-Out!!, a game selling 1.27 million copies.",
+      "FX Networks: Developed high performance online experiences for the newly redesigned fxnetworks.com in the run-up to a fall kickoff.",
+      "JetBlue: Created interactive flight path visualizations and various frontend experiences."
+    ],
+    "id": "e5d4591d-5092-4343-9dfa-49e7400d043c",
+    "location": "Remote, Brooklyn NY, Los Angeles CA",
+    "title": "Senior Software Engineer"
+  },
+  {
+    "agency": "Under Armour",
+    "date": "2008 – 2009",
+    "highlights": [
+      "Built interactive and updatable frontend microsites in Flash/Actionscript and Javascript for Under Armour Athletes Hunt, Under Armour Mountain Gear, and Under Armour Performance Training."
+    ],
+    "id": "3a66945c-334f-4bf6-9134-09cf6cfe2fee",
+    "location": "Remote, Baltimore MD",
+    "title": "Web Developer"
+  },
+  {
+    "agency": "Mammoth NYC",
+    "date": "2007 – 2008",
+    "highlights": [
+      "Led frontend development efforts for a wide range of web projects in the entertainment industry, such as Young Frankenstein the Musical, One Hour Photo, Dragon Dynasty, IFC Entertainment, and IFC In Theaters."
+    ],
+    "id": "c432ca72-5608-4591-9eaf-6b50c9d8115e",
+    "location": "Remote, Brooklyn NY",
+    "title": "Web Developer"
+  },
+  {
+    "agency": "Splice Today",
+    "date": "2007 – 2010",
+    "highlights": [
+      "Built full-stack solution for a daily online magazine which receives millions of viewers per month. Included was a bespoke administration system for content editors and site managers to add and publish articles, monitor user comments, and upload media."
+    ],
+    "id": "21740e4a-61e8-443a-a6b7-74b9258c7c9b",
+    "location": "Baltimore MD",
+    "title": "Web Developer"
+  },
+  {
+    "agency": "Cooper Hewitt, Smithsonian Design Museum",
+    "date": "2007",
+    "highlights": [
+      "Built an interactive frontend experience for IDEO Selects: Works From the Permanent Collection."
+    ],
+    "id": "7cca9099-293b-42cd-bedf-c67e1a04c324",
+    "location": "Remote",
+    "title": "Web Developer"
+  },
+  {
+    "agency": "U.S. Green Building Council",
+    "date": "2007",
+    "highlights": [
+      "Created a feature animation for “Green School”, played as the opener to the Greenbuild 2008 Boston/Chicago Conference."
+    ],
+    "id": "9d16472b-a998-4ea1-8399-4250899c4c68",
+    "location": "Baltimore MD",
+    "title": "Animator/Video"
+  },
+  {
+    "agency": "Fastspot",
+    "date": "2001 – 2007",
+    "highlights": [
+      "Led technology efforts in all aspects of frontend and backend development, animation and interactive experience, for a wide range of clients including Cambridge Architectural Mesh, Cleveland Institute of Art, Maryland Institute College of Art, and Cooper Hewitt, Smithsonian Design Museum."
+    ],
+    "id": "0cdf785b-b2bb-4ea9-ba5d-537600ab47e1",
+    "location": "",
+    "title": "Director of Design Technology"
+  }
+]

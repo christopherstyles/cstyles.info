@@ -40,3 +40,12 @@ export type ProjectLink = {
   href: string;
   title: string;
 };
+
+export type WorkRole = {
+  agency: string;
+  date: string;
+  highlights: string[];
+  id: string;
+  location: string;
+  title: string;
+};
