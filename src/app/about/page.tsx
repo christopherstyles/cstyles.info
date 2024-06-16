@@ -12,10 +12,10 @@ export default function Page({ params }: PageProps) {
     <div className="mx-auto mt-20 flex w-full flex-col items-start px-4 pt-10 md:px-6 md:pt-32">
       <Container>
         <div className="flex max-w-[1200px] flex-col gap-24">
-          <div className="mx-auto max-w-[960px]">
+          <div className="max-w-[960px]">
             <h1 className="sr-only mb-36 text-5xl">Chris Styles</h1>
-            <div className="flex flex-col gap-10 md:mb-24 md:flex-row">
-              <div className="relative w-1/2 md:w-1/5 md:flex-shrink-0">
+            <div className="flex flex-col gap-12 md:mb-24 md:flex-row">
+              <div className="relative w-1/3 md:w-1/5 md:flex-shrink-0">
                 <Image
                   alt="Chris standing in a northwest forest during Spring, while holding Finley (a standard wire-haired dachshund)"
                   className=""
