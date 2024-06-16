@@ -40,14 +40,14 @@ export default async function Page() {
                   >
                     <div className="flex flex-col gap-1">
                       <h3 className="text-xl font-medium">{item.title}</h3>
-                      <p className="text-sm">{item.agency}</p>
+                      <p>{item.agency}</p>
                     </div>
                     <RoleDate className="flex md:hidden" role={item} />
-                    <div className="flex items-center gap-2 text-sm">
+                    <div className="flex items-center gap-2">
                       <PiMapPin className="h-4 w-4" />
                       <p>{item.location}</p>
                     </div>
-                    <ul className="list-disc space-y-4 pl-4 text-sm">
+                    <ul className="list-disc space-y-4 pl-4">
                       {item.highlights.map((highlight: string) => (
                         <li key={highlight}>{highlight}</li>
                       ))}
@@ -61,16 +61,14 @@ export default async function Page() {
             <FadeUp>
               <section className="flex flex-col gap-4 pt-12">
                 <h2 className="text-2xl">Education</h2>
-                <p className="text-sm">
-                  Maryland Institute College of Art, BA in Graphic Design
-                </p>
+                <p>Maryland Institute College of Art, BA in Graphic Design</p>
               </section>
             </FadeUp>
 
             <FadeUp>
               <section className="flex flex-col gap-6 dark:border-neutral-600">
                 <h2 className="text-2xl">Skills</h2>
-                <ul className="space-y-6 text-sm">
+                <ul className="space-y-6">
                   <li>
                     <div className="font-bold">Languages</div>
                     <p className="font-normal">
@@ -102,7 +100,7 @@ export default async function Page() {
             <FadeUp>
               <section className="flex flex-col gap-4 dark:border-neutral-600">
                 <h2 className="text-2xl">Awards</h2>
-                <ul className="list-disc pl-5 text-sm">
+                <ul className="list-disc pl-5">
                   <li>
                     2013 Webby in Education category for{" "}
                     <span className="italic">TED-Ed</span>
