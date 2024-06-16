@@ -67,7 +67,7 @@ export default function Page({ params }: PageProps) {
             </div>
           </div>
 
-          <div className="border-t border-gray-300 pt-24">
+          <div className="border-t border-neutral-300 pt-24 dark:border-neutral-600">
             <Photos />
           </div>
 
