@@ -15,6 +15,7 @@ export type Project = {
   links: ProjectLink[];
   position: number;
   posterImages: Screenshot[];
+  primaryTechnologies: string[];
   roles: Role[];
   screenshots: Screenshot[];
   slug: string;

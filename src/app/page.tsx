@@ -4,6 +4,7 @@ import { promises as fs } from "node:fs";
 
 import Container from "@/components/container";
 import FadeUp from "@/components/fade-up";
+import Tag from "@/components/tag";
 import type { Project } from "@/components/types";
 
 interface PageProps {
@@ -46,9 +47,16 @@ export default async function Page({ params }: PageProps) {
                     <h2 className="text-2xl font-medium leading-[18px]">
                       {project.title}
                     </h2>
-                    <p className="text-base font-normal opacity-40">
-                      {project.agency.prefix} {project.agency.name}
-                    </p>
+                    <div className="flex w-full items-center justify-between text-sm font-normal">
+                      <p>
+                        {project.agency.prefix} {project.agency.name}
+                      </p>
+                      <div className="flex gap-2">
+                        {project.primaryTechnologies.map((technology) => (
+                          <Tag key={technology} name={technology} size="xs" />
+                        ))}
+                      </div>
+                    </div>
                   </figcaption>
                   <div className="relative flex h-full w-full flex-col self-stretch bg-gradient-to-b from-neutral-200 to-neutral-300 p-12 dark:from-neutral-600 dark:to-neutral-700">
                     <Image

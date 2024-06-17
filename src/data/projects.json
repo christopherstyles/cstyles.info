@@ -28,6 +28,7 @@
         "alt": ""
       }
     ],
+    "primaryTechnologies": ["React", "Rails"],
     "roles": [
       {
         "backend": true,
@@ -96,6 +97,7 @@
         "alt": ""
       }
     ],
+    "primaryTechnologies": ["Lit Framework", "Rails"],
     "roles": [
       {
         "backend": false,
@@ -196,6 +198,7 @@
         "alt": ""
       }
     ],
+    "primaryTechnologies": ["Rails"],
     "roles": [
       {
         "backend": true,
@@ -260,7 +263,6 @@
     ],
     "title": "TED-Ed"
   },
-
   {
     "agency": {
       "prefix": "Agency: ",
@@ -298,6 +300,7 @@
         "alt": ""
       }
     ],
+    "primaryTechnologies": ["React"],
     "roles": [
       {
         "backend": false,
@@ -405,6 +408,7 @@
         "alt": ""
       }
     ],
+    "primaryTechnologies": ["Rails"],
     "roles": [
       {
         "backend": true,
@@ -485,6 +489,7 @@
         "alt": ""
       }
     ],
+    "primaryTechnologies": ["Rails"],
     "roles": [
       {
         "backend": true,
