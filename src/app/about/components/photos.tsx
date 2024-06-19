@@ -18,7 +18,7 @@ export default function Photos() {
       <Photo image={gunnar} title="Gunnar" />
       <Photo image={charlieAndTina} title="Charlie and Tina" />
       <Photo image={ducks} title="Duck Fam" />
-      <Photo image={trillium} title="Trillium" />
+      <Photo image={trillium} title="Trillium at Beazell Memorial Forest, OR" />
       <Photo image={foxglove} title="Foxglove at Fort Hoskins, OR" />
       <Photo image={beach} title="Beach Combing" />
     </div>
