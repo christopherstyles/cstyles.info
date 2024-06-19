@@ -51,9 +51,9 @@ export default function Page({ params }: PageProps) {
                     target="_blank"
                   >
                     @landbird
-                  </a>
-                  , three dogs, a raft of ducks, a lovely goose, and a few
-                  mischievous chickens.
+                  </a>{" "}
+                  and their three dogs, two chickens, five ducks, and a lovely
+                  goose.
                 </p>
                 <p className="text-base">
                   If you’re interested in chatting about a potential
@@ -67,58 +67,58 @@ export default function Page({ params }: PageProps) {
             </div>
           </div>
 
-          <div className="border-t border-neutral-300 pt-24 dark:border-neutral-600">
+          <section className="border-t border-neutral-300 pt-24 dark:border-neutral-600">
+            <h2 className="text-xl">Life</h2>
+          </section>
+
+          <div>
             <Photos />
           </div>
 
-          <div className="flex flex-col gap-16 border-t border-neutral-300 pt-16 dark:border-neutral-600">
-            <div className="grid grid-cols-1 md:grid-cols-2">
-              <h3 className="mb-4 text-base font-semibold uppercase md:mb-0">
-                Contact
-              </h3>
-              <div>
-                <a
-                  aria-label="Email Chris Styles (opens in the default mail application)"
-                  href="mailto:cstyles@hey.com"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  cstyles@hey.com
-                </a>
-              </div>
+          <section className="flex flex-col gap-4">
+            <h2 className="text-xl">Contact</h2>
+            <div>
+              <a
+                aria-label="Email Chris Styles (opens in the default mail application)"
+                href="mailto:cstyles@hey.com"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                cstyles@hey.com
+              </a>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2">
-              <h3 className="mb-4 text-base font-semibold uppercase md:mb-0">
-                Follow
-              </h3>
-              <div className="flex flex-col gap-3">
-                <a
-                  aria-label="Visit Chris’s Instagram (opens in a new window)"
-                  href="https://www.instagram.com/christopherstyles/"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  Instagram
-                </a>
-                <a
-                  aria-label="Visit Chris’s LinkedIn (opens in a new window)"
-                  href="https://www.linkedin.com/in/christopherstyles/"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  LinkedIn
-                </a>
-                <a
-                  aria-label="Visit Chris’s GitHub (opens in a new window)"
-                  href="https://www.github.com/christopherstyles/"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  GitHub
-                </a>
-              </div>
+          </section>
+
+          <section className="flex flex-col gap-4 border-t border-neutral-300 pt-24 dark:border-neutral-600">
+            <h2 className="text-xl">Follow</h2>
+
+            <div className="flex flex-col gap-3">
+              <a
+                aria-label="Visit Chris’s Instagram (opens in a new window)"
+                href="https://www.instagram.com/christopherstyles/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Instagram
+              </a>
+              <a
+                aria-label="Visit Chris’s LinkedIn (opens in a new window)"
+                href="https://www.linkedin.com/in/christopherstyles/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+              <a
+                aria-label="Visit Chris’s GitHub (opens in a new window)"
+                href="https://www.github.com/christopherstyles/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                GitHub
+              </a>
             </div>
-          </div>
+          </section>
         </div>
       </Container>
     </div>
