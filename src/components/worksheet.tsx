@@ -30,7 +30,7 @@ export default function Worksheet({ project }: WorksheetProps) {
               <h2 className="text-3xl">
                 <a
                   aria-label={`View ${project.links[0].title} (opens in a new tab)`}
-                  className="group"
+                  className="group no-underline"
                   href={project.links[0].href}
                   rel="noreferrer noopener"
                   target="_blank"

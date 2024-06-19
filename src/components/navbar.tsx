@@ -15,6 +15,7 @@ export default function Navbar() {
         <div className="rounded-full opacity-100 backdrop-blur-md transition-all duration-200">
           <Link
             aria-label="Go to the home page"
+            className="no-underline"
             href="/"
             title="Home page link"
           >
@@ -26,12 +27,12 @@ export default function Navbar() {
         <div>
           <nav className="flex items-center gap-2 rounded-full text-sm uppercase backdrop-blur-md dark:font-light md:items-center">
             <ThemeToggle />
-            <Link href="/about">
+            <Link className="no-underline" href="/about">
               <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700">
                 About
               </div>
             </Link>
-            <Link href="/cv">
+            <Link className="no-underline" href="/cv">
               <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700">
                 CV
               </div>

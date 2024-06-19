@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-p a {
-  @apply underline decoration-dotted decoration-1 underline-offset-2 dark:decoration-1;
+a {
+  @apply underline decoration-1 underline-offset-2;
 }
 
 a:focus-visible,
