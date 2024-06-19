@@ -29,7 +29,7 @@ export default function Page({ params }: PageProps) {
                 />
               </div>
               <div className="flex flex-col gap-12">
-                <p className="text-lg">
+                <p className="text-xl">
                   Chris Styles was born in North Carolina and studied graphic
                   design at the{" "}
                   <a
@@ -55,7 +55,7 @@ export default function Page({ params }: PageProps) {
                   , three dogs, a raft of ducks, a lovely goose, and a few
                   mischievous chickens.
                 </p>
-                <p className="text-lg">
+                <p className="text-base">
                   If you’re interested in chatting about a potential
                   collaboration, or would just like to say hello, please{" "}
                   <a href="mailto:cstyles@hey.com" className="underline">
