@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 p a {
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
+  @apply underline decoration-dotted decoration-1 underline-offset-2 dark:decoration-1;
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline-color: theme("colors.neutral.900");
   outline-offset: 2px;
 }
 
 @media (prefers-color-scheme: dark) {
-  a:focus-visible {
+  a:focus-visible,
+  button:focus-visible {
     outline-color: theme("colors.white");
   }
 }

@@ -27,7 +27,7 @@ export default async function Page({ params }: PageProps) {
             A design-focused{" "}
             <a
               aria-label="If we’re not software engineers, then what are we? (opens in a new tab)"
-              className="underline decoration-dashed decoration-2 underline-offset-4 dark:decoration-1"
+              className="underline decoration-dotted decoration-2 underline-offset-4 dark:decoration-1"
               href="https://www.youtube.com/watch?v=9LfmrkyP81M&t=2805s"
               rel="noreferrer noopener"
               target="_blank"
