@@ -28,7 +28,7 @@
         "alt": ""
       }
     ],
-    "primaryTechnologies": ["React", "Rails"],
+    "primaryTechnologies": ["React", "Ruby on Rails"],
     "roles": [
       {
         "backend": true,
@@ -97,7 +97,7 @@
         "alt": ""
       }
     ],
-    "primaryTechnologies": ["Lit Framework", "Rails"],
+    "primaryTechnologies": ["Lit Framework", "Ruby on Rails"],
     "roles": [
       {
         "backend": false,
@@ -198,7 +198,7 @@
         "alt": ""
       }
     ],
-    "primaryTechnologies": ["Rails"],
+    "primaryTechnologies": ["Ruby on Rails"],
     "roles": [
       {
         "backend": true,
@@ -494,7 +494,7 @@
         "alt": ""
       }
     ],
-    "primaryTechnologies": ["Rails"],
+    "primaryTechnologies": ["Ruby on Rails"],
     "roles": [
       {
         "backend": true,
@@ -575,7 +575,7 @@
         "alt": ""
       }
     ],
-    "primaryTechnologies": ["Rails"],
+    "primaryTechnologies": ["Ruby on Rails"],
     "roles": [
       {
         "backend": true,
