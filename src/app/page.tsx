@@ -44,7 +44,7 @@ export default async function Page({ params }: PageProps) {
                   role="group"
                 >
                   <figcaption className="flex flex-col items-start gap-3">
-                    <h2 className="text-2xl font-medium leading-[18px]">
+                    <h2 className="line-clamp-1 text-2xl font-medium">
                       {project.title}
                     </h2>
                     <div className="flex w-full items-center justify-between text-sm font-normal">

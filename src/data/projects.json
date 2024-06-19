@@ -277,14 +277,6 @@
       {
         "href": "https://www.thirdway.org",
         "title": "Third Way"
-      },
-      {
-        "href": "https://www.aeequity.org",
-        "title": "Alliance for Entrepreneurial Equity"
-      },
-      {
-        "href": "https://www.carbonfreeeurope.org",
-        "title": "Carbon Free Europe"
       }
     ],
     "position": 4,
@@ -308,20 +300,6 @@
         "frontend": true,
         "project": "thirdway.org",
         "technologies": "Apollo GraphQL, Craft CMS, Google Maps, GraphQL, Imgix, React, TailwindCSS"
-      },
-      {
-        "backend": false,
-        "description": "",
-        "frontend": true,
-        "project": "aeequity.org",
-        "technologies": "Apollo GraphQL, Craft CMS, Google Maps, GraphQL, Imgix, NextJS, React, TailwindCSS"
-      },
-      {
-        "backend": false,
-        "description": "",
-        "frontend": true,
-        "project": "carbonfreeeurope.org",
-        "technologies": "Contentful, GraphQL, NextJS, React, TailwindCSS"
       }
     ],
     "screenshots": [
@@ -339,21 +317,6 @@
         "caption": "Third Way focuses on various policy areas, including: climate and energy, economy, education, health care, national security, politics, and social policy.",
         "src": "/images/third-way/areas-of-focus.jpg",
         "alt": "A screenshot of the Third Way website, showing their multiple areas of focus"
-      },
-      {
-        "caption": "AEE is a one-of-a-kind effort that develops and promotes federal policies that dramatically increase the opportunity for minority, female, and other disadvantaged entrepreneurs to start and expand successful businesses.",
-        "src": "/images/third-way/aeequity.jpg",
-        "alt": "A screenshot of the Alliance for Entrepreneurial Equity home page"
-      },
-      {
-        "caption": "The AEE website offers policy proposal downloads for content-rich issue pages.",
-        "src": "/images/third-way/aeequity-page.jpg",
-        "alt": "A screenshot of a ‘one-pager’ article on the Alliance for Entrepreneurial Equity website, showing the article page content and a download link"
-      },
-      {
-        "caption": "Carbon-Free Europe (CFE) was launched by Third Way’s Climate and Energy program at COP26 to build international support for a technology-inclusive climate agenda and encourage governments to maximise the next decade to meet climate goals.",
-        "src": "/images/third-way/carbonfreeeurope.jpg",
-        "alt": "A screenshot of the Carbon-Free Europe website home page"
       },
       {
         "caption": "",
@@ -376,6 +339,129 @@
   },
   {
     "agency": {
+      "prefix": "Agency: ",
+      "name": "Bletchley Park",
+      "url": "https://www.bletchley.co/"
+    },
+    "challenge": "The Carbon-Free Europe website brings together publications, policy initiatives, and environmental modeling studies to build international support for a technology-inclusive climate agenda.",
+    "deck": "Working towards a future where climate and energy policy across Europe is evidence-based, existing carbon-free solutions are rapidly deployed, and investment is readily available for the next generation technologies needed to get all the way to net-zero.",
+    "frameColorStart": "#21435d",
+    "frameColorEnd": "#21435d",
+    "links": [
+      {
+        "href": "https://www.carbonfreeeurope.org",
+        "title": "Carbon Free Europe"
+      }
+    ],
+    "position": 5,
+    "posterImages": [
+      {
+        "caption": "We are working to galvanise support across Europe for an ambitious decarbonisation agenda. Nations must have the option to deploy every clean energy technology necessary for the world to achieve net-zero emissions by 2050 at the latest.",
+        "src": "/images/carbon-free-europe/cover.jpg",
+        "alt": "A screenshot of Carbon-Free Europe’s home page"
+      }
+    ],
+    "primaryTechnologies": ["React"],
+    "roles": [
+      {
+        "backend": false,
+        "description": "",
+        "frontend": true,
+        "project": "carbonfreeeurope.org",
+        "technologies": "Contentful, GraphQL, NextJS, React, TailwindCSS"
+      }
+    ],
+    "screenshots": [
+      {
+        "caption": "We are working to galvanise support across Europe for an ambitious decarbonisation agenda. Nations must have the option to deploy every clean energy technology necessary for the world to achieve net-zero emissions by 2050 at the latest.",
+        "src": "/images/carbon-free-europe/cover.jpg",
+        "alt": "A screenshot of Carbon-Free Europe’s home page"
+      },
+      {
+        "caption": "Carbon-Free Europe (CFE) was launched by Third Way’s Climate and Energy program at COP26 to build international support for a technology-inclusive climate agenda and encourage governments to maximise the next decade to meet climate goals.",
+        "src": "/images/carbon-free-europe/carbonfreeeurope.jpg",
+        "alt": "A screenshot of the Carbon-Free Europe website home page"
+      }
+    ],
+    "slug": "carbon-free-europe",
+    "stack": [
+      "Contentful",
+      "Craft CMS",
+      "Google Maps",
+      "GraphQL",
+      "Imgix",
+      "Next.js",
+      "React",
+      "TailwindCSS"
+    ],
+    "title": "Carbon-Free Europe"
+  },
+  {
+    "agency": {
+      "prefix": "Agency: ",
+      "name": "Bletchley Park",
+      "url": "https://www.bletchley.co/"
+    },
+    "challenge": "The AEEquity website brings together research, proposals, events, and press releases to highlight what is possible in the federal policy arena.",
+    "deck": "This one-of-a-kind effort develops and promotes federal policies that dramatically increase the opportunity for minority, female, and other disadvantaged entrepreneurs to start and expand successful businesses.",
+    "frameColorStart": "#e04f39",
+    "frameColorEnd": "#e04f39",
+    "links": [
+      {
+        "href": "https://www.aeequity.org",
+        "title": "Alliance for Entrepreneurial Equity"
+      }
+    ],
+    "position": 6,
+    "posterImages": [
+      {
+        "caption": "AEE is a one-of-a-kind effort that develops and promotes federal policies that dramatically increase the opportunity for minority, female, and other disadvantaged entrepreneurs to start and expand successful businesses.",
+        "src": "/images/aeequity/aeequity.jpg",
+        "alt": "A screenshot of the Alliance for Entrepreneurial Equity home page"
+      }
+    ],
+    "primaryTechnologies": ["React"],
+    "roles": [
+      {
+        "backend": false,
+        "description": "",
+        "frontend": true,
+        "project": "aeequity.org",
+        "technologies": "Apollo GraphQL, Craft CMS, Google Maps, GraphQL, Imgix, NextJS, React, TailwindCSS"
+      }
+    ],
+    "screenshots": [
+      {
+        "caption": "AEE is a one-of-a-kind effort that develops and promotes federal policies that dramatically increase the opportunity for minority, female, and other disadvantaged entrepreneurs to start and expand successful businesses.",
+        "src": "/images/aeequity/aeequity.jpg",
+        "alt": "A screenshot of the Alliance for Entrepreneurial Equity home page"
+      },
+      {
+        "caption": "The AEE website offers policy proposal downloads for content-rich issue pages.",
+        "src": "/images/aeequity/aeequity-page.jpg",
+        "alt": "A screenshot of a ‘one-pager’ article on the Alliance for Entrepreneurial Equity website, showing the article page content and a download link"
+      },
+      {
+        "caption": "The AEE website offers policy proposal downloads for content-rich issue pages.",
+        "src": "/images/aeequity/aeequity-phones.jpg",
+        "alt": "A screenshot various AEE pages displayed on phone devices."
+      }
+    ],
+    "slug": "aeequity",
+    "stack": [
+      "Contentful",
+      "Craft CMS",
+      "Google Maps",
+      "GraphQL",
+      "Imgix",
+      "Next.js",
+      "React",
+      "TailwindCSS"
+    ],
+    "title": "Alliance for Entrepreneurial Equity"
+  },
+  {
+    "agency": {
       "prefix": "",
       "name": "Personal Project",
       "url": ""
@@ -390,7 +476,7 @@
         "title": "All The Farms"
       }
     ],
-    "position": 5,
+    "position": 7,
     "posterImages": [
       {
         "caption": "",
@@ -476,7 +562,7 @@
         "title": "Splice Today"
       }
     ],
-    "position": 6,
+    "position": 8,
     "posterImages": [
       {
         "caption": "",
@@ -539,5 +625,67 @@
       "Sidekiq"
     ],
     "title": "Splice Today"
+  },
+  {
+    "agency": {
+      "prefix": "Developed at ",
+      "name": "Kongregate",
+      "url": "https://www.kongregate.com/"
+    },
+    "challenge": "The challenge was to create a generative art NFT collection of rpg characters, and marketing website that tells the story of Chicago’s forgotten history.",
+    "deck": "A community-driven experience set in a forgotten era of Chicago’s history. Blood Vessels is both a role playing game and next generation NFT collection.",
+    "frameColorStart": "#ea1e25",
+    "frameColorEnd": "#ea1e25",
+    "links": [
+      {
+        "href": "https://www.bloodvessels.io",
+        "title": "Blood Vessels"
+      }
+    ],
+    "position": 9,
+    "posterImages": [
+      {
+        "caption": "",
+        "src": "/images/blood-vessels/blood-vessels-home.jpg",
+        "alt": ""
+      }
+    ],
+    "primaryTechnologies": ["React"],
+    "roles": [
+      {
+        "backend": true,
+        "description": "",
+        "frontend": true,
+        "project": "bloodvessels.io",
+        "technologies": "AWS Amplify, React, Next.js, TailwindCSS, Framer Motion, Hashlips Art Engine"
+      }
+    ],
+    "screenshots": [
+      {
+        "caption": "",
+        "src": "/images/blood-vessels/blood-vessels-home.jpg",
+        "alt": ""
+      },
+      {
+        "caption": "",
+        "src": "/images/blood-vessels/blood-vessels-purchase.jpg",
+        "alt": ""
+      },
+      {
+        "caption": "",
+        "src": "/images/blood-vessels/blood-vessels-cards.jpg",
+        "alt": ""
+      }
+    ],
+    "slug": "blood-vessels",
+    "stack": [
+      "AWS Amplify",
+      "React",
+      "Next.js",
+      "TailwindCSS",
+      "Framer Motion",
+      "Hashlips Art Engine"
+    ],
+    "title": "Blood Vessels"
   }
 ]

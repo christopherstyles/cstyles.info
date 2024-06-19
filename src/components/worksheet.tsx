@@ -1,5 +1,6 @@
-import { Carousel } from "@/components/carousel";
+import Image from "next/image";
 import { VscArrowRight } from "react-icons/vsc";
+
 import Container from "./container";
 import StackList from "./stack-list";
 import type { Project } from "./types";
@@ -68,8 +69,21 @@ export default function Worksheet({ project }: WorksheetProps) {
           )}
         </div>
       </div>
-      <section className="-mx-4 md:-mx-6">
-        <Carousel screenshots={project.screenshots} />
+      <section className="mx-auto mt-24 flex max-w-screen-md flex-col gap-24">
+        {project.screenshots.map((screenshot) => (
+          <Image
+            alt={`${screenshot.alt}`}
+            className="select-none rounded object-cover shadow-lg lg:shadow-2xl"
+            draggable={false}
+            height={1728}
+            key={screenshot.src}
+            loading="lazy"
+            quality={65}
+            sizes="(max-width: 768px) 100vw, 56rem"
+            src={screenshot.src}
+            width={2880}
+          />
+        ))}
       </section>
     </Container>
   );
