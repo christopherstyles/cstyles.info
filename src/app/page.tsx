@@ -24,8 +24,18 @@ export default async function Page({ params }: PageProps) {
         <div className="flex h-svh flex-col justify-center gap-12">
           <h1 className="mb-6 text-5xl md:mb-24">Chris Styles</h1>
           <p className="max-w-[48ch] text-pretty text-2xl">
-            A design-focused software engineer working to create beautiful,
-            functional, and accessible digital experiences.
+            A design-focused{" "}
+            <a
+              aria-label="If we’re not software engineers, then what are we? (opens in a new tab)"
+              className="underline decoration-dashed decoration-2 underline-offset-4 dark:decoration-1"
+              href="https://www.youtube.com/watch?v=9LfmrkyP81M&t=2805s"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              software writer
+            </a>{" "}
+            working to create beautiful, functional, and accessible digital
+            experiences.
           </p>
         </div>
       </Container>
