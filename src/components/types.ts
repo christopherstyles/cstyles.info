@@ -4,9 +4,16 @@ export type Agency = {
   url: string;
 };
 
+export type Brand = {
+  icon: string;
+  backgroundColor: string;
+  name: string;
+};
+
 export type Project = {
   agency: Agency;
   awards: string;
+  brand: Brand;
   challenge: string;
   deck: string;
   description: string;

@@ -5,6 +5,11 @@
       "name": "Bletchley Park",
       "url": "https://www.bletchley.co/"
     },
+    "brand": {
+      "icon": "/images/npr-live-sessions/brand-icon.png",
+      "backgroundColor": "#ffffff",
+      "name": "NPR"
+    },
     "challenge": "The challenge was to build a platform that seamlessly integrates the discovery of emerging artists with a robust bespoke backend, empowering station managers to curate live performance feeds and generate personalized recommendations.",
     "deck": "Live Sessions brings you the best videos of live music sessions from across the US. With national and local playlists, live webcasts of performances, and compelling coverage of emerging and proven artists, Live Sessions is NPR Music’s video connection to public radio music stations providing you the most exciting live performance content from around the country, updated daily.",
     "frameColorStart": "#E6B79B",
@@ -84,6 +89,11 @@
       "prefix": "Developed at ",
       "name": "Kongregate",
       "url": "https://www.kongregate.com/"
+    },
+    "brand": {
+      "icon": "/images/konstruct/brand-icon.png",
+      "backgroundColor": "#f04438",
+      "name": "Konstruct UI"
     },
     "deck": "Kongregate, an open platform for web gaming, set forth on a massive effort to rebrand its identity and platform.",
     "challenge": "By utilizing web components it was possible to make design changes without breaking existing functionality, and to expand the new brand’s visual identity across all Kongregate products while maintaining a consistent look and feel.",
@@ -173,6 +183,11 @@
       "prefix": "Agency: ",
       "name": "A Hundred Years",
       "url": "https://www.ahundredyears.com/"
+    },
+    "brand": {
+      "icon": "/images/ted-ed/brand-icon.png",
+      "backgroundColor": "#ffffff",
+      "name": "TED-Ed"
     },
     "deck": "TED needed to develop an experience that reconnects educators and students with the joy and discovery of learning. For teachers, that meant using TED’s unique capacity to tell compelling stories as a teaching tool, and for students, giving them the opportunity to craft stories of their own.",
     "challenge": "The result was a platform that gives teachers the ability to create customized lesson plans around any TED-Ed or YouTube video, add their own comprehension checks, distribute lessons privately or publicly, and track real-time performance statistics for individual students, classes, or the public at large.",
@@ -269,6 +284,11 @@
       "name": "Bletchley Park",
       "url": "https://www.bletchley.co/"
     },
+    "brand": {
+      "icon": "/images/third-way/brand-icon.png",
+      "backgroundColor": "#ffffff",
+      "name": "Third Way"
+    },
     "challenge": "With a very large amount of content managed by Third Way editors and partners, a frontend approach was needed for issue verticals that could easily be scaled and reproduced. We created several frontend sites that could be managed by the Third Way team, and integrated with their existing Craft CMS. This allowed for a more flexible and dynamic approach to managing content, while providing an engaging experience for their audience.",
     "deck": "Third Way stands as a prominent national think tank dedicated to advancing modern center-left ideologies. Various program microsites help focus attention on federal policy and national initiatives that offer opportunity and progress.",
     "frameColorStart": "#E0CDAF",
@@ -343,6 +363,11 @@
       "name": "Bletchley Park",
       "url": "https://www.bletchley.co/"
     },
+    "brand": {
+      "icon": "/images/carbon-free-europe/brand-icon.png",
+      "backgroundColor": "#1b415c",
+      "name": "Carbon-Free Europe"
+    },
     "challenge": "The Carbon-Free Europe website brings together publications, policy initiatives, and environmental modeling studies to build international support for a technology-inclusive climate agenda.",
     "deck": "Working towards a future where climate and energy policy across Europe is evidence-based, existing carbon-free solutions are rapidly deployed, and investment is readily available for the next generation technologies needed to get all the way to net-zero.",
     "frameColorStart": "#21435d",
@@ -401,6 +426,11 @@
       "prefix": "Agency: ",
       "name": "Bletchley Park",
       "url": "https://www.bletchley.co/"
+    },
+    "brand": {
+      "icon": "/images/aeequity/brand-icon.png",
+      "backgroundColor": "#ffffff",
+      "name": "Alliance for Entrepreneurial Equity"
     },
     "challenge": "The AEEquity website brings together research, proposals, events, and press releases to highlight what is possible in the federal policy arena.",
     "deck": "This one-of-a-kind effort develops and promotes federal policies that dramatically increase the opportunity for minority, female, and other disadvantaged entrepreneurs to start and expand successful businesses.",
@@ -465,6 +495,11 @@
       "prefix": "",
       "name": "Personal Project",
       "url": ""
+    },
+    "brand": {
+      "icon": "/images/allthefarms/brand-icon.png",
+      "backgroundColor": "#ffffff",
+      "name": "All The Farms"
     },
     "challenge": "To help local farmers and ranchers, we built an address-searchable database that helps people find their local farms and food growers, as well as local farms and ranches to be able to sell directly to the public that would like to support them. ",
     "deck": "The idea behind All The Farms is very straightforward and simple: We should understand what farms are around us, what they are carrying, and where/how we can support them.",
@@ -552,6 +587,11 @@
       "name": "Post Typography",
       "url": "https://www.posttypography.com/"
     },
+    "brand": {
+      "icon": "/images/splice-today/brand-icon.png",
+      "backgroundColor": "#ffffff",
+      "name": "Splice Today"
+    },
     "challenge": "Content is organized into three categories. The Feed is a collection of short articles that are selected from the site’s contributors. Splice Original is comprised of longer pieces, also from the site’s staff and roster of freelance contributors. Multimedia is a daily collection of new and classic material that’s slipped through the cracks in one way or another.",
     "deck": "Splice Today is a website covering topics such as music, film, books, sports and culture with a focus on politics and the arts. It features short articles, longer pieces, multimedia and a daily feed of new and classic material from its contributors and staff.",
     "frameColorStart": "#86a58b",
@@ -631,6 +671,11 @@
       "prefix": "Developed at ",
       "name": "Kongregate",
       "url": "https://www.kongregate.com/"
+    },
+    "brand": {
+      "icon": "/images/blood-vessels/brand-icon.png",
+      "backgroundColor": "#061e3e",
+      "name": "Blood Vessels"
     },
     "challenge": "The challenge was to create a generative art NFT collection, and a marketing website that tells the story of Chicago’s forgotten history.",
     "deck": "A community-driven experience set in a forgotten era of Chicago’s history. Blood Vessels is both a role playing game and next generation NFT collection.",

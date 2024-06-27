@@ -54,17 +54,38 @@ export default async function Page({ params }: PageProps) {
                   className="group flex h-full flex-col gap-4 transition-transform duration-1000 ease-out hover:-translate-y-0.5"
                   role="group"
                 >
-                  <figcaption className="flex flex-col items-start gap-3">
-                    <h2 className="line-clamp-1 text-2xl font-medium">
-                      {project.title}
-                    </h2>
+                  <figcaption className="flex flex-col items-start gap-2">
+                    <div className="flex items-center gap-2.5">
+                      {project.brand && (
+                        <div
+                          className="relative h-10 w-10 overflow-hidden rounded-full border-[5px] shadow"
+                          style={{
+                            backgroundColor: project.brand.backgroundColor,
+                            borderColor: project.brand.backgroundColor,
+                          }}
+                        >
+                          <Image
+                            alt={project.brand.name}
+                            className="absolute inset-0 h-full w-full object-contain"
+                            height={32}
+                            loading="eager"
+                            priority
+                            src={project.brand.icon}
+                            width={32}
+                          />
+                        </div>
+                      )}
+                      <h2 className="line-clamp-1 text-2xl font-medium">
+                        {project.title}
+                      </h2>
+                    </div>
                     <div className="flex w-full items-center justify-between text-sm font-normal">
                       <p>
                         {project.agency.prefix} {project.agency.name}
                       </p>
                       <div className="flex gap-2">
                         {project.primaryTechnologies.map((technology) => (
-                          <Tag key={technology} name={technology} size="xs" />
+                          <Tag key={technology} name={technology} size="sm" />
                         ))}
                       </div>
                     </div>
