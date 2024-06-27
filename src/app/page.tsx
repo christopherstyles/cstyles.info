@@ -57,7 +57,7 @@ export default async function Page({ params }: PageProps) {
                     <div className="flex items-start gap-2.5">
                       {project.brand && (
                         <div
-                          className="relative h-10 w-10 overflow-hidden rounded-full border-[5px] shadow"
+                          className="relative h-10 w-10 overflow-hidden rounded-full border-[3px] shadow"
                           style={{
                             backgroundColor: project.brand.backgroundColor,
                             borderColor: project.brand.backgroundColor,
