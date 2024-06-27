@@ -4,7 +4,6 @@ import { promises as fs } from "node:fs";
 
 import Container from "@/components/container";
 import FadeUp from "@/components/fade-up";
-import Tag from "@/components/tag";
 import type { Project } from "@/components/types";
 
 interface PageProps {
@@ -55,7 +54,7 @@ export default async function Page({ params }: PageProps) {
                   role="group"
                 >
                   <figcaption className="flex flex-col items-start gap-2">
-                    <div className="flex items-center gap-2.5">
+                    <div className="flex items-start gap-2.5">
                       {project.brand && (
                         <div
                           className="relative h-10 w-10 overflow-hidden rounded-full border-[5px] shadow"
@@ -75,18 +74,15 @@ export default async function Page({ params }: PageProps) {
                           />
                         </div>
                       )}
-                      <h2 className="line-clamp-1 text-2xl font-medium">
-                        {project.title}
-                      </h2>
-                    </div>
-                    <div className="flex w-full items-center justify-between text-sm font-normal">
-                      <p>
-                        {project.agency.prefix} {project.agency.name}
-                      </p>
-                      <div className="flex gap-2">
-                        {project.primaryTechnologies.map((technology) => (
-                          <Tag key={technology} name={technology} size="sm" />
-                        ))}
+                      <div className="flex flex-col items-start gap-2">
+                        <div>
+                          <h2 className="line-clamp-1 text-2xl font-medium">
+                            {project.title}
+                          </h2>
+                          <p className="text-sm font-normal opacity-60">
+                            {project.agency.prefix} {project.agency.name}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </figcaption>
