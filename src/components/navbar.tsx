@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { TfiWorld } from "react-icons/tfi";
 
+import { RxEnvelopeClosed } from "react-icons/rx";
 import ThemeToggle from "./theme-toggle";
 
 export default function Navbar() {
@@ -28,15 +29,27 @@ export default function Navbar() {
           <nav className="flex items-center gap-2 rounded-full text-sm uppercase backdrop-blur-md dark:font-light md:items-center">
             <ThemeToggle />
             <Link className="no-underline" href="/about">
-              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700">
+              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-all duration-100 hover:-translate-y-0.5 hover:bg-neutral-200 dark:hover:bg-neutral-700">
                 About
               </div>
             </Link>
             <Link className="no-underline" href="/cv">
-              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-colors duration-100 hover:bg-neutral-200 dark:hover:bg-neutral-700">
+              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-transparent px-2.5 transition-all duration-100 hover:-translate-y-0.5 hover:bg-neutral-200 dark:hover:bg-neutral-700">
                 CV
               </div>
             </Link>
+            <a
+              aria-label="Email Chris Styles (opens in the default mail application)"
+              className="flex aspect-square w-auto items-center justify-center rounded-full bg-neutral-800 p-3 px-4 text-sm font-medium lowercase text-neutral-50 no-underline transition-all duration-100 ease-out hover:-translate-y-0.5 dark:bg-neutral-50 dark:text-neutral-900 md:aspect-auto"
+              href="mailto:cstyles@hey.com"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <span className="inline-block md:hidden">
+                <RxEnvelopeClosed size={16} />
+              </span>
+              <span className="hidden md:block">cstyles@hey.com</span>
+            </a>
           </nav>
         </div>
       </div>
