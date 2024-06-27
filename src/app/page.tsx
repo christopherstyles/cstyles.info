@@ -21,8 +21,10 @@ export default async function Page({ params }: PageProps) {
   return (
     <div className="mx-auto flex w-full flex-col items-start px-4 pt-10 md:px-6 md:pt-32">
       <Container>
-        <div className="flex h-svh flex-col justify-center gap-12">
-          <h1 className="mb-6 text-5xl md:mb-24">Chris Styles</h1>
+        <div className="flex h-[75vh] flex-col justify-center gap-12 md:h-[60vh]">
+          <h1 className="mb-[4vh] text-3xl md:mb-[10vh] md:text-5xl">
+            Chris Styles
+          </h1>
           <p className="max-w-[48ch] text-pretty text-2xl">
             A design-focused{" "}
             <a
