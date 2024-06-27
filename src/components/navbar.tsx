@@ -40,7 +40,7 @@ export default function Navbar() {
             </Link>
             <a
               aria-label="Email Chris Styles (opens in the default mail application)"
-              className="flex aspect-square w-auto items-center justify-center rounded-full bg-neutral-800 p-3 px-4 text-sm font-medium lowercase text-neutral-50 no-underline transition-all duration-100 ease-out hover:-translate-y-0.5 dark:bg-neutral-50 dark:text-neutral-900 md:aspect-auto"
+              className="ml-2.5 flex aspect-square w-auto items-center justify-center rounded-full bg-neutral-800 p-3 px-4 text-sm font-medium lowercase text-neutral-50 no-underline transition-all duration-100 ease-out hover:-translate-y-0.5 dark:bg-neutral-50 dark:text-neutral-900 md:aspect-auto"
               href="mailto:cstyles@hey.com"
               rel="noreferrer noopener"
               target="_blank"
