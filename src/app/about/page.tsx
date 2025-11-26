@@ -52,8 +52,8 @@ export default function Page({ params }: PageProps) {
                   >
                     @landbird
                   </a>{" "}
-                  and their three dogs, two chickens, five ducks, and a lovely
-                  goose.
+                  and their three dogs, two chickens, four ducks, and a very
+                  calm and loving goose named Sweetie.
                 </p>
                 <p className="text-base">
                   If you’re interested in chatting about a potential
