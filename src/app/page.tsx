@@ -34,8 +34,7 @@ export default async function Page({ params }: PageProps) {
             >
               software writer
             </a>{" "}
-            working to create beautiful, functional, and accessible digital
-            experiences.
+            working to create lovely, meaningful, digital experiences.
           </p>
         </div>
       </Container>
