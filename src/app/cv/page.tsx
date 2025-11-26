@@ -83,10 +83,10 @@ export default async function Page() {
                   <li>
                     <div className="font-bold">Additional Experience</div>
                     Accessibility, Continuous Integration (CircleCI, GitHub
-                    Actions, TravisCI), CDN (Cloudinary, Imgix, KeyCDN, Fastly),
-                    GraphQL (Apollo Federation, Hasura GraphQL Engine), Keen.io,
-                    Mapbox, MySQL, Redis, Search (Algolia, Meilisearch,
-                    Elasticsearch), StorybookJS, Zencoder
+                    Actions, TravisCI), CDN (Cloudflare, Cloudinary, Imgix,
+                    KeyCDN, Fastly), GraphQL (Apollo Federation, Hasura GraphQL
+                    Engine), Keen.io, Mapbox, MySQL, Redis, Search (Algolia,
+                    Meilisearch, Elasticsearch), StorybookJS, Zencoder
                   </li>
                   <li>
                     <div className="font-bold">Deployment</div>
@@ -102,15 +102,15 @@ export default async function Page() {
                 <h2 className="text-2xl">Awards</h2>
                 <ul className="list-disc pl-5">
                   <li>
-                    2013 Webby in Education category for{" "}
+                    Webby in Education category for{" "}
                     <span className="italic">TED-Ed</span>
                   </li>
                   <li>
-                    2010 OMMA Award, “Best in Show” for Integrated Online
-                    Campaign for <span className="italic">Pepsi Refresh</span>
+                    OMMA Award, “Best in Show” for Integrated Online Campaign
+                    for <span className="italic">Pepsi Refresh</span>
                   </li>
                   <li>
-                    2010 OMMA Award, “Best Integrated Online Campaign” in the
+                    OMMA Award, “Best Integrated Online Campaign” in the
                     Non-Alcoholic Beverage category for{" "}
                     <span className="italic">Pepsi Refresh</span>
                   </li>
@@ -120,8 +120,8 @@ export default async function Page() {
                     <span className="italic">Pepsi Refresh</span>
                   </li>
                   <li>
-                    2010 “Best Web Site of Industry” in the Education category
-                    by the Web Marketing Association for{" "}
+                    “Best Web Site of Industry” in the Education category by the
+                    Web Marketing Association for{" "}
                     <span className="italic">American University</span>
                   </li>
                 </ul>
