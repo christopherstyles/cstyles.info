@@ -72,14 +72,14 @@
     ],
     "slug": "npr-live-sessions",
     "stack": [
-      "CircleCI",
+      "Ruby on Rails",
       "ElasticSearch",
-      "Heroku",
       "KeenIO",
       "Postgres",
-      "Reactjs",
+      "React",
       "Redis",
-      "Ruby on Rails",
+      "Heroku",
+      "CircleCI",
       "Zencoder"
     ],
     "title": "NPR Live Sessions"
@@ -163,12 +163,12 @@
     ],
     "slug": "konstruct-ui",
     "stack": [
+      "Ruby on Rails",
       "Fastly",
       "Figma",
       "Hotwire",
       "Lit Framework",
       "NX Monorepo",
-      "Ruby on Rails",
       "StimulusJS",
       "Storybook",
       "TailwindCSS",
@@ -262,14 +262,14 @@
     ],
     "slug": "ted-ed",
     "stack": [
+      "Ruby on Rails",
+      "Hotwire",
+      "Elasticsearch",
+      "Design Systems",
       "Cloudinary",
       "CircleCI",
-      "Design Systems",
-      "Elasticsearch",
       "Heroku",
-      "Hotwire",
       "Lookbook",
-      "Ruby on Rails",
       "StimulusJS",
       "TailwindCSS",
       "Turbo",
@@ -331,13 +331,13 @@
     ],
     "slug": "carbon-free-europe",
     "stack": [
+      "Next.js",
       "Contentful",
       "Craft CMS",
       "Google Maps",
       "GraphQL",
-      "Imgix",
-      "Next.js",
       "React",
+      "Imgix",
       "TailwindCSS"
     ],
     "title": "Carbon-Free Europe"
@@ -400,12 +400,12 @@
     ],
     "slug": "aeequity",
     "stack": [
+      "Next.js",
       "Contentful",
       "Craft CMS",
       "Google Maps",
       "GraphQL",
       "Imgix",
-      "Next.js",
       "React",
       "TailwindCSS"
     ],
@@ -489,11 +489,11 @@
     ],
     "slug": "allthefarms",
     "stack": [
+      "Ruby on Rails",
       "Hotwire",
       "Mapbox",
       "Meilisearch",
       "New Relic APM",
-      "Ruby on Rails",
       "Sidekiq",
       "StimulusJS",
       "TailwindCSS",
@@ -575,6 +575,7 @@
     ],
     "slug": "splice-today",
     "stack": [
+      "Ruby on Rails",
       "AWS",
       "Bootstrap",
       "Imgix",
@@ -582,7 +583,6 @@
       "New Relic APM",
       "Postgres",
       "Redis",
-      "Ruby on Rails",
       "Sidekiq"
     ],
     "title": "Splice Today"
@@ -650,7 +650,9 @@
       "Next.js",
       "TailwindCSS",
       "Framer Motion",
-      "Hashlips Art Engine"
+      "Hashlips Art Engine",
+      "NFT",
+      "Generative Art"
     ],
     "title": "Blood Vessels"
   }
